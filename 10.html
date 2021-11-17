@@ -1,0 +1,26 @@
+<script>
+//برنامه ای که مشخص می کند شما در چه دورعه ای از سن خودتان هستید این برنامه از عملگر های منطقی استفاده می کند برای همین کوتاه تر از قبلی است 
+var age=parseInt(prompt("کاربر گرامی لطفا سن خودتان را وارد کنید "));
+var gender=prompt("جنسیت خود را وارد کنید (famale-male)");
+if((age > 12) && (age <=30)){
+  if(gender=="male"){
+  console.log("شما یک آقای جوان هستید");
+ }
+ else{
+ console.log("شما یک خانوم جوان هستید ");
+ }
+}
+if(age>30){
+ if(gender=="male"){
+ console.log("شما یک  آقای بزرگ سال هستید");
+ }
+ else{
+ console.log(" شما یک خانم  بزرگ سال هستید");
+ }
+}
+//کار با عملگر not
+var number=parseInt(prompt("enter a number"));
+if(number != 2){
+console.log(" عدد برابر با 2 نیست ");
+}
+</script>

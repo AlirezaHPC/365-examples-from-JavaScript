@@ -1,0 +1,15 @@
+<script>
+var number=parseInt(prompt("عدد مورد نظر را چاپ کنید"));
+var baghimandeh;
+var maghlob=1;
+var result=0;
+ console.log(" عدد  وارد شده = ",number);
+ while(number>0){
+ baghimandeh=number%10;
+ maghlob=(maghlob*10)+baghimandeh;
+ result=baghimandeh+(result*10);
+ number=number/10;}
+ console.log(" مغلوب عدد برابر است با =>",maghlob);
+ console.log(maghlob);
+ console.log(result);
+</script>

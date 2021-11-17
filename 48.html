@@ -1,0 +1,43 @@
+<script>
+//math class
+console.log	("math class");
+class Math{
+number1;
+number2;
+
+sum(){
+//result=this.number1+this.number2;
+console.log("sum=",this.number1+this.number2);
+}
+zarb(){
+console.log(this.number1,"*",this.number2,"=",this.number1*this.number2);
+}
+tafrigh(){
+if(this.number1>this.number2){
+console.log(this.number1,"-",this.number2,"=",this.number1-this.number2);
+}
+else{
+console.log(this.number2-this.number1);
+}
+}
+tagsim(){
+if(this.number1>this.number2){
+console.log(this.number1,"/",this.number2,"=",this.number1/this.number2);
+}
+else{
+console.log(this.number1,"/",this.number2,"=",this.number2/this.number1);
+}
+}
+}
+let result1=new Math();
+let result2=new Math();
+let result3=new Math();
+result1.number1=20;
+result1.number2=15;
+result1.sum();
+result1.zarb();
+result1.tafrigh();
+result1.tagsim();
+
+
+</script>

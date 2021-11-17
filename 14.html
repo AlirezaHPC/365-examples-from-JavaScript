@@ -1,0 +1,34 @@
+<script>
+var num1,num2,big,small;
+num1=parseInt(prompt("enter number1:"));
+num2=parseInt(prompt("enter number2:"));
+
+
+//برنامه ای بنویسید که دو تا عدد بگیرد در ابتدا بگوید کدام عدد بزرگتر است و سپس مجموع ، ضرب ، تقسیم ،تفریق را چاپ کند
+if(num1>num2){
+big=num1;
+small=num2;
+console.log("big=",big);
+console.log("small=",small);
+
+}
+else{
+big=num2;
+small=num1;
+console.log("big=",big);
+console.log("small=",small);
+}
+var sum,tafrigh,zarb,taghsim;
+sum=num1+num2;
+tafrigh=big-small;
+zarb=num1*num2;
+taghsim=big%small;
+console.log(num1,"+ ",num2,"=",sum);
+console.log(num1,"-",num2,"=",tafrigh);
+console.log(num1,"* ",num2,"=",zarb);
+console.log(num1,"/ ",num2,"=",taghsim);
+console.log("1400/6/20 I now learning GIT");
+
+
+
+</script>

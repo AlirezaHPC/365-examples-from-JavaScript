@@ -1,0 +1,30 @@
+<script>
+function classMaker(flag=true){
+       class MyName{
+            name="raman";
+           /* constructor(){
+                this.name="raman";
+            }*/
+            tellInformation(){
+                console.log("yuor name is ",this.name);
+            }
+        }
+
+         function   tellName(){
+
+    
+     console.log("macing the class")
+     var answer=prompt("do you wante make an object of the class?");
+     if (answer=="yes"){
+        var  my_objet= new MyName();
+        console.log("object made");
+        my_objet.tellInformation(); }
+     else{
+         console.log("aneswer==no");
+     }
+
+    }tellName();
+}
+classMaker();
+console.log(MyName.name);
+</script>
