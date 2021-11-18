@@ -1,10 +1,9 @@
 <script>
-    /*برنامه ای بنویسید که عددی را خوانده اعداد اول یا کامل کوچکتر
-     یا مساوی عدد خوانده شده را نمایش دهد
-(عددی کامل است که مجموع مقسوم علیه های آن
- برابر خودش باشد. عدد 6 عددی کامل است )
-( عدد اول عددی است که بر هیچ عدد کوچکتر از
- خودش به جز یک بخش پذیر نیست )
+    /*Write a program that receives a number that displays prime numbers or integers less 
+	than or equal to the number received. (It is a perfect number whose
+	sum of divisors is equal to itself. The number 6 is a perfect number)
+(The first number is a number that is not divisible by any number smaller than itself)
+
 */
 var number=parseInt(prompt("enter a number"));
 var count=0;
@@ -14,10 +13,10 @@ if(number%i==0){
 }
 }
 if(count==2){
-    console.log("اول است",number );
+    console.log(number," is prime number");
 }
 else{
-    console.log("اول نیست",number)
+    console.log(" is not prime number",number)
 }
 if (count==number){
     console.log("عددی کامل است",number);
