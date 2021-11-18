@@ -1,76 +1,11 @@
 <script>
-//برنامه ای بنویسید که 5 تا عدد بگیره و بعد بگه که این اعداد بر 2و3و5و7 بخش پذیر هستند یا نه؟
-var number1=parseInt(prompt("enter number1"));
-console.log("number1 =",number1);
-var number2=parseInt(prompt("enter number2"));
-console.log("number2 =",number2);
-var number3=parseInt(prompt("enter number 3"));
-console.log("number 3=",number3);
-var number4=parseInt(prompt("enter number4"));
-console.log("number4=",number4);
-var number5=parseInt(prompt("enter number5"));
-console.log("number 5",number5);
-if(number1%2==0){
-console.log(number1,"بر 2 بخش پذیر است");
-}
-if(number1%3==0){
-console.log(number1,"بر 3 بخش پذیر است ");
-}
-if(number1%7==0){
-console.log(number1,"بر 7 بخش پذیر است  ");
-}
-if(number1%5==0){
-console.log(number1,"بر 5 بخش پذیر است ");
-}
-
-if(number2%2==0){
-console.log(number2,"بر 2 بخش پذیر است");
-}
-if(number2%3==0){
-console.log(number2,"بر 3 بخش پذیر است");
-
-}
-if(number2%5==0){
-console.log(number2,"بر 5 بخش پذیر است");
-}
-if(number2%7==0){
-console.log(number2,"بر 7 بخش پذیر است ");
-}
-if(number3%2==0){
-console.log(number3,"بر 2 بخش پذیر است");
-}
-if(number3%3==0){
-console.log(number3,"بر 3 بخش پذیر است");
-}
-if(number3%5==0){
-console.log(number3,"بر 5 بخش پذیر است");
-}
-if(number3%7==0){
-console.log(number3,"بر 7 بخش پذیر است");
-}
-if(number4%2==0){
-console.log(number4,"بر 2 بخش پذیر است");
-}
-if(number4%3==0){
-console.log(number4,"بر 3 بخش پذیر است");
-}
-if(number4%5==0){
-console.log(number4,"بر 5 بخش پذیر است");
-}
-if(number4%7==0){
-console.log(number4,"بر 7 بخش پذیر است");
-}
-if(number5%2==0){
-console.log(number5,"بر 2 بخش پذیر است");
-}
-if(number5%3==0){
-console.log(number5,"بر 3 بخش پذیر است");
-}
-if(number5%5==0){
-console.log(number5,"بر 5 بخش پذیر است");
-}
-if(number5%7==0){
-console.log(number5,"بر 7 بخش پذیر است");
-}
-
+var count=parseInt(prompt("enter count"));
+var salary=5000000;
+var first_salary=12*count*salary;
+console.log("first_salary",first_salary);
+var new_salary1=(15*salary)/100;
+var new_salary=salary+new_salary1;
+var last_salary=12*count*new_salary;
+console.log("last_salary",last_salary);
+console.log("last_salary-first_salary= ",last_salary-first_salary);
 </script>

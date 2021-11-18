@@ -1,0 +1,20 @@
+<script>
+    //برنامه ای بنویسید که رشته ای را از ورودی دریافت کند
+    var string1=prompt("enter a string please:");
+    console.log(string1);
+    //از کاربر بپرسد که آیا میخواهد  یک محدوده از رشته را دریافت کند یا فقط یک کاراکتر را چاپ کند.
+    var type1=parseInt(prompt("اگر می خواهید یک محدوده از رشته چاپ شود یک عدد زوج وارد کنید  در غیر این صورت یک عدد فرد وارد کنید"));
+    var index1,index2;
+    if(type1%2==0){
+        index1=parseInt(prompt("enter index 1 for print string"));
+        index2=parseInt(prompt("enter index2 for print string"));
+        console.log(string1[index1,index2]);
+
+
+    }
+    else{
+        index1=parseInt(prompt("enter index 1 for print string"));
+        console.log(string1[index1]);
+    }
+
+</script> 

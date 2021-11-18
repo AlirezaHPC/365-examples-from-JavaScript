@@ -1,11 +1,28 @@
 <script>
- var num1=10;
- var num2=15;
- var num3=-num1;
- console.log(num3);
-num2=-num1;
-console.log(num2);
-num2=num1++;
-console.log("num2="+num2);
-console.log("num1="+num1);
+    /*برنامه ای بنویسید که عددی را خوانده اعداد اول یا کامل کوچکتر
+     یا مساوی عدد خوانده شده را نمایش دهد
+(عددی کامل است که مجموع مقسوم علیه های آن
+ برابر خودش باشد. عدد 6 عددی کامل است )
+( عدد اول عددی است که بر هیچ عدد کوچکتر از
+ خودش به جز یک بخش پذیر نیست )
+*/
+var number=parseInt(prompt("enter a number"));
+var count=0;
+for (var i=1;i<=number;i++){
+if(number%i==0){
+    count++
+}
+}
+if(count==2){
+    console.log("اول است",number );
+}
+else{
+    console.log("اول نیست",number)
+}
+if (count==number){
+    console.log("عددی کامل است",number);
+}
+else{
+    console.log("عددی کامل نیست ",number)
+}
 </script>

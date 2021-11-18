@@ -1,23 +1,18 @@
 <script>
-//ساختار های تصمیم در جاواسکریپت
-var number=parseInt(prompt("enter a number: "));
-if(number%2==0){
-console.log("number is even");
+var sum=0,j,i;
+for(i=100;i<=999;i++){
+for (j=1;j<=i;j++){
+if(i%j==0){
+sum=sum+j;
 }
-else{
-console.log("number is odd");
+if(sum==i){
+console.log("i");}
 }
-//نتیجه شرط یک عبارت بولی است که می توان در یک متغیر ذخیره کرد 
-var year=2020;
-Boolean(year);
-if(year){
-console.log("year is 2020");}
-//برنامه ای بنویسید که یک مقدار بگیرد و بگوید بر 5 بخش پذیر است یا نه ؟
-var number2=parseInt(prompt("enter a number please: "));
-if(number2%5==0) {
-console.log(" بر 5 بخش پذیر است ",number2);
 }
-else{
-console.log(" بر 5 بخش پذیر نیست ",number2);
-}
+if(sum==i){
+console.log("i");}
+
+
+
+
 </script>

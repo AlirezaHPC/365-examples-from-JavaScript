@@ -1,20 +1,10 @@
 <script>
-//برنامه ای بنویسید که عددی را بگیرد و بگویدا ول است یا نه
-var number=parseInt(prompt("enter a number :"));
-var counter=0 ,i;
-for(i=1;i<number;i++){
-
-if (number%i==0){
-counter++;
-}
-
-}
-if(counter==1){
-console.log("اول است ");
-}
-else{
-console.log("اول نیست ");
-}
-console.log("1400/6/20 I now learning GIT");
-
+    //برنامه ای بنویسید که یک عدد را گرفته اگر زوج بود آن را در عدد بعدی خود ضرب کند و گرنه با ارقام بعدی خود جمع کند.
+    var number1=parseInt(prompt("enter number:"));
+    if(number1%2==0){
+console.log("number1*(number1+1)= ",number1*(number1+1));
+    }
+    else{
+console.log("number1+(number1+1)= ",number1+(number1+1));
+    }
 </script>

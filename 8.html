@@ -1,33 +1,15 @@
 <script>
-//طراحی برنا مه ای که رنگ مورد علاقه ات رو نمایش بده 
-console.log("choice yor favorite color");
-console.log("black[1]");
-console.log("white[2]");
-console.log("purple[3]");
-console.log("pink[4]");
-console.log("green[5]");
-console.log("red[6]");
-var choice=parseInt(prompt("enter your choice "));
-if(choice==1){
-console.log("black");}
-else if(choice==2){
-console.log("white");}
-else if (choice==3){
-console.log("purple");
+var array_10_number=[];
+var max1,max2,max3;
+for(var i=0;i<10;i++){
+array_10_number[i]=parseInt(prompt("enter a number"));
+console.log	("number",i,"= ",array_10_number[i]);
 }
-else if(choice==4){
-console.log("pink");
+max1=array_10_number[0];
+for(var i=0;i<=10;i++){
+if(array_10_number[i]>max1){
+max1=array_10_number[i];
 }
-
-else if(choice==5){
-console.log("رنگ مورد علاقه شما سبز است");
 }
-
-else if(choice==6){
-console.log("رنگ مورد علاقه شما قرمز است");
-}
-else{
-console.log("یک انتخاب بین بازه انتخابی داشته باشید ");
-}
-
+console.log("max1=",max1);
 </script>
