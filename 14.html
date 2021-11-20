@@ -1,34 +1,21 @@
 <script>
-var num1,num2,big,small;
-num1=parseInt(prompt("enter number1:"));
-num2=parseInt(prompt("enter number2:"));
+    /*: A program that reads a two-digit number can perform the following operations 
+    without using the multiplier operator.
+Y = 31 * x - 17 * x + 5
+Display the recessed x.
+x=number
+result=y
+*/
+var number=parseFloat(prompt("enter a two_digit number"));
+var a1=(number<< 5)-number;
 
-
-//برنامه ای بنویسید که دو تا عدد بگیرد در ابتدا بگوید کدام عدد بزرگتر است و سپس مجموع ، ضرب ، تقسیم ،تفریق را چاپ کند
-if(num1>num2){
-big=num1;
-small=num2;
-console.log("big=",big);
-console.log("small=",small);
-
-}
-else{
-big=num2;
-small=num1;
-console.log("big=",big);
-console.log("small=",small);
-}
-var sum,tafrigh,zarb,taghsim;
-sum=num1+num2;
-tafrigh=big-small;
-zarb=num1*num2;
-taghsim=big%small;
-console.log(num1,"+ ",num2,"=",sum);
-console.log(num1,"-",num2,"=",tafrigh);
-console.log(num1,"* ",num2,"=",zarb);
-console.log(num1,"/ ",num2,"=",taghsim);
-console.log("1400/6/20 I now learning GIT");
-
+var a2=(number<<4)+number;
+var result=(a1-a2)+5;
+console.log( "31 *",number," -17 *",number,"+5 =",result);
+var  remaining=number%10;
+number=number/10;
+number=(remaining*10)+number
+console.log(parseInt(number));
 
 
 </script>

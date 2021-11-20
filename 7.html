@@ -1,8 +1,11 @@
 <script>
-//
+//: Write a program that reads 5 numbers from the last number to the first number (array)
 var array1=[];
+for(var i=0;i<=4;i++){
+    array1[i]=parseInt(prompt("enter a number",i));
+}
 for(var i=4;i>=0;i--){
-array1[i]=parseInt(prompt("enter a number",i));
+
 console.log("number",i,"= ",array1[i]);
 }
 

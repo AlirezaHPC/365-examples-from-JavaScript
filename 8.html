@@ -1,15 +1,30 @@
 <script>
+    //A program that reads 10 numbers and prints the third largest number (array)
 var array_10_number=[];
 var max1,max2,max3;
 for(var i=0;i<10;i++){
 array_10_number[i]=parseInt(prompt("enter a number"));
 console.log	("number",i,"= ",array_10_number[i]);
 }
-max1=array_10_number[0];
-for(var i=0;i<=10;i++){
-if(array_10_number[i]>max1){
-max1=array_10_number[i];
-}
+var max1,max2,max3;
+var j;
+max1=max2=max3=array_10_number[0];
+for(j=1;j<=9;j++){
+    if(array_10_number[j]>max1){
+        max3=max2;
+        max2=max1;
+        max1=array_10_number[j];
+    }
+    else if (array_10_number[j]>max2){
+        max3=max2;
+        max2=array_10_number[j];
+    }
+    else if(array_10_number[j]>max3){
+        max3=array_10_number[j];
+    }
 }
 console.log("max1=",max1);
+console.log("max2",max2);
+console.log("max3",max3);
+
 </script>

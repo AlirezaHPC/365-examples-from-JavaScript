@@ -1,26 +1,11 @@
 <script>
-//برنامه ای که مشخص می کند شما در چه دورعه ای از سن خودتان هستید این برنامه از عملگر های منطقی استفاده می کند برای همین کوتاه تر از قبلی است 
-var age=parseInt(prompt("کاربر گرامی لطفا سن خودتان را وارد کنید "));
-var gender=prompt("جنسیت خود را وارد کنید (famale-male)");
-if((age > 12) && (age <=30)){
-  if(gender=="male"){
-  console.log("شما یک آقای جوان هستید");
- }
- else{
- console.log("شما یک خانوم جوان هستید ");
- }
+//Write a program that takes 12 numbers from the user and prints its sum (array)
+var number_12=[];
+var sum=0;
+for(var i=0;i<12;i++){
+  number_12[i]=parseInt(prompt("enter a number"));
+  console.log("number",i,"=",number_12[i]);
+sum=sum+number_12[i];
 }
-if(age>30){
- if(gender=="male"){
- console.log("شما یک  آقای بزرگ سال هستید");
- }
- else{
- console.log(" شما یک خانم  بزرگ سال هستید");
- }
-}
-//کار با عملگر not
-var number=parseInt(prompt("enter a number"));
-if(number != 2){
-console.log(" عدد برابر با 2 نیست ");
-}
+console.log("sum =",sum);
 </script>

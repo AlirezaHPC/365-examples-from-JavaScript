@@ -1,11 +1,17 @@
 <script>
-var count=parseInt(prompt("enter count"));
+    /*
+    The company manager pays 5 million to each of his specialists monthly.
+     He wants to know how much he adds to the company's staff costs annually 
+     if he adds 15 percent to the salary of each specialist.
+     Write a program that receives the number of specialists that do this
+    */
+var count=parseInt(prompt("enter count specialists"));
 var salary=5000000;
-var first_salary=12*count*salary;
-console.log("first_salary",first_salary);
-var new_salary1=(15*salary)/100;
-var new_salary=salary+new_salary1;
-var last_salary=12*count*new_salary;
-console.log("last_salary",last_salary);
-console.log("last_salary-first_salary= ",last_salary-first_salary);
+var first_salary_annually=12*count*salary;
+console.log("first_salary_annually",first_salary_annually);
+var rate_change=(15*salary)/100;
+var new_salary=salary+rate_change;
+var last_salary_annually=12*count*new_salary;
+console.log("last_salary_annually",last_salary_annually);
+console.log("Amount of annual salary increase ",last_salary_annually-first_salary_annually);
 </script>
