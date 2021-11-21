@@ -1,0 +1,31 @@
+<script>
+/*Write a program that reads three numbers and sorts them in ascending order.
+ After sorting, the smallest number is in a and the largest number is in c.*/
+ var a=parseInt(prompt("enter number one"));
+ var b=parseInt(prompt("enter number two"));
+ var c=parseInt(prompt("enter number three"));
+ if (a>b){
+     temp=a;
+     a=b;
+     b=temp
+     
+ }
+ if(a>c){
+     temp=a;
+     a=c;
+     c=temp
+ }
+ if(b>c){
+     temp=b;
+     b=c;
+     c=temp;
+ }
+ console.log("C=",c);
+ console.log("B=",b);
+ console.log("A=",a);
+ var temp=0;
+
+
+
+
+</script>

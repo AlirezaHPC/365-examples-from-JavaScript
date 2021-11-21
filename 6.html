@@ -1,0 +1,21 @@
+<script>
+/*Write a program that displays three-digit integers
+ (is an integer whose sum of divisors of a number is equal to the number itself)
+
+
+*/
+var sum=0,j,i;
+for(i=100;i<=999;i++){
+for (j=1;j<=i;j++){
+if(i%j==0){
+sum=sum+j;
+}
+if(sum==i){
+console.log("i");}
+}
+}
+
+
+
+
+</script>

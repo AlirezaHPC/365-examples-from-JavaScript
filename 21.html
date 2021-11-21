@@ -1,0 +1,12 @@
+<script>
+//برنام های بنویسید که عددی را دریافت کند و مغلوب آن را چاپ کند 
+//این برنامه برای چاپ مغلوب اعداد دو رقمی استفاده می شود 
+var number=parseInt(prompt("یک عدد وارد کنید "));
+var baghi_mandeh=number%10;
+var kharej_ghesmat=number/10;
+baghi_mandeh=parseInt(baghi_mandeh);
+kharej_ghesmat=parseInt(kharej_ghesmat);
+var maghlob=(10*baghi_mandeh)+kharej_ghesmat;
+console.log("عدد برابرا ست با ",number);
+console.log("مغلوب عدد=",maghlob);
+</script>
