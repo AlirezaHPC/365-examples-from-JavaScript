@@ -1,12 +1,22 @@
 <script>
-//برنام های بنویسید که عددی را دریافت کند و مغلوب آن را چاپ کند 
-//این برنامه برای چاپ مغلوب اعداد دو رقمی استفاده می شود 
-var number=parseInt(prompt("یک عدد وارد کنید "));
-var baghi_mandeh=number%10;
-var kharej_ghesmat=number/10;
-baghi_mandeh=parseInt(baghi_mandeh);
-kharej_ghesmat=parseInt(kharej_ghesmat);
-var maghlob=(10*baghi_mandeh)+kharej_ghesmat;
-console.log("عدد برابرا ست با ",number);
-console.log("مغلوب عدد=",maghlob);
+
+ var emoloyment_ID=parseInt(prompt("enter employment ID"));
+ var name=prompt("enter emoloyment's name");
+ var type_of_insurance=parseInt(prompt("enter type of insurance"));
+var employee_salary=parseInt(prompt("employee salary"));
+ var income,insurance;
+ var taxation=(employee_salary*9)/100;
+ switch(type_of_insurance){
+ case 1:
+ insurance=(7*employee_salary)/100;
+ break;
+ case 2:
+ insurance=(9*employee_salary)/100;
+ break;
+ case 3:
+ insurance=(10*employee_salary)/100;
+ break;}
+ income=employee_salary-(insurance+taxation);
+ console.log("employee_salary=",employee_salary);
+ console.log("income=",income);
 </script>
