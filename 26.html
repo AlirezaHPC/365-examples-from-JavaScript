@@ -1,14 +1,26 @@
 <script>
-var number=parseInt(prompt("enter a number"));
-var array_8=[];
+var number_primary=parseInt(prompt("enter a number "));
+var number=number_primary
+var array=[];
+var array_2=[];
+var digit=0;
 var i=0;
+var count=0;
 while(number>0){
-parseInt(array_8=number%8);
-parseInt(number/=8);
+digit=number%2;
 i++;
+array[i]=digit;
+count++;
+number=parseInt(number/2);
+for (j=i-1;j>=0;j--){
+console.log(array[j]);
+//console.log(number_primary,"Based on 2=",array_2);
 }
-console.log(array_8);
-for(var j=(i-1);j>=0;j--){
 
 }
+
+//console.log(number_primary,"Based on 2=",array_2);
+
+
+
 </script>

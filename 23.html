@@ -1,23 +1,16 @@
 <script>
-console.log("i am learning JS");
-var [num1,num2,num3]=[12,2,5];
-console.log("num1=",num1);
-var object1={1:"samira",2:"zahra"};
-console.log(object1);
-var object2={"name":"samira","family":"abdi"};
-console.log(object2);
-var string1="samira abdi";
-console.log("string1[5]= ",string1[5]);
-console.log(object2['name']);
-var object3={"name":"samira","family":"abdi",2020:100};
-console.log(object3);
-const pi=3.14;
-console.log(pi);
-//برنامه ای بنویسید که دو تا عدد بگیرد و مجموع ان را چاپ کند 
-var number1,number2;
-number1=parseInt(prompt("enter a number1"));
-number2=parseInt(prompt("enter a number2"));
-var sum=number1+number2;
-console.log('number1+number2=',sum);
-console.log(parseInt("345gh6"));
+/*Write a program that reads a maximum of 7 digits and adds its digits using the following methods.
+A) Using the repeat loop
+*/
+var number_primary=parseInt(prompt("enter a number maximum of 7 digits"));
+var number=number_primary
+var sum=0;
+var digit=0;
+while(number>0){
+digit=number%10;
+sum=parseInt(sum+digit);
+number=parseInt(number/10);
+}
+console.log("number",number_primary);
+console.log("sum digits =",sum);
 </script>
