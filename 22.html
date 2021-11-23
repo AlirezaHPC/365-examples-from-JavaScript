@@ -1,15 +1,26 @@
 <script>
-var number=parseInt(prompt("عدد مورد نظر را چاپ کنید"));
-var baghimandeh;
-var maghlob=1;
-var result=0;
- console.log(" عدد  وارد شده = ",number);
- while(number>0){
- baghimandeh=number%10;
- maghlob=(maghlob*10)+baghimandeh;
- result=baghimandeh+(result*10);
- number=number/10;}
- console.log(" مغلوب عدد برابر است با =>",maghlob);
- console.log(maghlob);
- console.log(result);
+/*Suppose a telecommunications company in one of the provinces wants to transfer its information over a telephone line. 
+All transfer information consists of four correct digits. The telecommunications company encodes it for transmission.
+ A program that reads an integer four-digit number and encodes and prints it as follows:
+1. Calculates the remainder of each digit to 4 and replaces the digit with a sum.
+2. Replaces the first digit with the third.
+*/
+
+var num=parseInt(prompt("enter four-digit number"));
+console.log("number=",num);
+if(num>=1000 && num<=9999){
+var sum=0,base1=1;n=num;
+while(n>0){
+sum=parseInt(sum+(((n%10)%4)+1)*base1);
+base1=base1*10;
+n=n/10;}
+var n1=parseInt(sum%10);
+var n3=parseInt((sum/100)%10);
+sum=parseInt(sum-(n1+n3*100));
+sum=parseInt(sum+(n3+n1*100));
+console.log("sum",sum);
+}
+else{
+console.log("number is not four-digit");
+}
 </script>
