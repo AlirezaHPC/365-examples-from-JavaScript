@@ -1,11 +1,26 @@
 <script>
-//برنامه ای بنویسید که یک رشته را از ورودی بگیرد و آن را به عدد تبدیل کند و نمایش دهد.
-var varible=prompt("enter a string: ");
-var number=parseInt(varible);
-console.log(number);
-var var1=5,var2=2;
-var1=++var2;
-console.log(var1);
-console.log(var2);
+/*
+Write a program that takes two numbers from the input and compares them and prints them on the output.
+A) Are these two numbers equal?
+B) Are these two smaller numbers equal or larger?
+C) Tell me which number is bigger and which one is smaller?
 
+*/
+var num1=parseInt(prompt("enter number one"));
+console.log("num1=",num1);
+var num2=parseInt(prompt("enter number two"));
+console.log("num2",num2);
+if(num1==num2){
+console.log("these two numbers equal");}
+if(num1>=num2){
+console.log("num2 is less than  equal num1")}
+if (num2>=num1){
+console.log("num1 is less than  equal num2");
+}
+if(num1>num2){
+console.log("num1 is bigger than num2");
+}
+else{
+console.log("num2 is bigger than num1");
+}
 </script>
