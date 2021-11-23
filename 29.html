@@ -1,13 +1,33 @@
 <script>
-//برنامه ای بنویسید که سه عدد از ورودی بگیرد و میانگین ان ها را چاپ کند 
-var avrage,number1,number2,number3;
-number1=parseInt(prompt("enter number1"));
-number2=parseInt(prompt("enter number2"));
-number3=parseInt(prompt("enter number3"));
 
-console.log("number1=",number1);
-console.log("number2=",number2);
-console.log("number3=",number3);
-avrage=(number1+number2+number3)/3;
-console.log("avrage=",avrage);
+/*Write a program that reads a positive integer and converts it to base 16.
+ (To convert an integer to base 16, consecutive divisions by 16 are used) 
+*/
+var number_primary=parseInt(prompt("enter a number "));
+var number=number_primary
+var array=[];
+var array_16=[];
+var digit=0;
+var i=0;
+var count=1;
+while(number>0){
+digit=number%8;
+i++;
+array[i]=digit;
+count++;
+number=parseInt(number/16);}
+
+
+var index=count;
+
+for  ( var j=0;j<count;j++){
+index--;
+array_16[j]=array[index];
+
+
+}
+console.log("number=",number_primary);
+console.log(number_primary,"Based on 16=",array_16);
+
+
 </script>
