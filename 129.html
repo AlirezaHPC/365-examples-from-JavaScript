@@ -1,0 +1,19 @@
+<script>
+/* Write a program that takes a 3-digit number and prints the number of hundreds, tens, and units.*/
+var number=parseInt(prompt("enter   a 3-digit number "));
+console.log("number",number);
+var n=number,digit,i=0;
+var array_3=[];
+while(n>0){
+digit=parseInt(n%10);
+
+array_3[i]=digit;
+i++;
+n=parseInt(n/10);
+
+}
+console.log("hundreds",array_3[2]);
+console.log("tens",array_3[1]);
+console.log("units",array_3[0]);
+
+</script>

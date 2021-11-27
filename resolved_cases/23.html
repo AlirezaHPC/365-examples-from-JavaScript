@@ -1,0 +1,16 @@
+<script>
+/*Write a program that reads a maximum of 7 digits and adds its digits using the following methods.
+A) Using the repeat loop
+*/
+var number_primary=parseInt(prompt("enter a number maximum of 7 digits"));
+var number=number_primary
+var sum=0;
+var digit=0;
+while(number>0){
+digit=number%10;
+sum=parseInt(sum+digit);
+number=parseInt(number/10);
+}
+console.log("number",number_primary);
+console.log("sum digits =",sum);
+</script>
