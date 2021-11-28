@@ -1,0 +1,20 @@
+<script>
+/*
+ Write a program that will asks you,how much money do you have?
+A) Tell you that with this money you can buy a few pairs of shoes for 300 thousand Tomans
+B) If the rest of the division is less than 300 thousand tomans, he will tell you that with this money you can buy some socks for 20 thousand tomans.
+
+*/
+var money=parseInt(prompt("how much money do you have?"));
+
+var count_shoes=parseInt(money/300000);
+var cost_shoes=(count_shoes*300000)
+
+var rest=money-cost_shoes
+var socks=parseInt(rest/20000)
+console.log("money=",money);
+console.log("count shoes=",count_shoes);
+console.log("cost_shoes",cost_shoes);
+console.log(rest);
+console.log("some socks",socks);
+</script>
