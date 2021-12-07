@@ -1,0 +1,16 @@
+<script>
+
+
+/*A program that reads two positive numbers from the input, then divides the larger number by the subtraction method to the smaller number*/
+var number1=parseInt(prompt("enter number one:"));
+var number2=parseInt(prompt("enter number two:"))
+var count=0;
+var num1=number1;
+var num2=number2;
+while(number1>=number2){
+    number1=number1-number2;
+    count++;
+}
+console.log(num1,"/",num2,"=",count);
+console.log("the remainder of the correct division=",number1)
+</script>
