@@ -1,0 +1,58 @@
+<script>
+    // : Write a class called data that receives the day, month and year to control them.
+    //  For example, if the moon is equal to 12, 
+    // the user cannot enter the day greater than 29
+    class data{
+        #day;
+        #month;
+        #year;
+        get Month(){
+            return this.#month;
+        }
+        set Month(value){
+            this.#month=value;
+        }
+        get Year(){
+            return this.#year;
+        }
+        set Year(value){
+            this.#year=value;
+        }
+        get Day(){
+            return this.#day;
+        }
+        set Day(value){
+            if(this.#month<12){
+                this.#day=value;
+            }
+           else  if (this.#month==12    && (value<=29)){
+               
+                    this.#day=value;
+            }
+            else{
+                console.log("month==12    cannot enter the day greater than 29 ")
+            }
+        }
+            /*if(this.#month==12){
+                if(value<=29){
+                    this.#day=value;
+                }
+            }
+            
+            else{
+                console.log("month==12    cannot enter the day greater than 29 ")
+            }*/
+        
+       constructor(/*year,month,day*/){
+           this.#year=parseInt(prompt("enter year"));
+           this.#month=parseInt(prompt("enter month"));
+           this.day=parseInt(prompt("enter day"));
+       }
+       printDate(){
+           console.log(this.#year,"/",this.#month,"/",this.#day);
+       }
+
+    }
+    var date1=new data();
+    date1.printDate();
+</script>
