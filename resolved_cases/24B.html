@@ -1,0 +1,13 @@
+<script>
+    //The smallest three-digit number that is divisible by 5
+    min=999;
+    for(var i=999;i>=100;i--){
+        if(i<min){
+            if(i%5==0){
+                min=i;
+            }
+        }
+
+    }
+    console.log("The smallest three-digit number that is divisible by 5=",min);
+</script>
