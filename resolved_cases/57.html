@@ -21,35 +21,28 @@
         get Day(){
             return this.#day;
         }
+         #flag=this.#month<12;
+         
         set Day(value){
-            if(this.#month<12){
-                this.#day=value;
-            }
-           else  if (this.#month==12    && (value<=29)){
+       if(this.#flag){
+               this.#day=value;
+           }
+         else  if  (value<=29)
+           {
                
-                    this.#day=value;
-            }
-            else{
-                console.log("month==12    cannot enter the day greater than 29 ")
-            }
-        }
-            /*if(this.#month==12){
-                if(value<=29){
-                    this.#day=value;
-                }
-            }
+                   this.#day=value;
+           }
             
-            else{
-                console.log("month==12    cannot enter the day greater than 29 ")
-            }*/
-        
+        }
+            
        constructor(/*year,month,day*/){
            this.#year=parseInt(prompt("enter year"));
            this.#month=parseInt(prompt("enter month"));
-           this.day=parseInt(prompt("enter day"));
+           this.#day=parseInt(prompt("enter day"));
        }
        printDate(){
            console.log(this.#year,"/",this.#month,"/",this.#day);
+           console.log("flag",this.#flag);
        }
 
     }
