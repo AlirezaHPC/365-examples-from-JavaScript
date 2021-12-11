@@ -1,31 +1,25 @@
 <script>
-/*Write a program that reads 10 numbers and displays the third number in terms of size.
- This program uses 4 variables called max1, max2, max3, temp.*/
-var array_10_number=[];
-
-var max1,max2,max3,temp;
-max1=max2=max3=temp=0;
-for (var i=0;i<10;i++){
-array_10_number[i]=parseInt(prompt("enter number",i));
-}
-console.log	(array_10_number);
-for (var i=0;i<10;i++){
-if (array_10_number[i]>max1){
-     max3=max2;
-     max2=max1;
-     max1=array_10_number[i];
-     
- }
-else if(array_10_number[i]>max2){
-     max3=max2;
-     max2=array_10_number[i];
- }
-else  if(array_10_number[i]>max3){
-      max3=array_10_number[i];
- }
-
-}
-console.log("max1",max1);
-console.log("max2",max2);
-console.log("max3",max3);
+/*Write a program that receives distances in feet and inches and
+ expresses it in meters and centimeters (each foot is 0.3048 meters, and 12 inches).*/
+ /*
+ 1 m= 3.28 feet 
+ 1 m= 39.37 inches
+ 1 inch = 2.54 cm
+ 1 feet = 12 inch
+ 1 feet = 30.48 cm
+ 1 foot =0.3048 m
+ */
+ var feet_distance=parseInt(prompt("enter the distance in feet "));
+ var inches_distance=parseInt(prompt("enter the distance in inches"));
+ var centimeter_f,meter_f,meter_i,centimeter_i;
+ centimeter_f=(feet_distance*30.48)
+ meter_f=(feet_distance*0.3048)
+ console.log(feet_distance,"feet is ",centimeter_f ,"cm");
+ console.log(feet_distance,"feet is ",meter_f ,"m");
+ centimeter_i=(inches_distance*2.54);
+ meter_i=(inches_distance*0.0254);
+ console.log(inches_distance,"inch is ",centimeter_i ,"cm");
+ console.log(inches_distance,"inch is ",meter_i ,"m");
+ 
+ 
 </script>
