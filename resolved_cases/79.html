@@ -1,0 +1,47 @@
+<script>
+//Take two ranges and print multiples of 5 between them
+let num1=parseInt(prompt("enter number one"));
+let num2=parseInt(prompt("enter number two"));
+
+let max,min;
+//functions
+function maxMin(num1,num2){
+
+    if(num1>num2){
+        max=num1;
+        min=num2;
+    }
+    else{
+        max=num2;
+        min=num1;
+    }
+    if(num2==num1){
+        max=num1;
+        min=num2;
+    }
+    
+}
+
+function multiplesOf5(max,min){
+   for(let i=max;i>=min;i--){
+     if(i%5==0){
+         console.log(i);
+     }
+      
+      
+       
+   }
+   }
+   //call 
+
+
+maxMin(num1,num2);
+
+
+multiplesOf5(max,min)
+
+console.log("max=",max);
+console.log("min=",min);
+
+</script>
+
