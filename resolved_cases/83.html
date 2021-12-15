@@ -1,0 +1,17 @@
+<script>
+    //Write a program that takes a number and displays its digits and displays the number of digits
+    let num=parseInt(prompt("enter number "));
+let digit,n=num,count=0;
+    function Digit(n){
+        while(n>0){
+            digit=parseInt(n%10);
+            console.log(digit);
+            count++;
+            n=parseInt(n/10);
+        }
+    }
+      
+    Digit(num);
+console.log("num=",num);
+console.log("count",count);
+    </script>

@@ -1,0 +1,20 @@
+<script>
+    //Write a program that takes a number and displays all its divisors by its sum and number.
+    let num=parseInt(prompt("enter a number:"));
+    console.log("input number=",num);
+    let count=0;
+    let sum=0;
+    function all_divisors(n){
+        for (let i=0;i<=num;i++){
+            if(n%i==0){
+count++;
+sum=sum+i;
+console.log(i);
+            }
+        }
+        console.log("count divisors=",count);
+        console.log("sum=",sum);
+    }
+    all_divisors(num);
+    
+</script>

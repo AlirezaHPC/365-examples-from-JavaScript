@@ -1,0 +1,21 @@
+<script>
+    //: Write a program that displays the result 1^1 + 2^2 + 3^3 + …… ..n^n =
+
+let sum=0;
+let sum1;
+    let num=parseInt(prompt("enter a number:"));
+    function result(n){
+        for(var i=1;i<=n;i++){
+             sum1=1;
+            for(var j=1;j<=i;j++){
+                
+sum1=sum1*i
+            }
+            sum=sum+sum1
+           
+        }
+        console.log("sum=",sum)
+
+    }
+    result(num);
+</script>

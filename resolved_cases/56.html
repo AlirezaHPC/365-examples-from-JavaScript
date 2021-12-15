@@ -1,0 +1,58 @@
+<script>
+    // Write a plan to receive the employee's working hours, name and hourly wages, 
+    // and calculate and display the employee's salary. In this program, create a 
+    // class called employee that has 4 members hour (number of working hours), hp
+    //  (hourly wage), name (employee name), salary (employee salary). The input () member function 
+    //  reads the employee profile. The member function calculate () calculates the salary of the 
+    //  employee, and the member function print ()
+    //  outputs the employee's salary.
+    class employee{
+        #name;
+        #hour;
+        #h_p;
+        #salary 
+        get Name(){
+            return this.#name;
+        }
+        set Name(value){
+            this.#name=value;
+        }
+        get Hour(){
+            return this.#hour;
+        }
+        set Hour(value){
+            this.#hour=value;
+        }
+        get H_p(){
+            return this.#h_p;
+        }
+        set H_p(value){
+            this.#h_p=value;
+        }
+        input(/*name,hour,h_p*/){
+            this.#name=prompt("enter employee's name");
+            this.#hour=parseInt(prompt("enter employee's working  hour"));
+            this.#h_p=parseInt(prompt("enter employee's hourly wages"));
+
+
+        }
+        //calculates the salary of the 
+    //  employee
+        calculate() {
+            this.#salary=(this.#h_p*this.#hour)
+
+        }
+        //outputs the employee's salary.
+        print(){
+            console.log(this.#name)
+            console.log("salary is ",this.#salary);
+        }
+
+    }
+    var person1=new employee();
+    person1.input();
+    person1.calculate();
+    person1.print();
+
+
+</script>

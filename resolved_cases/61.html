@@ -1,0 +1,40 @@
+<script>
+
+// If you have three pieces of wood, you may be able to make a triangle with
+//  them and you may not. For example, if the length of one of the three pieces
+//   is 12 inches and each of the other two pieces is one inch, you certainly can
+//    not glue the two ends of the one-inch pieces together so that after connecting 
+//    to the 12-inch piece, the connection point They should be in the middle of it. 
+//    There is a simple test that can be used to determine whether a triangle can be
+//     created with three lines of different lengths.
+// If the length of each of the three line segments is greater than the sum
+//  of the lengths of the other two line segments, you cannot use them to
+//   create a triangle. Otherwise you can use them to create a triangle.
+// Write a function called is_triangle that takes three integers as 
+// arguments and prints the "yes" or "no" messages, depending on how you can 
+// print the triangle with the parameters.
+// Write a function that takes the lengths of the sides from the user and
+//  converts them to integers, and then uses the is_triangle function to test the 
+//  possibility of constructing a triangle using them
+function is_triangle (side1,side2,side3){
+    if(side1>(side2+side3) ||  side2>(side1+side3)   || (side3>(side2+side1)) ){
+        console.log(" you cannot use them to  create a triangle")
+    }
+    else{
+        console.log(" you Can use them to create a triangle")
+    }}
+function to_int(sidea,sideb,sidec){
+    sidea=parseInt(prompt("enter length of  side1"));
+    sideb=parseInt(prompt("enter length of  side2"));
+    sidec=parseInt(prompt("enter length of  side3"));
+    is_triangle(sidea,sideb,sidec);
+console.log("side1=",sidea,"side2=",sideb,"side3=",sidec);
+
+}
+
+
+to_int();
+   
+
+
+</script>

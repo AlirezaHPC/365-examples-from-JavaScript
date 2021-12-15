@@ -1,0 +1,35 @@
+<script>
+    //  Write a program that reads two 100-digit numbers and adds them together and displays 
+    // the output (if a value other than 0 to 9 is 
+    // entered when two numbers are entered, an appropriate error message is displayed)
+    var number1=parseInt(prompt("enter 100-digit number:"));
+    var number2=parseInt(prompt("enter 100 digit number:"));
+    var n1=number1;
+    var n2=number2;
+    var digit;
+   while(n1>0){
+      digit=parseInt(n1%10);
+      
+       if (  !(digit == 0)&& !(digit == 1) &&  !(digit == 2) && !(digit == 3)&& !(digit == 4)  && !(digit == 5)  && !(digit == 6 )    && !(digit == 7 )  && !(digit == 8 ) && !(digit ==9) )
+       {
+           console.log("invalid input"); 
+       }
+           n1=parseInt(n1/10);
+      
+
+   }
+   while(n2>0){
+      digit=parseInt(n2%10);
+      
+       if (  !(digit == 0)&& !(digit == 1) &&  !(digit == 2) && !(digit == 3)&& !(digit == 4)  && !(digit == 5)  && !(digit == 6 )    && !(digit == 7 )  && !(digit == 8 ) && !(digit ==9) )
+       {
+           console.log("invalid input"); 
+       }
+           n2=parseInt(n2/10);
+      
+
+   }
+   console.log(number1," is valid input"); 
+   console.log(number2," is valid input"); 
+
+</script>
