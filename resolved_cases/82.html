@@ -1,0 +1,15 @@
+<script>
+    //Write a program that takes a number and displays its digits below it
+    let num=parseInt(prompt("enter number "));
+let digit,n=num;
+    function Digit(n){
+        while(n>0){
+            digit=parseInt(n%10);
+            console.log(digit);
+            n=parseInt(n/10);
+        }
+    }
+      
+    Digit(num);
+console.log("num=",num);
+    </script>
