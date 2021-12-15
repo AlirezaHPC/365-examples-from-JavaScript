@@ -1,0 +1,37 @@
+<script>
+    /*
+    The price of a car decreases by 21% at the end of each year (car depreciation is 20%).
+A program that reads the price of a car from the input will price it in the next ten years
+Shows the end of each year.
+
+    */
+   var priceCar=parseInt(prompt("enter price of a car"));
+
+   //this is long soloation
+/*var year1=(priceCar*21)/100
+var year2=(year1*21)/100
+var year3=(year2*21)/100
+let year4=(year3*21)/100
+var year5=(year4*21)/100
+
+var year6=(year5*21)/100
+var year7=(year6*21)/100
+var year8=(year7*21)/100
+var year9=(year8*21)/100
+var year10=(year9*21)/100
+console.log("price car in year1",year1);
+console.log("price car in year2",year2);
+console.log("price car in year3",year3);
+console.log("price car in year4",year4);
+console.log("price car in year5",year5);
+console.log("price car in year6",year6);
+console.log("price car in year7",year7);
+
+console.log("price car in year9",year9);*/
+for (var i=1;i<=10;i++){
+    priceCar=(priceCar*21)/100
+    console.log("price of a car after",i,"year=",priceCar)
+}
+
+
+</script>

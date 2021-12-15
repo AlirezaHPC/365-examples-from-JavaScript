@@ -1,0 +1,28 @@
+<script>
+    //Write a program that displays all three-digit integers
+  
+    let count=0;
+    let sum;
+    function all_divisors(){
+        for(let  j=100;j<=9999;j++){
+sum=0;
+//console.log(j);
+        for (let i=0;i<=j;i++){
+            if(j%i==0){
+count++;
+sum=sum+i;
+
+            }
+            }
+//console.log(sum);
+            if(sum==j){
+                console.log("j",j)
+        }
+        
+    }}
+
+
+
+    all_divisors();
+    
+</script>

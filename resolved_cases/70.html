@@ -1,0 +1,18 @@
+<script>
+    //Write a program that displays even numbers less than n and shows its sum
+    n=parseInt(prompt("enter a number please: "));
+    let sum=0
+    function even(i){
+         sum=sum+i;
+        console.log("even number=>",i);
+       
+    }
+    for(var i=n;i>=1;i--){
+        if(i%2==0){
+            even(i);
+            sum=sum+i;
+        }
+    }
+    console.log("sum",sum)
+
+</script>

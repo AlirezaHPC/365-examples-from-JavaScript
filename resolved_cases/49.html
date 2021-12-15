@@ -1,0 +1,27 @@
+<script>
+
+//Write a program that reads 20 numbers and puts them in two 10-element arrays. 
+//Then merge the elements of the two arrays (the two arrays must be arranged)
+var array_number1=[]
+var array_number2=[]
+for (var i=0;i<10;i++){
+    array_number1[i]=parseInt(prompt("enter a number please for aaray one:",i));
+
+}
+for(var i=0;i<10;i++){
+    array_number2[i]=parseInt(prompt("enter a number please for arrat two :",i));
+}
+var number1=array_number1.sort(function(x,y){
+    return x-y;});
+    var number2=array_number2.sort(function(x,y){
+        return x-y;
+    });
+    var number3=number1.concat(number2);
+
+console.log("array one",array_number1);
+console.log(" sort array one",number1);
+
+console.log("array two",array_number2);
+console.log("sort array two",number2);
+console.log("Then merge the elements of the two arrays ",number3);
+</script>
