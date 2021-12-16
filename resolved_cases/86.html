@@ -1,0 +1,24 @@
+<script>
+    //Write a program that takes a number and prints itself.
+    let num=parseInt(prompt("enter a number please:"));
+    console.log(`input number=${num}`)
+    let itself=n =>{
+        let digit,self=0,p=1;
+        while(n>0){
+            digit=parseInt(n%10);
+         
+                self=self+(digit*p)
+                
+            
+            n=parseInt(n/10);
+            if(n>0){
+                p=p*10;
+            }
+            
+        }
+        
+        return self;
+        
+    }
+    console.log("itself input number=",itself(num));
+</script>
