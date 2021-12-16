@@ -1,0 +1,28 @@
+<script>
+    //: Write a program that prints all three-digit numbers
+    // that are divisible by the sum of their digits.
+    
+    let itsumdigit=() =>{
+        let digit,sumdigit;
+        let n;
+        for(let i=100;i<=999;i++){
+            n=i;
+            sumdigit=0;
+        while(n>0){
+            digit=parseInt(n%10);
+         
+                sumdigit=sumdigit+digit;
+                
+            
+            n=parseInt(n/10);
+            
+            
+        }
+        
+        if(i%sumdigit==0){
+            console.log(i);
+        
+    }
+    }}
+   itsumdigit();
+</script>
