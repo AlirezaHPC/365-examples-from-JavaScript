@@ -1,15 +1,3 @@
-In this small project (of course, if you can call it a project)
-I solved 365 programming examples in js programming language
-To use it to improve my skills in GitHub and js
-Join me
-I tried to use appropriate comments for each short program I wrote
-Also, everything is being updated in this project
-
-
-
-
-
-
 365 examples from JavaScript
 
 1: Write a program that receives a number that displays even and odd numbers less than or equal to the number read. Print even numbers from 0 to received numbers and odd numbers from received to 1)
@@ -501,3 +489,31 @@ Samira Abdi is a programmer fluent in JavaScript.
 225: Write a program that prints the sum of even numbers from one to 100 with a while loop
 226: Write a program that prints the sum of odd numbers from one to 100 with a for loop
 227: Write a program that prints the phrase I love 200 times
+
+
+228: Write a program that reads a string array from the input and then says whether the input value was an array or not.
+229: Write a program that reads an array of type number from the input and then returns the index of an input value
+230: Write a program that uses the push () method to create a string array, displaying only elements whose index is even.
+231: Define a function of type Arrow Function that receives a number from the input, prints the numerator of the number and deletes it if there is a digit in the number.
+
+232: Define a function of the Arrow Function type that takes a number, displays its digits below it, and prints the number of digits.
+ 233: Define a function of type Arrow Function that takes a number from the input and returns the result 1 ^ 2 + 2 ^ 2 + 3 ^ 2 + n .n ^ 2.
+
+
+234: Define a function of type Arrow Function that takes a number from the input and returns the result 1 ^ 3 + 2 ^ 3 + 3 ^ 3 +… .n ^ 3.
+
+235: Define a function of type IIFES that receives a number from the input and displays even numbers before it.
+236: Define a function of type IIFES that displays numbers from 0 to 100.
+237: Write a program that receives information about three students, including first and last name, age, place of residence, and field of study (map), and then check for the city key in all three maps.
+
+238: Write a program that has a function that receives and sets the name of 15 students, then receives a name from the input and checks if the name is in the namespace.
+239: Define a function of Arrow Function that receives a number from the input and if there is a number 5 in this number, replace it with 2 and return the resulting number.
+240: Define a function that receives a number from a word and indicates whether it is divisible by the sum of its digits.
+241: Define a function that receives an array of 12 elements from the input and prints its sum of elements.
+
+
+242: Write a program that receives an array of 14 elements from the input and defines three functions:
+.
+The view function receives an index and displays the corresponding element
+The all function returns all elements of the array.
+The length function returns the number of array elements
