@@ -1,0 +1,28 @@
+<script>
+    //Write a program that takes a number from the input and shows whether it 
+    //is divisible by the sum of its digits or not?
+    let num=parseInt(prompt("enter a number please:"));
+    console.log(`input number=${num}`)
+    let itsumdigit=n =>{
+        let digit,sumdigit=0;
+        while(n>0){
+            digit=parseInt(n%10);
+         
+                sumdigit=sumdigit+digit;
+                
+            
+            n=parseInt(n/10);
+            
+            
+        }
+        
+        if(sumdigit%num==0){
+            console.log("input number is divisible by the sum of its digits")
+        }
+        else{
+            console.log("input number is not  divisible by the sum of its digits")
+        }
+        
+    }
+   itsumdigit(num);
+</script>
