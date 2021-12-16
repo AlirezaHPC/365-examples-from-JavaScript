@@ -1,0 +1,22 @@
+<script>
+    //Write a program that puts 2 instead of 5
+    let num=parseInt(prompt("enter a number please:"));
+    console.log(`input number=${num}`)
+    let upside=n =>{
+        let digit,upside=0;
+        while(n>0){
+            digit=parseInt(n%10);
+         if(digit==5){
+                digit=2}
+                upside=(upside*10)+digit
+                
+            
+            n=parseInt(n/10);
+            
+        }
+        
+        return upside;
+        
+    }
+    console.log("revers input number=",upside(num));
+</script>
