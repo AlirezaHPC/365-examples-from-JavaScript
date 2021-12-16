@@ -1,0 +1,22 @@
+<script>
+    //Write a program that takes a number, removes 
+    //zero if it contains zero, and prints the number upside down.
+    let num=parseInt(prompt("enter a number please:"));
+    console.log(`input number=${num}`)
+    let upside=n =>{
+        let digit,upside=0;
+        while(n>0){
+            digit=parseInt(n%10);
+            if(digit>0){
+                upside=(upside*10)+digit
+                
+            }
+            n=parseInt(n/10);
+            
+        }
+        
+        return upside;
+        
+    }
+    console.log("revers input number=",upside(num));
+</script>
