@@ -1,12 +1,14 @@
 <script>
 //Write a program that asks you if you would like to enter a string data type or a number and then enter and display the input * 3
-var choice=prompt("you would like to enter a string data type or a number");
+let choice=prompt("you would like to enter a string data type or a number");
+let value;
 if(choice=="string"){
-var valuee=prompt("enter a string :");
+ value=prompt("enter a string :");//NaN
 }
 else{
-var valuee=parseInt(prompt("enter a number"));
+ value=parseInt(prompt("enter a number"));
+ 
 }
-console.log(String(valuee * 3))
-console.log("samira"*3)
+console.log(String(value * 3))
+
 </script>
