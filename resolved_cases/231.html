@@ -1,0 +1,16 @@
+<script>
+    //Define a function of type Arrow Function that receives a number from the input, 
+    //prints the numerator of the number and deletes it if there is a digit in the number.
+
+    let digitBelow=num=>{
+        console.log("input number=",num);
+        let digit;
+        while(num>0){
+            digit=parseInt(num%10);
+            console.log(digit);
+            num=parseInt(num/10);
+
+        }
+    }
+    digitBelow(parseInt(prompt("enter a number:")));
+</script>
