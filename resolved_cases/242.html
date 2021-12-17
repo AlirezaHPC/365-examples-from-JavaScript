@@ -1,0 +1,28 @@
+<script>
+
+// : Write a program that receives an array of 14 elements from the input and defines three functions:
+// .
+// The view function receives an index and displays the corresponding element
+// The all function returns all elements of the array.
+// The length function returns the number of array elements
+let array14Number=[];
+for (let i=0;i<14;i++){
+    array14Number[i]=parseInt(prompt("enter a number",i));
+
+}
+let all=array=>{
+   console.log(array);
+}
+let length=array=>{
+  
+   
+    return array.length;
+}
+let view=(array,index)=>{
+  return array[index];
+}
+all(array14Number);
+console.log("length input array is ",length(array14Number));
+console.log(view(array14Number,parseInt(prompt("enter index for search in array"))));
+
+    </script>
