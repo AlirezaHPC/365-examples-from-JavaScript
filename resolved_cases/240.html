@@ -1,0 +1,25 @@
+<script>
+
+
+    //Define a function that receives a number from a word and indicates whether
+    // it is divisible by the sum of its digits.
+
+    let  indicates=number=>{
+        console.log("input number=",number);
+        let n=number,digit,sumdigit=0;
+        while(n>0){
+            digit=parseInt(n%10);
+            sumdigit=sumdigit+digit;
+            n=parseInt(n/10);
+
+        }
+        if(number%sumdigit==0){
+            return ` ${number}  is divisible by the sum of its digits`
+        }
+        else{
+            return `${number} is  NOT divisible by the sum of its digits`
+        }
+    }
+    console.log(indicates(parseInt(prompt("enter a number:"))) );
+   
+</script>.
