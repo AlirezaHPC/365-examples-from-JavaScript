@@ -1,0 +1,23 @@
+<script>
+
+
+//Define a function that receives an array of 12 elements from the input and prints its sum of elements.
+let array12Number=[];
+for (let i=0;i<12;i++){
+    array12Number[i]=parseInt(prompt("enter a number",i));
+
+}
+
+let sumElements=array=>{
+    let sum=0;
+    for(let i=0;i<array.length;i++){
+        sum=sum+array[i];
+
+    }
+    return sum;
+}
+console.log(array12Number);
+console.log("sum elements in array is ",sumElements(array12Number));
+
+</script>
+
