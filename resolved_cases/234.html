@@ -1,0 +1,15 @@
+<script>
+    //Define a function of type Arrow Function that takes a number from the input and returns the result 1 ^ 3 + 2 ^ 3 + 3 ^ 3 +… .n ^ 3.
+
+
+    let power3=n=>{
+        let result=0;
+        console.log("input number:");
+        for(let i=1;i<=n;i++){
+result=result+(i*i*i);
+        }
+        return result;
+    }
+console.log("the result 1 ^ 3 + 2 ^ 3 + 3 ^ 3 +… .n ^ 3",power3(parseInt(prompt("enter a number:"))));
+    
+</script>
