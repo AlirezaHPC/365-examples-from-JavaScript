@@ -1,0 +1,28 @@
+<script>
+
+
+// Define a function of Arrow Function that receives a number from the input and 
+// if there is a number 5 in this number,
+//  replace it with 2 and return the resulting number.
+let NumWithout5=num=>{
+    console.log("input number=",num);
+    let number=0,digit,p=1;
+    while(num>0){
+        digit=parseInt(num%10);
+        if(digit==5){
+            digit=2;
+        }
+        number=(digit*p)+number;
+        num=parseInt(num/10);
+        if(num>0){
+            p=p*10
+        }
+
+    }
+    return number;
+
+}
+console.log(NumWithout5(parseInt(prompt("enter a number"))));
+
+
+</script>
