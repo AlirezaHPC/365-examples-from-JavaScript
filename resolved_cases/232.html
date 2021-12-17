@@ -1,0 +1,15 @@
+<script>
+    //: Define a function of the Arrow Function type that takes a number, displays its digits below it, and prints the count of digits.
+    let digitBelow=num=>{
+        console.log(`input number is ${num}`);
+        let digit,count=0;
+        while(num>0){
+            digit=parseInt(num%10);
+            console.log(digit);
+            count++;
+            num=parseInt(num/10);
+        }
+        console.log("count=",count);
+    }
+    digitBelow(parseInt(prompt("enter a number:")));
+</script>
