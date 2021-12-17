@@ -1,0 +1,41 @@
+<script>
+//     //: A program that reads n numbers, puts them in an array, and uses a method
+// Invert its elements (from the last number to the first number) to the program
+// Return and the application displays it (application, to receive data,
+// Inverting and printing array elements uses separate methods.
+// Tasks of methods:
+// The main method: first reads the number, by calling the input method 1
+// Reads a number from the input, the convert method inverts them and with
+// The print1 call prints inverted numbers.
+// Input9 method: reads a number and puts it in an array.
+// Convert method: Inverts the numbers in the array.
+// Print9 method: Prints the elements in the array.
+
+let input=count=>{
+let array=[];
+for(let i=0;i<count;i++){
+    array[i]=parseInt(prompt(`enter  number ${i} for array`));
+}
+print(array);
+}
+let print=array=>{
+   console.log("input array",array);
+   convert(array);
+}
+let convert=array=>{
+    for (let i=0;i<array.length;i++){
+        let n=array[i];
+        let digit,convert=0;
+        while(n>0){
+            digit=parseInt(n%10);
+            convert=(convert*10)+digit;
+            n=parseInt(n/10);
+        }
+        array[i]=convert;
+    }
+   console.log("conver input array",array)
+}
+
+input(parseInt(prompt("enter size array")));
+
+</script>
