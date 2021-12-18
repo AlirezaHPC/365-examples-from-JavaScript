@@ -1,0 +1,22 @@
+<script>
+// //     A program that takes three non-zero integers to determine whether these three numbers form 
+// a right triangle. When the power of 2 of one of the sides is equal to the sum of the power of
+//  the other 2 sides, it is a right triangle.
+// // (Explanation: The purpose of this program is to use the ||) or logical () operator.
+let num1=parseInt(prompt("enter number1:"))
+let num2=parseInt(prompt("enter number2"));
+let num3=parseInt(prompt("enter number 3:"))
+if(num1>0 && num2>0 && num3>0){
+if(     (num1*num1)==(num2*num2)+(num3*num3)  ||   (num2*num2)==(num1*num1)+(num3*num3) 
+|| (num3*num3)==(num2*num2)+(num1*num1)){
+    console.log(" it is a right triangle.");
+}
+else{
+    console.log(" it is not  a right triangle.");
+}
+}
+else{
+    console.log("invalid input")
+}
+
+</script>
