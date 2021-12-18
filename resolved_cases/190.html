@@ -1,0 +1,40 @@
+<script>
+    // //: A program that reads three numbers displays the numbers between the first
+    //  and second numbers whose sum of digits is equal to the third number. For example,
+    //   if the user enters 5,1000 and 15. 
+    // The program must display numbers from 5 to 1000 with a total of 15 digits.
+
+
+    let num1=parseInt(prompt("enter number one"));
+    let num2=parseInt(prompt("enter number two"));
+    let num3=parseInt(prompt("enter number three"));
+    console.log(`num1 = ${num1}  and num2 = ${num2} and num3=${num3}`);
+    if(num1>num2){
+    for(let i=num2;i<=num1;i++){
+        let sumdigit=0,digit;
+        let n=i;
+        while(n>0){
+            digit=parseInt(n%10);
+            sumdigit=sumdigit+digit;
+            n=parseInt(n/10);
+        }
+        
+ if(sumdigit==num3){
+   console.log(i);
+ }
+    }}
+    else{
+        for(let i=num1;i<=num2;i++){
+        let sumdigit=0,digit;
+        let n=i;
+        while(n>0){
+            digit=parseInt(n%10);
+            sumdigit=sumdigit+digit;
+            n=parseInt(n/10);
+        }
+        
+ if(sumdigit==num3){
+   console.log(i);
+ }
+    }}
+</script>
