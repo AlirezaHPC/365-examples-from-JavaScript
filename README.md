@@ -517,3 +517,26 @@ Samira Abdi is a programmer fluent in JavaScript.
 The view function receives an index and displays the corresponding element
 The all function returns all elements of the array.
 The length function returns the number of array elements
+243: Print the phrase "Hello World" in five ways to print output in JavaScript
+244: Write a program that performs multiplication and addition on two values (define variables as underscore)
+245: Write a program that subtracts and divides two input values (define variables as pascalCase)
+246: Write a program that joins two strings with the concat method (define variables as hyphens)
+
+
+247: Write a program that defines an object called writer and takes the attributes, including name, bookname, and year of publication, from the input, and this object has a function that displays all its elements in one line.
+248: Define a function that prints the "clicked button" when the user clicks the button.
+249: Define a function to print the phrase "Mouse pointer floats on the button" when the mouse is on.
+
+250: Define a function to print the page load phrase when the page is loaded
+251: Define a function to print when the mouse pointer moves away from the button
+252: Print the phrase "samira abdi" is programmer.
+253: Write programs that receive a string and replace the "a" character with the "@" character.
+254: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+
+255: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+256: Redefine the sub srtring method.
+257: Redefine the sub str () method.
+258: Redefine the replace () method.
+259: Get a string and delete the empty space around it
+260: Join two strings in three ways
+261: Get a string and convert its letters to uppercase and display.
