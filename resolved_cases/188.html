@@ -1,0 +1,18 @@
+<script>
+    // : A program that reads an integer and displays digits of that number that are divisible by 2 or 4.
+    let num=parseInt(prompt("enter a number:"));
+    let digit,n=num;
+    let count=0;
+    while(n>0){
+        digit=parseInt(n%10);
+        count++;
+        console.log(`digit ${count} == ${digit}`)
+        if(digit%2==0){
+        console.log(`${digit} is divisible by 2`);
+        }
+        if(digit%4==0){
+            console.log(`${digit} is divisible by 4`);
+        }
+        n=parseInt(n/10);
+    }
+</script>
