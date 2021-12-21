@@ -2,13 +2,13 @@
 /*Write a program that reads a positive integer and converts it to base 2.
  (To convert an integer to base 2, consecutive divisions by 2 are used) 
 */
-var number_primary=parseInt(prompt("enter a number "));
-var number=number_primary
-var array=[];
-var array_2=[];
-var digit=0;
-var i=0;
-var count=1;
+let number_primary=parseInt(prompt("enter a number "));
+let number=number_primary
+let array=[];
+let array_2=[];
+let digit=0;
+let i=0;
+let count=1;
 while(number>0){
 digit=number%2;
 i++;
@@ -17,9 +17,9 @@ count++;
 number=parseInt(number/2);}
 
 
-var index=count;
+let index=count;
 
-for  ( var j=0;j<count;j++){
+for  ( let j=0;j<count;j++){
 index--;
 array_2[j]=array[index];
 
@@ -28,5 +28,4 @@ array_2[j]=array[index];
 console.log(number_primary,"Based on 2=",array_2);
 console.log(array_2[2]);
 
- 
 </script>
