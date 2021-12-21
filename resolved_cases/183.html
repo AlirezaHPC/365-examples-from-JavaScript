@@ -1,0 +1,25 @@
+<script>
+
+    //: A program that first reads n then reads n grade point average for n students 
+    // and displays the largest  grade point average. In this program, n is the
+    //  number of students, the grade point average of each student and max is the largest grade point average.
+
+    let n=parseInt(prompt("enter the number of students:"));
+    let grades=[];
+    
+    for(let i=0;i<n;i++){
+        grades[i]=parseInt(prompt(`enter the student${i+1} score`));
+        console.log(`score student ${i+1} is ${grades[i]}`)
+    }
+    let max=grades[0];
+for(let i=0;i<n;i++){
+    if(grades[i]>max){
+        max=grades[i];
+    }
+}
+
+    
+    console.log("the largest  grade point average=",max)
+
+
+</script>

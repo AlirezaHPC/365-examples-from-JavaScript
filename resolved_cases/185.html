@@ -1,0 +1,19 @@
+
+<script>
+    //Write a program that receives a sentence and then takes the start, 
+    // end from the user and prints a slice of the sentence.
+
+
+    let sentence=prompt("enter a sentence :");
+    let start=parseInt(prompt("enter a number"));
+    let end=parseInt(prompt("enter a number"));
+    console.log(`input sentence :${sentence}`);
+
+    if(start<end){
+    let part=sentence.slice(start,end)
+    console.log(part)
+    }
+    else{
+        console.log(` start>end = ${start}>${end}`);
+    }
+</script>

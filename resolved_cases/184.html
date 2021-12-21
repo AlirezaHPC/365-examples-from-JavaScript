@@ -1,0 +1,58 @@
+<script>
+    //A program that reads two integers and displays divisors against their common denominator
+
+    let num1=parseInt(prompt("enter a number one :"));
+    let num2=parseInt(prompt("enter number two:"));
+   let  divisors1=[], divisors2=[];
+   let index=0 , index2=0;
+   let count1=0,count2=0;
+   for(let i=0;i<num1;i++){
+      
+       if(num1%i==0){
+           divisors1[index]=i;
+           index++;
+           count1++;
+           
+
+       }
+   }
+   
+  
+   for (let i=0;i<num2;i++){
+       
+       if(num2%i==0){
+           divisors2[index2]=i;
+           index2++;
+           count2++;
+       }
+   }
+
+   //print statement
+   console.log(` divisors are against the ${num1} = ${divisors1} and count =${count1}`);
+   console.log(` divisors are against the ${num2} =${divisors2} and count =${count2}`);
+
+console.log("the divisors of the two numbers:")
+
+
+if(count1>count2){
+    for (let i=0;i<divisors1.length;i++){
+        for(let j=0;j<divisors2.length;j++){
+            if(divisors1[i]==divisors2[j]){
+                console.log(divisors2[j]);
+            }
+        }
+    }
+
+}
+else{
+    for (let i=0;i<divisors2.length;i++){
+        for(let j=0;j<divisors1.length;j++){
+            if(divisors2[i]==divisors1[j]){
+                console.log(divisors1[j]);
+            }
+        }
+    }
+}
+   
+   
+</script>
