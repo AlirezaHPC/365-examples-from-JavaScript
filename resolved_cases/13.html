@@ -5,13 +5,13 @@
      if he adds 15 percent to the salary of each specialist.
      Write a program that receives the number of specialists that do this
     */
-var count=parseInt(prompt("enter count specialists"));
-var salary=5000000;
-var first_salary_annually=12*count*salary;
+let count=parseInt(prompt("enter count specialists"));
+let salary=5000000;
+let first_salary_annually=12*count*salary;
 console.log("first_salary_annually",first_salary_annually);
-var rate_change=(15*salary)/100;
-var new_salary=salary+rate_change;
-var last_salary_annually=12*count*new_salary;
+let rate_change=(15*salary)/100;
+let new_salary=salary+rate_change;
+let last_salary_annually=12*count*new_salary;
 console.log("last_salary_annually",last_salary_annually);
 console.log("Amount of annual salary increase ",last_salary_annually-first_salary_annually);
 </script>
