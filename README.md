@@ -1,3 +1,7 @@
+I defined 365-examples-from-JavaScript (if you can call it a project, of course!) To get more and more familiar with JavaScript topics and become more skilled and capable in Gate and GateHub
+
+
+
 365 examples from JavaScript
 
 1: Write a program that receives a number that displays even and odd numbers less than or equal to the number read. Print even numbers from 0 to received numbers and odd numbers from received to 1)
@@ -365,8 +369,7 @@ Is it different or not?
 177: If the sides of a triangle are numbers 1 to 9 (single-digit numbers), the program displays the number of isosceles triangles that can be formed with these numbers.
 178: If the sides of a triangle are single-digit numbers, it shows the number of triangles that can be formed. And shows the sides of these triangles (the sides form a triangle when the sum of both sides is greater than the third side).
 
-179: A program that reads the number of numbers that are entered in ascending order from the input and displays the sum of them. If the next number is less than the previous number, the program terminates.
-
+179: A program that reads the n of numbers that are entered in ascending order from the input and displays the sum of them. 
 180: A program that reads a number displays even digits. for example
 For the number 135274, it will display the number 24.
 
@@ -378,10 +381,14 @@ For the number 135274, it will display the number 24.
 
 184: A program that reads two integers and displays divisors against their common denominator
 
-185: A program that receives three sides of a triangle, if the triangle is right-angled, calculates and displays its area and b, a, otherwise its perimeter. In this program, there are auxiliary variables that keep the perimeter or area temp of the sides of the triangle, but the variable c stores.
-186: A program that reads the three sides of a triangle and makes it clear that the verses are like a triangle.
-Equilateral P is equilateral of the sides or different sides of the moon (in the program)
-The variables a, b and c hold the sides of the triangle (.
+185: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+186: : Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+: Redefine the sub srtring method.
+: Redefine the sub str () method.
+: Redefine the replace () method.
+: Get a string and delete the empty space around it
+: Join two strings in three ways
+: Get a string and convert its letters to uppercase and display.
 
 
 187: A program that reads the three sides of a triangle and determines whether the triangle
@@ -531,12 +538,13 @@ The length function returns the number of array elements
 251: Define a function to print when the mouse pointer moves away from the button
 252: Print the phrase "samira abdi" is programmer.
 253: Write programs that receive a string and replace the "a" character with the "@" character.
-254: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+254: Define the Math class and rewrite the pow method.
+255: Get the value of x and print the result of the following expression without using the multiplication operator.
+Y = 32x- (x * 24)
+256: Define an object type variable with const and add the following keys to it and get its values from Word.
+Book Name:
+print year:
+Author Name :
+Price:
+257: Define the pLanguage variable of array type with const and get the name of n programming language from Word.
 
-255: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
-256: Redefine the sub srtring method.
-257: Redefine the sub str () method.
-258: Redefine the replace () method.
-259: Get a string and delete the empty space around it
-260: Join two strings in three ways
-261: Get a string and convert its letters to uppercase and display.
