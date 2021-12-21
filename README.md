@@ -1,6 +1,5 @@
 I defined 365-examples-from-JavaScript (if you can call it a project, of course!) To get more and more familiar with JavaScript topics and become more skilled and capable in Gate and GateHub
-
-
+365 examples from JavaScript
 
 365 examples from JavaScript
 
@@ -110,25 +109,22 @@ Ask the user to enter a number between 1 and 3, arrange the array if he enters 1
 
 ************************************************* ***
 41: Write a program that does the following:
-Adds an Array list
-• Ask the user to enter 3 numbers, if he enters the number one, he will delete all the elements of the Array list, if he enters the number 2, he will delete the first element of the Array list, if he enters the number 3, he will enter the Array list information in Copies an array and displays the information in that array.
-
+Adds an array
+Ask the user to enter 3 numbers, if he enters the number one he deletes all the elements of the Array, if he enters the number 2 he deletes the first element of the Array, if he enters the number 3 he copies the Array information to an array Displays the information in that array.
 
 42: Write a program that displays the number of words in a string read from the input (there is a space between the words of one of the characters, and the space and? And,.
 
 
 43: Write a program that reads two strings and does the following:
-A) Show the location of the first string in the second string
+A)	Show the location of the first string in the second string
+B)	Show the location of the last  string in the second string
 44: Write a program that reads a number of numbers and puts them in an array. Then divide all the elements of the array by the middle element. If the middle element is zero, divide by the element after the middle element. If this element is also zero, divide by the element before the middle element. If this element is also zero, continue the previous process to find the non-zero element and perform divisions. If all elements are zero, it will send the appropriate message. (Array)
 45: Write a program that reads two 100-digit numbers and adds them together and displays the output (if a value other than 0 to 9 is entered when two numbers are entered, an appropriate error message is displayed)
 
 46: Each even number greater than 6 is smaller than the sum of the first two numbers, a program that reads one even numbers greater than 6. Finds and prints the sum of the first two numbers equal to the numbers read (the program continues until the user presses the esc key)
 47: Write a program that reads a string and does the following:
 Convert all uppercase letters of the string to lowercase letters
-Count all string digits and print all string digits
 Count the number of letters in a string
-Count all the even pairs of strings
-Use a number for each of the stated actions
 
 48: Write a program that simulates the dose game (in this game we have a 3 * 3 matrix in which two players with numbers 1 and 2 play together, each player has three pieces. The winning player is the one who can move faster Align your beads in a row or column or diagonally)
 49: Write a program that reads 20 numbers and puts them in two 10-element arrays. Then merge the elements of the two arrays (the two arrays must be arranged)
