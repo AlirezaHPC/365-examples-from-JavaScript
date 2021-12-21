@@ -1,12 +1,14 @@
 <script>
+    //در این برنامه هیچ ورودی غیر از عدد دریافت نمی شود در نتیجه استفاده از شرط ها بیهوده است
+    // این برنامه باید دوباره بازنگری شود
     //  Write a program that reads two 100-digit numbers and adds them together and displays 
     // the output (if a value other than 0 to 9 is 
     // entered when two numbers are entered, an appropriate error message is displayed)
-    var number1=parseInt(prompt("enter 100-digit number:"));
-    var number2=parseInt(prompt("enter 100 digit number:"));
-    var n1=number1;
-    var n2=number2;
-    var digit;
+    let number1=parseInt(prompt("enter 100-digit number:"));
+    let number2=parseInt(prompt("enter 100 digit number:"));
+    let n1=number1;
+    let n2=number2;
+    let digit;
    while(n1>0){
       digit=parseInt(n1%10);
       
