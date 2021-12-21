@@ -1,0 +1,21 @@
+<script>
+//   A program that first reads the number of students (n), then reads the n grade point average, and
+//    counts and displays the number of students whose grade point average is between 10 and 15.
+
+    let n=parseInt(prompt("enter the number of students: "));
+    let grades=[];
+    let count=0;
+    for(let i=0;i<n;i++){
+        grades[i]=parseInt(prompt(`enter the student${i+1} score`));
+        console.log(`score student ${i+1} is ${grades[i]}`)
+    }
+    for(let i=0;i<n;i++){
+        if(10<grades[i]<15){
+           
+            count++;
+        }
+    }
+  
+    console.log("counts  grade between 10 and 15. : ",count);
+   
+</script>

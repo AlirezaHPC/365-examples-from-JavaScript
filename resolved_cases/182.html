@@ -1,0 +1,22 @@
+<script>
+    // A program that reads a student's
+    //  grade point average shows a grade point average of more than 15.
+
+
+    let n=parseInt(prompt("enter the number of students: "));
+    let grades=[];
+    let count=0,sum=0;
+    for(let i=0;i<n;i++){
+        grades[i]=parseInt(prompt(`enter the student${i+1} score`));
+        console.log(`score student ${i+1} is ${grades[i]}`)
+    }
+    for(let i=0;i<n;i++){
+        if(grades[i]>15){
+            sum=sum+grades[i];
+            count++;
+        }
+    }
+    let avrage=sum/count;
+    console.log("avrage grade above 15 : ",avrage)
+   
+</script>
