@@ -1,0 +1,16 @@
+<script>
+    // : A program that reads then n  of 
+    // numbers that are entered in ascending order from the input and displays the sum of them. 
+    let n=parseInt(prompt("count of input numbers "));
+    let sum=0,numbers=[];
+    for(let i=0;i<n;i++){
+        numbers[i]=parseInt(prompt("enter numbers from lowercase  to uppercase   => number",i+1));
+        console.log(`number ${i} is ${numbers[i]}`);
+        sum=sum+numbers[i];
+        if(numbers[i]<numbers[i-1]){
+            alert("invalid input,please refrresh")
+        }
+
+    }
+    console.log(`sum= ${sum}`);
+</script>

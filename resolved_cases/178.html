@@ -1,0 +1,21 @@
+<script>
+    // If the sides of a triangle are single-digit numbers, it shows the number of triangles that can be formed. And shows the sides of 
+    // these triangles (the sides form a triangle when the sum of both sides is greater than the third side).
+
+    for(let i=0;i<=9;i++){
+        for(let j=0;j<=9;j++){
+            for (let k=0;k<=9;k++){
+                if((i+j)>k){
+                    console.log(` side1= ${i} side2=${j}   side3=${k}`);
+                }
+                if((k+j)>i){
+                    console.log(` side1= ${i} side2=${j}   side3=${k}`);
+                }
+                if((k+i)>j){
+                    console.log(` side1= ${i} side2=${j}   side3=${k}`);
+                }
+                }
+            }
+        }
+   
+</script>
