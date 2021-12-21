@@ -2,11 +2,11 @@
 /*
 Write a program that reads a three-digit number and displays the sum of its digits.
 */
-var sum=0;
-var numberr=parseFloat(prompt("enter a three_digit number"));
+let sum=0;
+let numberr=parseFloat(prompt("enter a three_digit number"));
 number=numberr;
 while(number>0){
-var  remaining=number%10;
+let  remaining=number%10;
 sum=sum+remaining;
 number=number/10;}
 console.log("sum of its digits",numberr,"=",parseInt(sum));
