@@ -1,0 +1,23 @@
+<script>
+    // : A program that reads the three sides of a triangle and determines whether the triangle
+//     Equilateral P is equilateral or isosceles) in this program
+// The variables a, b and c hold the sides of the triangle (.
+
+    const a=parseInt(prompt("enter size side one: "));
+    const b=parseInt(prompt("enter size side two:"));
+    const c=parseInt(prompt("enter size side three"));
+    console.log(`size side one:${a} `);
+    console.log(    ` size side two: ${b}`);
+    console.log(`size side three:${c}`);
+    if((a==b)&&(b==c)){
+console.log("An equilateral tringle is formed ");
+
+    }
+    if(((a==b) && (a!=c)) || (b==c && c!=a)){
+console.log("An isosceles tringle is formed ");
+    }
+    if((a!=b && b!=c) && c!=a){
+console.log("a tringle of different sides is formed");
+
+    }
+</script>
