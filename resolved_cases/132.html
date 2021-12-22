@@ -1,19 +1,30 @@
 <script>
 // Write a program that takes a number from the input and prints numbers smaller than those that are not divisible by 2, 3, 5, 9
 var number=parseInt(prompt("enter a number"));
+let arr2=[],index2=0;
+let arr3=[],index3=0;
+let arr5=[],index5=0;
+let arr9=[],index9=0;
 for(var i=number;i>=1;i--){
 if (i%2!=0){
-console.log(i,"not divisible by 2");
+arr2[index2]=i;
+index2++;
 }
 if (i%3!=0){
-console.log(i,"not divisible by 3");
+    arr3[index3]=i;
+index3++;
 }
 if (i%5!=0){
-console.log(i,"not divisible by 5");
+    arr5[index5]=i;
+index5++;
 }
 if (i%9!=0){
-console.log(i,"not divisible by 9");
+    arr9[index9]=i;
+index9++;
 }
 }
-
+console.log(arr2,"not divisible by 2");
+console.log(arr3,"not divisible by 3");
+console.log(arr5,"not divisible by 5");
+console.log(arr9,"not divisible by 9");
 </script>
