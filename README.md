@@ -233,6 +233,35 @@ Write a function that takes the lengths of the sides from the user and converts 
 A) Check whether it is regular or not?
 B) If the array is ordered, take an element from the input and the resulting array is still ordered
 100: Write a program that takes an array from the user and displays max, min (array)
+101 - A program that determines how many four-digit numbers with digits 5, 6, 7, 8 (without repeating digits) can be produced in descending order.
+
+
+102 - A program that reads a number displays the average of the digits of an odd and even number. For example, if the number is 2569, the average of the odd digits is (9 + 5) / 2 = 7, the average of the even digits is (2 + 6) / 2 = 4.
+
+103 - A program that displays all three-digit numbers that are produced with digits 1, 2, 3.
+104. A program that shows all three-digit numbers with digits of 1, 4, or 8.
+
+
+105. A program that displays all four-digit numbers that consist only of digits 2, 1, 4, and 9, and that each digit is repeated once.
+
+
+106 A program that reads employee salaries, type of insurance deduction, and tax rate calculates employee net salary. The following is done to calculate net salary
+) To solve this exercise of the operator? use(:
+If the type of insurance deduction is 1, * 7/100 * salary = insurance
+If the type of insurance deduction is 2, 8.5 / 100 * Salary = insurance
+If the type of insurance deduction is 3, * 10/100 salary = insurance
+/ 100% tax * Salary = tax
+
+Tax - Insurance - Salary = Net Salary
+
+107 A program that reads and recognizes the number of digits. Each number read has a digit of zero or not.
+-108 A program that reads the age and gender of a number of people, calculates and displays the number and percentage of men between the ages of 07 and 21. If you enter gender M or m, this person is a man
+
+109 A program that reads the number n (n is the number of employees), then reads the overtime hours of n employees and displays the three employees who have the least overtime.
+
+110 - A program that reads the household number, their daily expenses, displays their monthly and annual expenses. It then determines which household has the lowest cost and
+Which household has the most expenses?
+
 111: Write a program that takes a number from the input and says how many times it is repeated in the array? (Array)
 112: Write a program that takes 10 numbers from the user, sorts them, and prints the middle element.
 
