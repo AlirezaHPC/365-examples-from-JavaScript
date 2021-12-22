@@ -1,5 +1,5 @@
 <script>
-    //Write a program that calculates the result 1^3 + 2^3 + 3^3 +…. + N^3 =.
+    //Write a program that calculates the result 1^3 + 3^3 + 3^3 +…. + N^3 =.
     let num=parseInt(prompt("enter a number:"));
     let sum=0;
     function cube_number(n){
@@ -8,7 +8,7 @@
 
 
         }
-        console.log("sum=",sum);
+        console.log(`result of 1^3 + 2^3 + 3^3 +…. + ${num}^3=${sum}`);
 
     }
     cube_number(num);
