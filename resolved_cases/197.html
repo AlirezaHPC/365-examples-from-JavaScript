@@ -1,0 +1,31 @@
+<script>
+//    A program that reads gender code, 0) woman, 1: man and salary, prints the following in the output.
+// a. Number of male employees b) Number of female employees c. Average salary to
+// Separation of men and women
+
+
+
+
+let count=parseInt(prompt("enter count of employes "));
+let woman=[],w=0, sumM=0;
+let man=[],m=0,sumW;
+for(let i=0;i<count;i++){
+    let genderCode=parseInt(prompt("enter 1 or 0  man=0,woman=1"));
+if(genderCode==0){
+    man[m]=parseInt(prompt(`enter salary for woman${m+1} `))
+    sumM=sumM+man[m];
+m++;
+
+}
+else{
+    man[m]=parseInt(prompt(`enter salary for man${w+1} ` ))
+    sumW=sumW+woman[w];
+w++;
+}
+}
+
+console.log("count of employees of Ms=",w)
+console.log("sum salary  of employees of Ms=",sumW);
+console.log("count of employees of Mr=",m)
+console.log("sum salary  of employees of Ms=",sumM);
+</script>
