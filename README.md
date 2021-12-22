@@ -85,14 +85,14 @@ The smallest three-digit number that is divisible by 5
 33: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and searches the array in pairs. (Array)
 34: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and searches the array in sequential order. (Array)
 35: A program that puts 20 numbers between 1 and 100 in an array regularly reads a number from the input and searches the array in binary. (Array)
-36: A program that puts 20 numbers between 1 and 100 in an array regularly reads a number from the input and searches the array sequentially. (Array)
+36: : Define the pLanguage variable of array type with const and get the name of n programming language from Word.
 37: A program that initializes a 4x3 table and displays the largest array element along with its location in the array. (Array)
 
 38: A program that reads two disciplines and performs the following actions:
 A) Search the first string in the second string and display its first location
 B) Search for the letters of the first string in the second string and show the first place of its occurrence
 C) Converts the letters of the second string to lowercase letters
-D) Removes the empty space to the left of the first and second strings
+D) Removes the empty space to the first and second strings
 E) Adds the first string from the third character to the second string
 J) Deletes five characters from the fourth character onwards in the first string
 39: A program that performs the following operations on data of type StringBuilder.
@@ -162,8 +162,11 @@ Familiarity with methods that have a reference type parameter
 59: Create a class for polynomials. The internal representation of a polynominal class is an array of sentences. Each sentence contains a multiplication and a power. For example, the 3x5 sentence has a factor of 3 and a power of 5. The class must have the following capabilities:
 A) Perform addition and multiplication on two polynomial sentences
 B) Perform subtraction and division on two polynomial sentences
-60: Write a function named right_justify that takes a string named s as a parameter and adds enough space to the beginning so that the last letter of the argument string is in column 70 of the screen.
-60: Write a function named right_justify that takes a string named s as a parameter and adds enough space to the beginning so that the last letter of the argument string is in column 70 of the screen.
+60: Define an object type variable with const and add the following keys to it and get its values from Word.
+Book Name:
+print year:
+Author Name :
+Price:
 61: If you have three pieces of wood, you may be able to make a triangle with them and you may not. For example, if the length of one of the three pieces is 12 inches and each of the other two pieces is one inch, you certainly can not glue the two ends of the one-inch pieces together so that after connecting to the 12-inch piece, the connection point They should be in the middle of it. There is a simple test that can be used to determine whether a triangle can be created with three lines of different lengths.
 If the length of each of the three line segments is greater than the sum of the lengths of the other two line segments, you cannot use them to create a triangle. Otherwise you can use them to create a triangle.
 Write a function called is_triangle that takes three integers as arguments and prints the "yes" or "no" messages, depending on how you can print the triangle with the parameters.
@@ -417,7 +420,7 @@ Shows the end of each year.
 196: A program that displays all numbers between 1000 and 1100 that are divisible by 9 parts
 ) Is a number divisible by 9 whose sum of digits can be divided by 9 (..
 
-197: A program that reads the information of a number of employees such as employee number, year of employment, gender code, 0) woman, 1: man and salary, prints the following in the output.
+197: A program that reads gender code, 0) woman, 1: man and salary, prints the following in the output.
 a. Number of male employees b) Number of female employees c. Average salary to
 Separation of men and women
 198: A program that reads the number of goods and the price of each product displays the amount of sales (the amount of sales is equal to the number of goods * is the price of goods).
@@ -537,10 +540,4 @@ The length function returns the number of array elements
 254: Define the Math class and rewrite the pow method.
 255: Get the value of x and print the result of the following expression without using the multiplication operator.
 Y = 32x- (x * 24)
-256: Define an object type variable with const and add the following keys to it and get its values from Word.
-Book Name:
-print year:
-Author Name :
-Price:
-257: Define the pLanguage variable of array type with const and get the name of n programming language from Word.
 
