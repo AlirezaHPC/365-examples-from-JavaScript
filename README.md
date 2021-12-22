@@ -242,7 +242,9 @@ B) If the array is ordered, take an element from the input and the resulting arr
 104. A program that shows all three-digit numbers with digits of 1, 4, or 8.
 
 
-105. A program that displays all four-digit numbers that consist only of digits 2, 1, 4, and 9, and that each digit is repeated once.
+105: Get the value of x and print the result of the following expression without using the multiplication operator.
+Y = 32x- (x * 24)
+
 
 
 106 A program that reads employee salaries, type of insurance deduction, and tax rate calculates employee net salary. The following is done to calculate net salary
@@ -567,6 +569,4 @@ The length function returns the number of array elements
 252: Print the phrase "samira abdi" is programmer.
 253: Write programs that receive a string and replace the "a" character with the "@" character.
 254: Define the Math class and rewrite the pow method.
-255: Get the value of x and print the result of the following expression without using the multiplication operator.
-Y = 32x- (x * 24)
 
