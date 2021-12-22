@@ -1,0 +1,24 @@
+<script>
+    //Write a program that takes 20 numbers from the user and prints them upside down. (Array)
+    let numbers=[];
+    let updides=[];
+    let index=0;
+    for(let i=0;i<5;i++){
+        numbers[i]=parseInt(prompt(`enter number ${i+1}`));
+       let n=numbers[i];
+       let digit=0
+       let revers=0;
+       while(n>0){
+           digit=parseInt(n%10);
+revers=revers+(digit*10);
+n=n/10;
+
+       }
+       updides[index]=revers;
+       index++;
+    }
+    console.log(numbers);
+    console.log(updides);
+    
+
+</script>

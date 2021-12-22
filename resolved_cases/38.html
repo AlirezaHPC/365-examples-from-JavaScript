@@ -1,0 +1,41 @@
+<script>
+
+// A program that reads two disciplines and performs the following actions:
+// A) Search the first string in the second string and display its first location
+// B) Search for the letters of the first string in the second string and show the first place of its occurrence
+// C) Converts the letters of the second string to lowercase letters
+// D) Removes the empty space to the first and second strings
+// E) Adds the first string from the third character to the second string
+// J) Deletes five characters from the fourth character onwards in the first string
+
+
+// A program that reads two disciplines and performs the following actions:
+    let text1=prompt("enter a string type input");
+    let text2=prompt("enter string type input");
+    
+    console.log(`string1="${text1}" and string2="${text2}"`);
+
+
+    // Search the first string in the second string and display its first location
+    console.log(`index "${text2}"" in "${text1}"=`,text1.indexOf(text2));
+
+
+
+    // Search for the letters of the first string in the second string and show the first place of its occurrence
+for(let i=0;i<text1.length;i++){
+    console.log(`index "${text1[i]}"" in "${text2}"=`,text2.indexOf(text1[i]));
+}
+console.log(`the second string to lowercase letters=${text2.toLowerCase()}`);
+
+//Removes the empty space to the first and second strings
+console.log(`(Removes the empty space to the first and second strings)=>"${text1.trim()}" and "${text2.trim()}"`);
+
+
+// Adds the first string from the third character to the second string
+let temp=text2;
+let temp2=text1.substr(2);
+console.log("Adds the first string from the third character to the second string=>",temp+temp2);
+
+// Deletes five characters from the fourth character onwards in the first string
+console.log(text1.substr(0,4));
+</script>
