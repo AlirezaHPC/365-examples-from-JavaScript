@@ -1,0 +1,22 @@
+<script>
+    // A program that reads and recognizes the number of digits. Each number read has a digit of zero or not.
+    const count=parseInt(prompt("enter count"));
+    let numbers=[];
+    let n;
+    let digit;
+    console.log("input numbers=>",numbers);
+    for(let i=0;i<count;i++){
+        numbers[i]=parseInt(prompt(`enter number =>${i+1}`));
+        n=numbers[i];
+        digit=0;
+        while(n>0){
+            digit=parseInt(n%10);
+            if(digit==0){
+                console.log(`${numbers[i]} has a digit of zero`);
+                
+            }
+            n=parseInt(n/10);
+        }
+    }
+
+</script>

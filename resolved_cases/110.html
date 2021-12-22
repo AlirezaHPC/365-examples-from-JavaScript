@@ -1,0 +1,38 @@
+<script>
+//     A program that reads the household number, their daily expenses,
+//      displays their monthly and annual expenses. It then determines which household has the lowest cost and
+// Which household has the most expenses?
+
+let n =parseInt(prompt("enter count  of household"));
+let indexMax=0 , indexMin=0;
+let  expenses=[];
+let  mon_expenses=[];
+let  year_expenses=[];
+let min,max;
+for(let i=0;i<n;i++){
+    expenses[i]=parseInt(prompt(`enter  the expensesv  household  ${i+1}`))
+    mon_expenses[i]= expenses[i]*30;
+    year_expenses[i]= mon_expenses[i]*12;
+
+    if(i==0){
+         min=max=expenses[0];
+    }
+    if(expenses[i]<min){
+       
+        min1=expenses[i];
+        indexMin=i;
+    }
+     if (expenses[i]>max){
+       
+        max=expenses[i];
+        indexMax=i;
+    }
+    
+}
+console.log(`the expenses  of ${n} household =${expenses}`);
+console.log(`annual expenses  of ${n} household =${year_expenses}`);
+console.log(`monthly expenses  of ${n} household =${ mon_expenses}`);
+console.log(`min=>${min}  this number is ${indexMin}`);
+console.log(`max=>${max}  this number is ${indexMax}`);
+
+    </script>

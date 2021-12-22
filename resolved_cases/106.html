@@ -1,0 +1,23 @@
+<script>
+//     106 A program that reads employee salaries, type of insurance deduction, 
+//     and tax rate calculates employee net salary. The following is done to calculate net salary
+// ) To solve this exercise of the operator? use(:
+// If the type of insurance deduction is 1, * 7/100 * salary = insurance
+// If the type of insurance deduction is 2, 8.5 / 100 * Salary = insurance
+// If the type of insurance deduction is 3, * 10/100 salary = insurance
+// / 100% tax * Salary = tax
+// Tax - Insurance - Salary = Net Salary
+
+let salary=parseInt(prompt("enter  employee salarie "));
+let typeInsur=parseInt(prompt("enter  type of insurance deduction between(1 or 2 or 3)"));
+let taxRate=parseInt(prompt("enter tax rate "));
+let insurance=(typeInsur*salary)/100;
+let tax=(salary*taxRate)/100;
+let netSalary=salary-(insurance+tax);
+console.log("input salari",salary);
+console.log("Net Salary",netSalary);
+
+
+
+
+</script>

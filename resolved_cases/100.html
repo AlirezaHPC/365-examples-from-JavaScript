@@ -1,0 +1,22 @@
+<script>
+    // Write a program that takes an array from the user and displays max, min (array)
+    
+    let numbers=[];
+    let min;
+    let max;
+    for(let i=0;i<10;i++){
+        numbers[i]=parseInt(prompt(`enter  number ${i+1}`));
+        if(i==0){
+            min=numbers[i]
+            max=numbers[i]
+        }
+        if(numbers[i]>max){
+            max=numbers[i];
+        }
+        if(numbers[i]<=min){
+            min=numbers[i];
+        }
+    }
+    console.log(`input numbers=>${String(numbers)}`);
+    console.log(` min=>${min} ************** max=${max}`);
+</script>

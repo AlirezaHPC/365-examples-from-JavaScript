@@ -1,0 +1,15 @@
+<script>
+    //Write a program that takes 10 numbers and displays the sum of the individual digits (array)
+
+
+    let numbers=[];
+    let sum=0;
+    for(let i=0;i<10;i++){
+        numbers[i]=parseInt(prompt(`enter  number ${i+1}`));
+        if(numbers[i]%2==0){
+            sum=sum+numbers[i];
+        }
+    }
+    console.log(`input numbers=>${String(numbers)}`);
+    console.log(` inputs sum=>${sum}`);
+    </script>

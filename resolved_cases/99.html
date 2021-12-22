@@ -1,0 +1,31 @@
+<script>
+//    Write a program that takes an array from the user
+// A) Check array it is regular or not?
+// B) If the array is ordered, take an element from the input and the resulting array is still ordered
+
+
+let numbers=[];
+   let sort=true;
+    for(let i=0;i<10;i++){
+        numbers[i]=parseInt(prompt(`enter  number ${i+1}`));
+        if(numbers[i]>numbers[i-1]){
+            sort=false;
+        }
+    }
+
+    
+    if(sort==true){
+        numbers[10]=parseInt(prompt(`input numbers is orderd please enter number 11 `));
+        numbers.sort(function(x,y){
+            return x-y;
+        });
+        console.log(` sort input numbers=>${String(numbers)}`);
+    }
+    else{
+        console.log("array  is Not regular ");
+        console.log(`  input numbers=>${String(numbers)}`);
+    }
+  
+
+
+</script>

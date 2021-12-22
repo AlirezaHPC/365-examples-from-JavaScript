@@ -1,0 +1,23 @@
+<script>
+//   Write a program that takes 10 numbers from the user and determines whether they are in order or not? If not in order
+
+
+
+    let numbers=[];
+   let sort=true;
+    for(let i=0;i<10;i++){
+        numbers[i]=parseInt(prompt(`enter  number ${i+1}`));
+        if(numbers[i]>numbers[i-1]){
+            sort=false;
+        }
+    }
+
+    console.log(`input numbers=>${String(numbers)}`);
+    if(sort==false){
+        numbers.sort(function(x,y){
+            return x-y;
+        });
+        console.log(` sort input numbers=>${String(numbers)}`);
+    }
+  
+    </script>

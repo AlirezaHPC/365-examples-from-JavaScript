@@ -1,0 +1,28 @@
+<script>
+    // A program that reads a number displays the average of the digits of an odd and even number. 
+    // For example, if the number is 2569, the average of the odd digits is 
+    // (9 + 5) / 2 = 7, the average of the even digits is (2 + 6) / 2 = 4.
+
+
+    let num=parseInt(prompt("enter a number:"));
+    let digit ,countOdd=0,countEven=0,avrOdd=0,avrEven=0;
+    let n=num;
+    let sumEven=0,sumOdd=0
+    while(n>0){
+        digit=parseInt(n%10);
+        if(digit%2==0){
+           countEven++;
+            sumEven=sumEven+digit;
+        }
+        else{
+            countOdd++;
+           sumOdd=sumOdd+digit;
+        }
+        n=parseInt(n/10);
+    }
+avrOdd=parseInt(sumOdd/countOdd);
+avrEven=parseInt(sumEven/countEven);
+console.log("input number is =",num);
+console.log("avrage of the digits of an odd  =>",avrOdd);
+console.log("avrage of the digits of an even  =>",avrEven);
+</script>
