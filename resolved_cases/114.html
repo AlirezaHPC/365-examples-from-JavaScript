@@ -1,0 +1,24 @@
+<script>
+    // : Write a program that takes two arrays, one regular and one irregular, 
+    // from the user and appends them and delivers them regularly. (Array)
+
+    let number1=[];
+    let number2=[];
+    for (let  i=0;i<3;i++){
+number1[i]=parseInt(prompt(`enter number ${i+1} for sort array `));}
+
+
+for (let i=0;i<3;i++){
+number2[i]=parseInt(prompt(`enter number ${i+1} for irregular array `));}
+
+
+let number3=number1.concat(number2);
+number3.sort(function(a,b){
+    return a-b;
+});
+console.log(`array number 1=${number1}`);
+console.log(`array number 2=${number2}`);
+console.log(`array number 3=${number3}`);
+
+
+</script>

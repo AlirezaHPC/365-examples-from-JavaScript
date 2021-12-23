@@ -1,0 +1,27 @@
+<script>
+    // : Write a program that takes 10 numbers from the user and prints them defeated.
+//(Array)
+
+    let array_number=[];
+    
+    let revers=0;
+   
+    let arr_revers=[];
+    let digit,n;
+for (let i=0;i<10;i++){
+array_number[i]=parseInt(prompt(`enter number ${i+1}`));
+n=array_number[i];
+digit=0;
+revers=0;
+while(n>0){
+digit=parseInt(n%10);
+revers=digit+(revers*10);
+n=parseInt(n/10);
+}
+arr_revers[i]=revers;
+}
+console.log("input numbers ",String(array_number));
+console.log(" revers input numbers ",String(arr_revers));
+
+
+</script>

@@ -3,17 +3,17 @@
  Write a program that takes a number from the input and says how many times it is repeated in the array?
 the get number of number's of this array from the user (Array)
 */
-var array_number=[];
-var count_repeat=0;
-var count=parseInt(prompt("enter the number of array members"));
+let array_number=[];
+let count_repeat=0;
+let count=parseInt(prompt("enter the number of array members"));
 
-for (var i=0;i<count;i++){
+for (let i=0;i<count;i++){
 array_number[i]=parseInt(prompt(`enter number ${i+1}`));
 }
-console.log(array_number);
-var number_repated=parseInt(prompt("enter a number to say how many times been repeated"));
+console.log(String(array_number));
+let number_repated=parseInt(prompt("enter a number to say how many times been repeated"));
 
-for (var i=0;i<count;i++){
+for (let i=0;i<count;i++){
 if(array_number[i]==number_repated){
 count_repeat++;
 }

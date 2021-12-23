@@ -1,0 +1,20 @@
+<script>
+    // Write a program that takes 10 numbers from the user, sorts them, and prints the middle element.
+
+    let array_number=[];
+    let sort=true;
+for (let i=0;i<10;i++){
+array_number[i]=parseInt(prompt(`enter number ${i+1}`));
+if(array_number[i]<array_number[i-1]){
+    sort=false;
+}
+}
+if(sort==false){
+    array_number.sort(function(a,b){
+        return a-b;
+    });
+}
+console.log("input numbers ",String(array_number));
+console.log(` the middle element  is => ${array_number[5]}`);
+
+</script>

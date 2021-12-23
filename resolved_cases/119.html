@@ -1,0 +1,86 @@
+<script>
+//     Write a program that reads two arrays that define n elements and are set by the user.
+//      Puts in these two arrays then performs the following operations
+// A) The method finds the common elements of the two arrays
+// B) The method finds the community of two arrays
+// C) The method returns the difference between the two arrays
+
+let number1=[];
+let n=parseInt(prompt("enter count element array:"))
+    let number2=[];
+    for (let i=0;i<n;i++){
+number1[i]=parseInt(prompt(`enter number ${i+1} for sort array `));}
+
+
+for (let i=0;i<n;i++){
+number2[i]=parseInt(prompt(`enter number ${i+1} for irregular array `));}
+
+
+let number3=number1.concat(number2);
+number3.sort(function(a,b){
+    return a-b;
+});
+
+// The method finds the common elements of the two arrays
+let common=(arr1,arr2)=>{
+    let common=[];
+    let index=0;
+    for( let i=0;i<arr1.length;i++){
+        for(let j=0;j<arr2.length;j++){
+            if(arr1[i]==arr2[j]){
+common[index]=arr1[i];
+index++;
+            }
+            
+        }
+    }
+    if(index==0){
+                console.log("not have a common element in these two arrays")
+            }
+            else{
+    console.log(`the common elements of the two arrays=>${common} `);}
+}
+
+// The method finds the community of two arrays
+let community=(array1,array2)=>{
+    let community=array1.concat(array2);
+    community.sort(function(a,b){
+        return a-b;
+    })
+    console.log("the community of two arrays",community);
+}
+// The method returns the difference between the two arrays
+let difference=(arr1,arr2)=>{
+    let difference=[];
+    let index=0;
+    for( let i=0;i<arr1.length;i++){
+        for(let j=0;j<arr2.length;j++){
+            if(arr1[i]!=arr2[j]){
+               
+                difference[index]=arr1[i];
+               
+                index++;
+            }
+            
+        }
+     
+    }
+    if(index==0){
+                console.log("not have a difference element in these two arrays")
+            }
+   if(index>0){
+    console.log(`the difference elements of the two arrays=>${difference} `);
+}
+}
+
+
+
+
+
+
+console.log(`array number 1=${number1}`);
+console.log(`array number 2=${number2}`);
+common(number1,number2);
+community(number1,number2);
+difference(number1,number2);
+</script>
