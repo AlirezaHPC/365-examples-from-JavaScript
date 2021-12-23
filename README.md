@@ -282,8 +282,6 @@ Which household has the most expenses?
 A) The method finds the common elements of the two arrays
 B) The method finds the community of two arrays
 C) The method returns the difference between the two arrays
-Use numbers to determine which actions to perform
-
 120: Write a program that displays the address of a file as (C: \ ProgramData \ Adobe \ ARM \ {291AA914-A987-4CE9-BD63-AC0A92D435E5})
 121: Write a program that displays your first and last name with a space. To do this, use the control characters.
 122: Write a program that displays a dictionary of students' names and grades. Then take the student's name from the input and display its grade
