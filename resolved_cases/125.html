@@ -1,0 +1,20 @@
+<script>
+//     Write a program that receives a string from the input
+// A) Ask the user if he wants to get a range of strings or just print one character.
+// B) Then display the characters according to the index or input indices.
+
+let string=prompt("enter a string")
+let chose=prompt(" wants to get a range of strings or just print one character.","char/string");
+console.log("input string=>",string)
+if(chose=="char"){
+    let index=parseInt(prompt("enter index for print char  "));
+    console.log("char=",string[index]);
+}
+    else{
+
+let start=parseInt(prompt("enter index start "));
+let end=parseInt(prompt("enter index end"));
+console.log(" range of strings",string.slice(start,end));
+    }
+
+</script>

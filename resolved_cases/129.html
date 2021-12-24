@@ -1,0 +1,11 @@
+<script>
+    // : Write a program that takes a 3-digit number and prints the number of hundreds, tens, and units.
+    let number=parseInt(prompt("enter   3-digit number"));
+    
+    let hundreds=parseInt(number/100);
+    number=number%100;
+    let tens=parseInt(number/10);
+    let units=number%10;
+    
+    console.log(`hundreds =>${hundreds} tens=>${tens}  units=>${units} `);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    // Write a program that takes 3 digits from the user and produces the smallest 3-digit number that is divisible by 2
+    let nums=[];
+    for(let i=0;i<3;i++){
+        nums[i]=parseInt(prompt(`enter number (1 digit) ${i+1}`));
+    }
+    nums.sort(function(a,b){
+        return a-b;
+    });
+let number=(nums[0]*100)+(nums[1]*10)+nums[2];
+if(number%2==1){
+number=(nums[0]*100)+(nums[2]*10)+nums[1]
+}
+if(number%2==1){
+number=(nums[2]*100)+(nums[1]*10)+nums[0]
+}
+console.log("input numbers",String(nums))
+console.log("the smallest 3-digi",number);
+</script>
