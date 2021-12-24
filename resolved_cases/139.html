@@ -1,0 +1,40 @@
+<script>
+//     The method that receives two numbers as a parameter determines the first few numbers between
+// These two numbers exist. This program has a method for determining the prime number. The program from
+// Uses these methods. "The first number is not less than half a number
+
+// "It's not a part of itself."
+let num1=parseInt(prompt("enter number1"));
+let num2=parseInt(prompt("enter number2"));
+
+let prime=(num1,num2)=>{
+    let min,max;
+    let primes=[];
+    let count,index=0;
+if(num1>num2){
+     max=num1;
+     min=num2;
+}
+else{
+     max=num2;
+     min=num1;
+}
+for(let i=min;i<max;i++){
+    count=0;
+    for(let j=1;j<=i;j++){
+        if(i%j==0){
+count++;
+        }
+    }
+    if(count==2){
+primes[index]=i;
+index++;
+    }
+}
+console.log(`the prime number between ${min} and ${max}=>> `,String(primes));
+}
+let call=(num1,num2)=>{
+    prime(num1,num2);
+}
+call(num1,num2);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    // The program that reads the number n displays all the multiples of 7 below n that none of the digits are 7.
+    let num=parseInt(prompt("enter a number:"));
+    let n,digit;
+    for(let i=1;i<=num;i++){
+    if(i%7==0){
+        n=i;
+        while(n>0){
+            digit=parseInt(n%10);
+            if(digit!=7){
+                console.log(i);
+            }
+            n=parseInt(n/10);
+        }
+       
+    }
+    
+}
+</script>

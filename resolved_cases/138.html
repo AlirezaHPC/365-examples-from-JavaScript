@@ -1,0 +1,15 @@
+<script>
+    // A program that reads the number n and then reads another number k and displays the product of
+    //  a number less than or equal to the number n multiplied by the number k
+
+    let n=parseInt(prompt("enter a number:"));
+    let k=parseInt(prompt("enter a number"));
+    let multi=1;
+    for(let i=1;i<=n;i++){
+        if(i%k==0){
+multi=multi*i;
+        }
+    }
+    console.log(`input number1=${n}, input number2=${k}`);
+    console.log(multi);
+</script>
