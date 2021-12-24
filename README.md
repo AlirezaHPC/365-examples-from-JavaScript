@@ -313,6 +313,66 @@ Note: Set the smallest number above this place value
 133: Write a program where the user enters the number of students in the class, then determines that he or she would like the students to be divided into groups.
 A program that says how many groups of n we can create and prints the rest of the students
 
+134: A program that receives a number of numbers displays their month equivalents. If the number entered is outside the range of 1 to 12, the program ends). In this program, month is a number whose equivalent month must be specified.
+
+135: A program that reads two numbers, if the remainder of dividing each number by another number is zero, displays "yes" and otherwise "no"
+136: The program that reads n, in addition to displaying the following expression, also displays the result of the expression:
+The result of the expression = 1 + 2 + 3 +… + n
+
+136: A program that reads the number n displays all the multiples of 7 below n
+137: The program that reads the number n displays all the multiples of 7 below n that none of the digits are 7.
+138: A program that reads the number n and then reads another number k and displays the product of a number less than or equal to the number n multiplied by the number k
+139: The method that receives two numbers as a parameter determines the first few numbers between
+These two numbers exist. This program has a method for determining the prime number. The program from
+Uses these methods. "The first number is not less than half a number
+"It's not a part of itself."
+
+140: An organization intends to add x percent to its employees' salaries. Method that coefficient
+Receives an increase in the employee's current salary and returns the new salary.
+A program that uses this method for n employees.
+141: A return method that takes a number as a parameter and all odd numbers between it
+Displays two numbers. A program that uses this method.
+
+142: Receives the return method n as a parameter and displays all harmful numbers 4 smaller than n. The program that uses this method.
+
+143: A program that reads n represents all integers (less than (less than or equal to n, which are also harmful 4)) is an integer that is the sum of divisors less than
+Be equal to itself (.
+
+
+144: A program that reads the base and height of a triangle calculates the area of a triangle using two methods of the same name. The area of a triangle is equal to the rule multiplied by half the height. In addition, height and rule can be two integers or two decimal numbers.
+
+
+145: A program that reads the length and width of a rectangle calculates the area of a rectangle using two methods of the same name.
+
+146: A program that reads the length of a square calculates the area of a square using a method.
+  147: A program that reads the radius of a circle calculates the area of a circle using a method.
+148: A program that reads the radius of a circle calculates the circumference of a circle using a method.
+149: A program that reads the length of a square calculates the area of a square using a method
+
+150: Programs that read the numbers n and b convert the number n from base 10 to base b (note that base b is less than 10)
+
+151: A program reads three numbers by a method and returns one of the following values:
+If three numbers do not form a triangle, return zero.
+If three numbers form a right triangle, return one.
+If three numbers form an equilateral triangle, return the number 2.
+If three numbers form an equilateral triangle, return the number 4.
+Otherwise it returns the number -0.
+
+
+
+152: The program that receives the price of the product and the discount percentage, sends it to a method, and this method returns the amount of the product discount and displays the amount of the discount in the program.
+
+153: A program that receives box information such as length, width, and height as a parameter, calculates and displays the volume of the box using a method. The volume of the box is equal to the length × width × height.
+
+154: On a letter that receives x and n and displays 10 times x times using an n method
+
+155: A program that reads a number retrieves and displays even numbers using a multiplication method.
+156: Displays a program that reads a number and calculates it using the multiplication method of digits above 5.
+
+
+
+
+
 156: Displays a program that reads a number and calculates it using the multiplication method of digits above 5.
 157: Returns and displays a program that receives a person's age in years, months, and days, converts it to days, hours, minutes, and seconds by methods (365 days per year and 30 days per month).
 158: The program that receives the year determines whether it is a leap or not?
