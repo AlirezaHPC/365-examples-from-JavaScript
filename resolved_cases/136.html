@@ -1,0 +1,19 @@
+<script>
+//      The program that reads n, in addition to displaying the following expression, also displays the result of the expression:
+// The result of the expression = 1 + 2 + 3 +… + n
+// B: A program that reads the number n displays all the multiples of 7 below n
+
+let n=parseInt(prompt("enter a number:"));
+let sum=0;
+for(let i=1;i<=n;i++){
+sum+=i;
+}
+
+console.log(`1 + 2 + 3 +. + n =>${sum}`)
+for(let i=1;i<=n;i++){
+    if(i%7==0){
+        console.log(i);
+    }
+    
+}
+    </script>

@@ -1,0 +1,22 @@
+<script>
+    // : A program that reads two numbers, if the remainder of dividing each number by another number is zero, displays "yes" and otherwise "no"
+    let num1=parseInt(prompt("enter number 1"));
+    let num2=parseInt(prompt("enter number 2 "));
+    if(num1>num2){
+        if(num1%num2==0){
+            console.log(`${num1}%${num2}=0`);
+        }
+        else{
+            console.log(`${num1}%${num2}!=0`);
+        }
+    }
+    if(num2>num1){
+        if(num2%num1==0){
+            console.log(`${num2}%${num1}=0`);
+        }
+        else{
+            console.log(`${num2}%${num1}!=0`);
+        }
+    }
+    
+</script>
