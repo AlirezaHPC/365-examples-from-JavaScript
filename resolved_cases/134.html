@@ -1,0 +1,15 @@
+<script>
+    // A program that receives a number  displays their month equivalents.
+    //  If the number entered is outside the range of 1 to 12, show message).
+    //  In this program, month is a number whose equivalent month must be specified.
+
+    let month=["january","february","march","april","may","june","july","august","september","october","november","december"];
+    let number=parseInt(prompt("enter number"));
+    console.log(String(month));
+    if(1<=number<=12){
+        console.log(month[number-1]);
+    }
+    else{
+        console.log("invalid input")
+    }
+</script>
