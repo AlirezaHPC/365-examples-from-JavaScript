@@ -1,0 +1,24 @@
+<script>
+//     An organization intends to add x percent to its employees' salaries. Method that coefficient
+// Receives an increase in the employee's current salary and returns the new salary.
+// A program that uses this method for n employees
+
+let count=parseInt(prompt("enter count of employees"));
+let increase,salary;
+let Mincrease=(increase,salary)=>{
+    let newSalary=parseInt((increase*salary)/100);
+
+    return newSalary;
+}
+
+for(let i=1;i<=count;i++){
+    increase=parseInt(prompt(`enter  increase in the employee's ${i} current salary`));
+ salary=parseInt(prompt(`enter employees' ${i} salaries `));
+console.log(`newsalary ${i} =`,Mincrease(increase,salary));
+}
+
+
+
+
+
+</script>
