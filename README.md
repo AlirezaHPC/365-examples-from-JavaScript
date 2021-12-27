@@ -313,13 +313,12 @@ Note: Set the smallest number above this place value
 133: Write a program where the user enters the number of students in the class, then determines that he or she would like the students to be divided into groups.
 A program that says how many groups of n we can create and prints the rest of the students
 
-134: A program that receives a number of numbers displays their month equivalents. If the number entered is outside the range of 1 to 12, the program ends). In this program, month is a number whose equivalent month must be specified.
+134: A program that receives a number displays their month equivalents. If the number entered is outside the range of 1 to 12,show message). In this program, month is a number whose equivalent month must be specified.
 
 135: A program that reads two numbers, if the remainder of dividing each number by another number is zero, displays "yes" and otherwise "no"
 136: The program that reads n, in addition to displaying the following expression, also displays the result of the expression:
 The result of the expression = 1 + 2 + 3 +… + n
-
-136: A program that reads the number n displays all the multiples of 7 below n
+B: A program that reads the number n displays all the multiples of 7 below n
 137: The program that reads the number n displays all the multiples of 7 below n that none of the digits are 7.
 138: A program that reads the number n and then reads another number k and displays the product of a number less than or equal to the number n multiplied by the number k
 139: The method that receives two numbers as a parameter determines the first few numbers between
@@ -342,7 +341,7 @@ Be equal to itself (.
 144: A program that reads the base and height of a triangle calculates the area of a triangle using two methods of the same name. The area of a triangle is equal to the rule multiplied by half the height. In addition, height and rule can be two integers or two decimal numbers.
 
 
-145: A program that reads the length and width of a rectangle calculates the area of a rectangle using two methods of the same name.
+145: A program that reads the length and width of a rectangle calculates the area of a rectangle using method
 
 146: A program that reads the length of a square calculates the area of a square using a method.
   147: A program that reads the radius of a circle calculates the area of a circle using a method.
@@ -355,7 +354,7 @@ Be equal to itself (.
 If three numbers do not form a triangle, return zero.
 If three numbers form a right triangle, return one.
 If three numbers form an equilateral triangle, return the number 2.
-If three numbers form an equilateral triangle, return the number 4.
+If three numbers form an equilateral triangle, return the number 3
 Otherwise it returns the number -0.
 
 
