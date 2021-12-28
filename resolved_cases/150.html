@@ -1,0 +1,16 @@
+<script>
+    // Programs that read the numbers n and b convert the number n from base 10 to base b (note that base b is less than 10)
+    let n=parseInt(prompt("enter number please:"));
+    let b=parseInt(prompt("enter base to convert"));
+    let digit,array=[];
+    let i=0;
+    while(n>0){
+        digit=parseInt(n%b);
+        array[i]=digit;
+        i++;
+        n=parseInt(n/b);
+    }
+    console.log(`number=${n}      base=${b}`);
+    array.reverse();
+    console.log(`${String(array)}`);
+</script>
