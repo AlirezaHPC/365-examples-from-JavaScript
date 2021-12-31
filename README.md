@@ -375,7 +375,7 @@ Otherwise it returns the number -0.
 156: Displays a program that reads a number and calculates it using the multiplication method of digits above 5.
 157: Returns and displays a program that receives a person's age in years, months, and days, converts it to days, hours, minutes, and seconds by methods (365 days per year and 30 days per month).
 158: The program that receives the year determines whether it is a leap or not?
-159: A program that calculates and prints the largest divisor of two numbers using a recursive method.
+159: A program that calculates and prints the largest divisor of two numbers using a method.
 
 
 
@@ -389,7 +389,7 @@ All three-digit numbers where the sum of the first and second digits is less tha
 161: Parking costs at least $ 2 for a stop for up to three hours and $ 0.5 for each additional hour or part of an extra 3 hours. The maximum amount payable for each 24-hour course is $ 10. Assume that no car stops for more than 24 hours. A program that receives the parking time for customers and prints the total amount paid by the customer. The user for each customer hours and
 Enter the stop minute. The method calculates and returns the amount paid.
 
-162: A program that reads a number from the input and counts down that number to one by a recursive method (prints the numbers in the output).
+162: A program that reads a number from the input and counts down that number to one by a method (prints the numbers in the output).
 
 163: A program that reads three numbers from the input and calculates and displays their average by a method.
 
@@ -405,15 +405,15 @@ Enter the stop minute. The method calculates and returns the amount paid.
 
 
 
-167: A program that reads a number from the input and counts that number to one by a recursive method (prints the numbers in the output).
+167: Define the Math class and rewrite the pow method.
+
+
 168: A program that reads two numbers from the input and sends them to a method. The method calculates the difference between the product and the product of their division, returns it to the program, and displays the original program of this result.
 
 
 
 169: A program that reads two numbers from the input and sends them to a method. The method calculates the difference between the sum and the sum of them, returns it to the program, and displays the original program of this result.
-170: A program that reads a digit from the input prints all the optimal integers 0 and 011, so that the received digit in the numbers A to 011, there is a square and a cube of these numbers. For example, if we read the number 1 from the input, the number 13 is one of the numbers. The number one is true in that condition because there are 13, 169, 2197.
-
- Use a method to detect the presence of a digit in a number, square and number cube (.
+170: : Write programs that receive a string and replace the "a" character with the "@" character.
 
 171: Rate per cubic meter of water according to consumption rate such as consumption
 It is different at home, commercial or industrial. A program that measures the amount of water consumption per cubic meter and type
@@ -424,7 +424,6 @@ If the type of consumption of the letter I or i is entered (industrial consumpti
 1000 cubic meters of water is 750 Rials and for each cubic meter more than that, 0.00025 is added to the bill amount.
 If the Egyptian type E or e is entered (commercial consumption), if Egypt water up to two million
 Cubic meters, for every 1500 cubic meters of Egypt 600 Rials and for every cubic meter more than 0.00004 will be added to the bill.
-To end the program, the user enters a negative number instead of consuming water.
 172: A program that reads a day of the year determines what season, month and day of the year it is. For example, the 55th day of the year, the spring season, is May and the fourth day of this month.
 
 
@@ -598,7 +597,7 @@ Samira Abdi is a programmer fluent in JavaScript.
 
 235: Define a function of type IIFES that receives a number from the input and displays even numbers before it.
 236: Define a function of type IIFES that displays numbers from 0 to 100.
-237: Write a program that receives information about three students, including first and last name, age, place of residence, and field of study (map), and then check for the city key in all three maps.
+237: Write a program that receives information about one students, including first and last name, age, place of residence, and field of study (map), and then check for the city key in map.
 
 238: Write a program that has a function that receives and sets the name of 15 students, then receives a name from the input and checks if the name is in the namespace.
 239: Define a function of Arrow Function that receives a number from the input and if there is a number 5 in this number, replace it with 2 and return the resulting number.
@@ -611,10 +610,10 @@ Samira Abdi is a programmer fluent in JavaScript.
 The view function receives an index and displays the corresponding element
 The all function returns all elements of the array.
 The length function returns the number of array elements
-243: Print the phrase "Hello World" in five ways to print output in JavaScript
+243: Print the phrase "Hello World" in four ways to print output in JavaScript
 244: Write a program that performs multiplication and addition on two values (define variables as underscore)
 245: Write a program that subtracts and divides two input values (define variables as pascalCase)
-246: Write a program that joins two strings with the concat method (define variables as hyphens)
+246: Write a program that joins two strings with the concat method 
 
 
 247: Write a program that defines an object called writer and takes the attributes, including name, bookname, and year of publication, from the input, and this object has a function that displays all its elements in one line.
@@ -624,6 +623,4 @@ The length function returns the number of array elements
 250: Define a function to print the page load phrase when the page is loaded
 251: Define a function to print when the mouse pointer moves away from the button
 252: Print the phrase "samira abdi" is programmer.
-253: Write programs that receive a string and replace the "a" character with the "@" character.
-254: Define the Math class and rewrite the pow method.
 
