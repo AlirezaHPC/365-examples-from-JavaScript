@@ -1,0 +1,17 @@
+<script>
+//     : Write a program that defines an object called writer and takes the attributes, including name, bookname, and year of publication,
+//      from the input, and this object has a function that displays all its elements in one line.
+
+const writer={
+    "name" : " ",
+    "bookname": " ",
+    "yeaPublication" : " ",
+    "displays":function(){
+        console.log(`writer name=>"${this.name}",bookName=>"${this.bookname}",year of publication=>"${this.yeaPublication}"`);
+    }
+}
+writer.name=prompt("what is writer name?");
+writer.bookname=prompt("what is book name?");
+writer.yeaPublication=prompt("what is year of publication this book");
+writer.displays();
+// </script>
