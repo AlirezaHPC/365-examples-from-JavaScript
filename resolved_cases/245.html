@@ -1,0 +1,17 @@
+<script>
+    // Write a program that subtracts and divides two input values (define variables as pascalCase)
+
+    const Num1=parseInt(prompt("enter number one:"));
+    const Num2=parseInt(prompt("enter number two:"));
+    let divides=0,subtracts=0;
+    if(Num1>Num2){
+        divides=parseInt(Num1/Num2);
+        subtracts=Num1-Num2;
+    }
+    else{
+        divides=parseInt(Num2/Num1);
+        subtracts=Num2-Num1;
+    }  
+    
+    console.log(`num1=${Num1}   _________ num2=${Num2}   _________divides=${divides} __________subtracts=${subtracts}`);
+</script>
