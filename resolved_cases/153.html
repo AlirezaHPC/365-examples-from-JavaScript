@@ -1,0 +1,12 @@
+<script>
+    // A program that receives box information such as length, width, and height as a parameter,
+    //  calculates and displays the volume of the box using a method. The volume of the box is equal to the length × width × height.
+    const width=parseInt(prompt("enter width of box:"));
+    const height=parseInt(prompt("enter height of box:"))
+    const length=parseInt(prompt("enter length of box:"));
+     function volumeBox(width ,height,length ){
+         return width*height*length;
+     }
+
+     console.log(`length=${length} __ width=${width}___height=${height}_____are`,volumeBox(width,height,length));
+</script>
