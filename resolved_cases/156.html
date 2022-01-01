@@ -1,0 +1,17 @@
+<script>
+    // : Displays a program that reads a number and calculates it using the multiplication method of digits above 5.
+    const number=parseInt(prompt("enter a number"));
+    function multiDigitsAbove5(num){
+        let digit=0;
+        let multi=1;
+        while(num>0){
+            digit=parseInt(num%10);
+            if(digit>5){
+                multi=multi*digit;
+            }
+            num=parseInt(num/10);
+        }
+        return multi;
+    }
+    console.log("number=",number,"  and the multiplication method of digits above 5.=>",multiDigitsAbove5(number));
+</script>
