@@ -1,0 +1,17 @@
+<script>
+    // : A program that calculates and prints the largest divisor of two numbers using a method.
+    let x=parseInt(prompt("enter  number one"));
+    let y=parseInt(prompt("enter number two"));
+    function gcd_two_numbers(x,y){
+        x=Math.abs(x);
+        y=Math.abs(y);
+        while(y){
+            var t=y;
+            y=x%y;
+            x=t;
+        }
+        return x;
+    }
+console.log(gcd_two_numbers(x,y))
+
+</script>
