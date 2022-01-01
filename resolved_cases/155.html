@@ -1,0 +1,17 @@
+<script>
+// A program that reads a number retrieves and displays even numbers using a multiplication method.
+let number=parseInt(prompt("enter a number:"));
+function multuEvenDigit(num){
+    let digit=0;
+    let multi=1;
+    while(num>0){
+        digit=parseInt(num%10);
+        if(digit%2==0){
+            multi=multi*digit;
+        }
+        num=parseInt(num/10);
+    }
+    return multi;
+}
+console.log("number=",number,"  and multiplication even digits=>",multuEvenDigit(number));
+</script>
