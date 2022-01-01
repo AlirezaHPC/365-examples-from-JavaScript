@@ -1,0 +1,31 @@
+<script>
+    // : Returns and displays a program that receives a person's age in years, months, and days, converts it to days,
+    //  hours, minutes, and seconds by methods
+    //  (365 days per year and 30 days per month).
+    let year=parseInt(prompt("Enter your year of birth"));
+    let month=parseInt(prompt("Enter your month of birth"));
+    let day=parseInt(prompt("Enter your day of birth"));
+   
+const date2=new Date(year,month,day);
+console.log("your birthday is ",date2);
+function hours(year,month,day){
+    let hours=(parseInt((year*365)*24 )  + parseInt(month*30*24)+day*24);
+    return hours;
+}
+
+function minutes(year,month,day){
+    let minutes=(parseInt((year*365)*24*60 )  + parseInt(month*30*24*60)+day*24*60);
+    return minutes;
+}
+
+function seconds(year,month,day){
+    let seconds=(parseInt((year*365)*24*60*60 )  + parseInt(month*30*24*60*60)+day*24*60*60);
+    return seconds;
+}
+
+
+console.log("your life  in hours",hours(year,month,day));
+console.log("your life  in  minutes",minutes(year,month,day));
+console.log("your life  in  seconds",seconds(year,month,day));
+
+</script>
