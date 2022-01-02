@@ -7,7 +7,104 @@
 //  All four-digit numbers that are symmetrical to each other, for example 2442. That is, 
 //  the first digit is equal to the fourth digit and the second digit is equal to the third digit.
 
+// Print all two-digit numbers whose first and second digits are equal.
+function equalTwoDigit()
+{
+    for(let i=10;i<=99;i++){
+        let n=i;
+        let digit=0;
+        let digit2=0;
+        while(n>0){
+digit=parseInt(n%10);
+n=parseInt(n/10);
+digit2=parseInt(n%10);
+if(digit==digit2){
+    console.log(i);
+}
+        }
+    }
+
+}
 
 
+// Print all three-digit numbers with zero digits.
 
+function threeDigitZero()
+{
+    for(let i=100;i<=999;i++){
+        let n=i;
+        let digit=0;
+        let digit2=0;
+       let  digit3=0;
+        while(n>0){
+digit=parseInt(n%10);
+n=parseInt(n/10);
+digit2=parseInt(n%10);
+n=parseInt(n%10);
+digit3=parseInt(n%10);}
+
+
+    if(digit==0){
+    console.log(i);
+}
+     }
+    }
+
+
+    // All three-digit numbers where the sum of the first and second digits is less than the third digit.
+
+    function threeDigitSum()
+{
+  let digit1,n,digit2,digit3;
+    for(let i=100;i<=999;i++){
+        n=i;
+        digit=0;
+        digit2=0;
+       digit3=0;
+       
+digit3=parseInt(n%10);
+n=parseInt(n/10);
+digit2=parseInt(n%10);
+digit1=parseInt(n/10);
+
+//console.log(digit);
+
+    if((digit1+digit2)<digit3){
+    console.log(i);
+}
+     }
+    }
+
+
+    // the first digit is equal to the fourth digit and the second digit is equal to the third digit.
+
+
+    function reversequal()
+{
+    let n,digit,revers;
+    for(let i=1000;i<=9999;i++){
+         n=i;
+         digit=0;
+       revers=0;
+        while(n>0){
+digit=parseInt(n%10);
+revers=(revers*10)+digit;
+n=parseInt(n/10);
+}
+
+
+    if(revers==i){
+    console.log(i);
+}
+     }
+    }
+
+
+equalTwoDigit();
+console.log("////////////////////////");
+threeDigitZero();
+console.log("////////////////////////");
+threeDigitSum();
+console.log("////////////////////////");
+reversequal()
 </script>
