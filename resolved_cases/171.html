@@ -1,0 +1,59 @@
+<script>
+//     Rate per cubic meter of water according to consumption rate such as consumption
+// It is different at home, commercial or industrial. A program that measures the amount of water consumption per cubic meter and type
+// Reads the consumption of a number of subscribers, calculates and prints their water bill. To calculate water consumption, 
+// the following method is used:
+// If the type of Egypt is the letter H or h (home Egypt), 500 for every 166 cubic meters of consumption
+// Rials are received.
+// If the type of consumption of the letter I or i is entered (industrial consumption up to four million cubic meters), for each
+// 1000 cubic meters of water is 750 Rials and for each cubic meter more than that, 0.00025 is added to the bill amount.
+// If the Egyptian type E or e is entered (commercial consumption), if Egypt water up to two million
+// Cubic meters, for every 1500 cubic meters of Egypt 600 Rials and for every cubic meter more than 0.00004 will be added to the bill.
+
+
+const rateWaterAccording={
+    "typeConsumption":"",
+    "amountWaterConsumption":"",
+    "bill":function(){
+        let count=0;
+        let bill=0;
+        let typeConsumption=this.typeConsumption;
+        switch(typeConsumption){
+            case "H":
+            case "h":
+            count=parseInt(this.amountWaterConsumption/166);
+            bill=count*500;
+            break;
+            case "I":
+            case "i":
+                
+            count=parseInt(this.amountWaterConsumption/1000);
+            bill=count*750;
+            if(this.amountWaterConsumption>1000){
+                let add =(bill*0.00025)/100;
+                bill=bill+add;
+            }
+            break;
+            case "E":
+            case "e":
+            count=parseInt(this.amountWaterConsumption/1500);
+            bill=count*750;
+            if(this.amountWaterConsumption>1500){
+                let add =(bill*0.00004)/100;
+                bill=bill+add;
+            }
+            break;
+            default:
+                console.log("invalid input!")
+
+        }
+        return bill;
+
+    }
+}
+rateWaterAccording.amountWaterConsumption=parseInt(prompt("enter the amount of water consumption per cubic meter"));
+rateWaterAccording.typeConsumption=parseInt(prompt("enter the amount of typeConsumption"));
+console.log("bill=>",rateWaterAccording.bill());
+
+
+</script>
