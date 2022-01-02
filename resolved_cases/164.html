@@ -1,0 +1,18 @@
+<script>
+    // : A program that reads three numbers from the input and calculates and displays the largest of them by a method.
+    const Max={
+        "num1":0,
+        "num2":0,
+        "num3":0,
+        "Max":function(){
+         let Max=Math.max(this.num1,this.num2,this.num3);
+            return Max;
+        }
+    }
+
+    Max.num1=parseInt(prompt("enter number1:"));
+    Max.num2=parseInt(prompt("enter number 2:"));
+    Max.num3=parseInt(prompt("enter number3:"));
+console.log(Max.Max());
+console.log(`num1=${Max.num1}_______num2=${Max.num2}_____num2=${Max.num3}_________Max=>`,Max.Max());
+</script>
