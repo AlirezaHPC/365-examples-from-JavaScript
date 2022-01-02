@@ -1,0 +1,39 @@
+<script>
+    // A program that reads two numbers from the input and sends them to a method. 
+    // The method calculates the difference between the product and the product of their division,
+    //  returns it to the program, and displays the original program of this result.
+    const calculator={
+        "num1": 0,
+        "num2":0,
+        "difference":function(){
+          
+            if(this.num1>this.num2){
+                return (this.num1-this.num2);
+            }
+            else{
+                return (this.num2-this.num1);
+            }
+           
+        },
+        "division":function(){
+          
+            if(this.num1>this.num2){
+               return parseInt((this.num1/this.num2));
+            }
+            else{
+                return parseInt((this.num2/this.num1));
+            }
+           },
+            "multi":function(){
+                return this.num1*this.num2;
+            }
+
+
+    }
+    calculator.num1=parseInt(prompt("enter number1:"));
+    calculator.num2=parseInt(prompt("enter number 2:"));
+  console.log(`${calculator.num1} - ${calculator.num2}==>`,  calculator.difference());
+  console.log(`${calculator.num1} / ${calculator.num2}==>`,calculator.division());
+  console.log(`${calculator.num1} * ${  calculator.num2}==>`,calculator.multi());
+
+</script>

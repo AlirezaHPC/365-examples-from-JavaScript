@@ -1,0 +1,36 @@
+<script>
+    // Define the Math class and rewrite the pow method.
+    class math{
+        #x;
+        #y;
+        get X(){
+            return this.#x;
+        }
+        set X(value){
+            this.#x=value;
+        }
+        get Y(){
+            return this.#y;
+        }
+        set Y(value){
+            this.#y=value;
+        }
+        constructor(x,y){
+            this.#x=x;
+            this.#y=y;
+        }
+        pow(){
+            let multi=1;
+            for( let i=1 ; i<=this.#y;i++){
+                multi=multi*this.#x;
+
+
+            }
+            return multi;
+        }
+
+    }
+let math1=new math(2,2);
+console.log(math1.pow());
+
+</script>
