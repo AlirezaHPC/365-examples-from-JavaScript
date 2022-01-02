@@ -1,0 +1,17 @@
+<script>
+    // : A program that reads three numbers from the input and calculates and displays their average by a method.
+    const average={
+        "num1":0,
+        "num2":0,
+        "num3":0,
+        "average":function(){
+            let average =parseInt((this.num1+this.num2+this.num3)/3);
+            return average;
+        }
+    }
+
+    average.num1=parseInt(prompt("enter number1:"));
+    average.num2=parseInt(prompt("enter number 2:"));
+    average.num3=parseInt(prompt("enter number3:"));
+console.log(`num1=${average.num1}_______num2=${average.num2}_____num2=${average.num3}_________average=>`,average.average());
+</script>
