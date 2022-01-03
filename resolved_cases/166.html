@@ -1,31 +1,25 @@
 <script>
 //    A program that reads three numbers from the input and calculates and displays their middle number by a method.
-    const middle={
-        "num1":0,
-        "num2":0,
-        "num3":0,
-        "middle":function(){
-            let temp;
-         let Min=Math.min(this.num1,this.num2,this.num3);
-         let Max=Math.max(this.num1,this.num2,this.num3);
-         let middle;
-      for(let key in middle){
-          temp=middle[key]
-        if( temp !=Max){
-            if( temp !=Min){
-                middle=temp
+   const myArr=[];
+   for(let i=0;i<3;i++){
+myArr[i]=parseInt(prompt(   `enter number ${i+1}:`));
+   }
 
-            }
-        } 
-      }
+         let Min=Max=middle=myArr[0];
+         for(let i=0;i<3;i++){
+if(myArr[i]>Max){
+    Min=Max;
+    Max=myArr[i]
+}
+else if(myArr[i]<Min){
+    middle=myArr[i];
+}
+else{
+    Min=myArr[i]
+}
+         }
+      
 
-            return middle;
-        }
-    }
 
-    middle.num1=parseInt(prompt("enter number1:"));
-    middle.num2=parseInt(prompt("enter number 2:"));
-    middle.num3=parseInt(prompt("enter number3:"));
-console.log(middle.middle());
-//console.log(`num1=${middle.num1}_______num2=${middle.num2}_____num2=${middle.num3}_________Min=>`,middle.middle());
+console.log(`numbers=${myArr}_______max=${Max}_____min=${Min}_________middle=>${middle}`);
 </script>
