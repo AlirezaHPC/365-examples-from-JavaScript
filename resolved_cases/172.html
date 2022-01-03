@@ -1,0 +1,60 @@
+<script>
+    // A program that reads a day of the year determines what season, month and day of the year it is. For example,
+    //  the 55th day of the year, the spring season, is May and the fourth day of this month.
+
+    let num=parseInt(prompt("enter day of the year"));
+    let month=0,day=0;
+    if(num<186){
+     day=parseInt(num%31);
+     month=parseInt(num/31);
+}
+else{
+    num=num-186;
+    day=parseInt(num%30);
+     month=parseInt(num/30);
+month=month+6;
+}
+// console.log(month);
+// console.log(day)
+switch(month){
+    case 0:
+        console.log(`${day} Farvardin`);
+    break;
+     case 1:
+            console.log(`${day} Ordibehesht`);
+    break;
+    case 2:
+                console.log(`${day} Khordad`);
+    break;
+    case 3:
+                    console.log(`${day} Tir`)
+    break;
+    case 4:
+                    console.log(`${day} Mordad`)
+    break;
+    case 5:
+                    console.log(`${day} Shahrivar`)
+    break;
+    case 6:
+                    console.log(`${day} Mehr`)
+    break;
+    case 7:
+                    console.log(`${day} Aban`)
+    break;
+    case 8:
+                    console.log(`${day} Azar`)
+    break;
+    case 9:
+                    console.log(`${day} Dey`)
+    break;
+    case 10:
+                    console.log(`${day} Bahman`)
+    break;
+    case 11:
+                    console.log(`${day} Esfand`)
+    break;
+
+
+}
+
+</script>
