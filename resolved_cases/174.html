@@ -1,0 +1,39 @@
+<script>
+//     A program that reads two integers checks if a number is a power of a number
+// Is it different or not?
+const num1=parseInt(prompt("enter number 1"));
+const num2=parseInt(prompt("enter number 2"));
+let max=0,min=0,digit=0,counter=0,max1,min1;
+if(num1>num2){
+    max=num1;
+    min=num2;
+    max1=num1;
+    min1=num2;
+}
+else{
+   max=num2;
+    min=num1;
+    max1=num2;
+    min1=num1;
+}
+while(max>0){
+    digit=parseInt(max%min);
+    
+   
+    if(digit>0){
+        counter++;
+    }
+    max=parseInt(max/min);
+
+}
+if(counter===1){
+    console.log(`${max1} is a power of a ${min1}}`);
+
+}
+else{
+    console.log(`${max1} is Not a power of a ${min1}`);
+
+}
+
+
+</script>
