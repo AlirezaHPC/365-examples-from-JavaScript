@@ -413,7 +413,7 @@ Enter the stop minute. The method calculates and returns the amount paid.
 
 
 169: A program that reads two numbers from the input and sends them to a method. The method calculates the difference between the sum and the sum of them, returns it to the program, and displays the original program of this result.
-170: : Write programs that receive a string and replace the "a" character with the "@" character.
+170: Write programs that receive a string and replace the "a" character with the "@" character.
 
 171: Rate per cubic meter of water according to consumption rate such as consumption
 It is different at home, commercial or industrial. A program that measures the amount of water consumption per cubic meter and type
@@ -623,4 +623,50 @@ The length function returns the number of array elements
 250: Define a function to print the page load phrase when the page is loaded
 251: Define a function to print when the mouse pointer moves away from the button
 252: Print the phrase "samira abdi" is programmer.
+
+253: Define a function that calculates the circumference of a circle and represents it by a callback.
+
+254: Define a function that calculates the perimeter of a rectangle and represents it by a callback.
+
+
+255: Define a function that calculates the sum of even digits of the input number.
+Checking the evenness of number digits is done by the callback function.
+
+
+256: Define a function that reads a number from Verdi and checks that it is even or odd, if it was an odd number, calculates the sum of its digits by callback number one, and if it was an even number, calculates the sum of its digits by callback number two.
+257: Write a program that has one function and two callbacks. Receive a number by the function and display integers smaller than it by callback and prime numbers smaller than it by the second callback.
+
+
+258: Write a function that takes N as an argument and examines whether it is prime or not. The output of this function is displayed by a callback.
+
+
+259: Write a function that takes X, Y as an argument and gets the result (X ** Y), a callback specifies whether the output is even or odd?
+260: Write a function that reads 5 numbers from the input and displays the last number to the first number with a callback.
+
+261: Define a function that reads 5 numbers from the last number to the first number, this function should be executed after 3 seconds.
+262: Write a program that refreshes the page automatically.
+263: Define a function that displays its name one day a week, this function should be executed after 5 seconds.
+264: Write a function that displays the phrase "Welcome to our site" every 3 seconds.
+
+265: Define a function that prints time in output once every 3 seconds.
+
+266: Define a function to load a file.
+267: Function that reads 10 numbers from Verdi and prints the third largest number by one callback, the result of the callback function is printed after three seconds.
+
+268: Define a function that receives a number from the input every 4 seconds and displays the output by a callback.
+
+269: Write a program that receives a number and determines by a callback whether the input number is even or odd?
+270: Write a function that receives 3 numbers in 3 seconds interval from the input and displays the numbers regularly by a callback.
+271: Define a class that receives a number from the input and uses three methods to say that the following are 2, 3, and 5, right?
+272: Define a class that receives a number from input and has different methods such as identifying even or odd
+Recognize being a prime number and print it using a letter equivalent method.
+273: Define a class that receives a number from Woody and converts and displays it to any user base.
+
+
+274: Define a class to receive a string and define different methods of working with the string for this class.
+
+
+275: Create an object from the books and then print the book number and book name by scrolling.
+276: Create an object containing student names and book names, then use a method to look for a duplicate book name in the object and print it if there is one, after finding the duplicate element after 3 Print seconds.
+
 
