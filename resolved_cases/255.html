@@ -1,0 +1,33 @@
+<script>
+//     Define a function that calculates the sum of even digits of the input number.
+// Checking the evenness of number digits is done by the callback function.
+
+
+function SumEvenDigit(number,callback){
+    let digit=0,n=number,sum=0,flag="*";
+    while(n>0){
+        digit=parseInt(n%10);
+         flag=callback(digit)
+        
+         if(flag===true){
+             sum=sum+digit;
+         }
+         n=parseInt(n/10);
+    }
+    console.log(sum);
+}
+
+
+function Checking(num){
+    if(num%2==0){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
+}
+console.log(`the sum of even digits of the ${number}`);
+
+SumEvenDigit(number,Checking);
+</script>
