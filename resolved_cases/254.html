@@ -1,0 +1,23 @@
+<script>
+    // Define a function that calculates the perimeter of a rectangle and represents it by a callback.
+
+    const width=parseInt(prompt("enter rectangle width:"));
+    const length=parseInt(prompt("enter rectangle length:"));
+
+
+
+    function Displayer(result){
+        console.log(result);
+    }
+
+
+    function perimeter(width,length,callback){
+        const perim=(width+length)*2;
+        callback(perim);
+    }
+    
+   
+    console.log(`width="${width}"  and length="${length}"`);
+    console.log("perimeter=")
+    perimeter(width,length,Displayer);
+</script>
