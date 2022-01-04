@@ -1,0 +1,16 @@
+<script>
+    // Define a function that calculates the circumference of a circle and represents it by a callback.
+    function Displyer(result){
+        console.log(result);
+    }
+    function circumference(radus,callback){
+        const pi=3.14;
+        let circumference=(radus+radus)*pi;
+        callback(circumference);
+
+    }
+    let radus=parseInt(prompt("enter circle radus"));
+
+circumference(radus,Displyer);
+
+</script>
