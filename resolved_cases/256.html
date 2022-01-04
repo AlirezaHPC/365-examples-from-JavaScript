@@ -1,0 +1,47 @@
+<script>
+
+// Define a function that reads a number from Verdi and checks that it is even or odd, if it was an odd number, 
+// calculates the sum of its digits by callback number one, and if it was an even number,
+//  calculates the multi of its digits by callback number two
+const number=parseInt(prompt("Enter a number:"));
+    
+function Checking(num,callback1,callback2){
+    if(num%2==0){
+        return callback1(num);
+    }
+    else{
+        return callback2(num);
+    }
+    
+}
+
+
+function SumDigit(number){
+    let digit=0,n=number,sum=0,flag="*";
+    while(n>0){
+        digit=parseInt(n%10);
+         
+             sum=sum+digit;
+       
+         n=parseInt(n/10);
+    }
+    console.log(`the sum of even digits of the ${number}`);
+    console.log(sum);
+}
+
+
+function MultiDigit(number){
+    let digit=0,n=number,multi=0,flag="*";
+    while(n>0){
+        digit=parseInt(n%10);
+         
+             multi=multi*digit;
+       
+         n=parseInt(n/10);
+    }
+    console.log(`the multi of  digits of the ${number}`);
+    console.log(multi);
+}
+
+Checking(number,SumDigit,MultiDigit)
+</script>
