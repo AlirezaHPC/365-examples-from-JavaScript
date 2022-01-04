@@ -1,0 +1,34 @@
+<script>
+
+// Write a function that takes X, Y as an argument and gets the result
+//  (X ** Y), a callback specifies whether the output is even or odd?
+
+const x=parseInt(prompt("Enter a number 1:"));
+const y=parseInt(prompt("Enter a number 2:"));
+
+
+function Checking(result){
+    if(result%2==0){
+       console.log(`${result}=even`);
+    }
+    else{
+        console.log(`${result}=odd`);
+    }
+    
+}
+
+function pow(x,y,callback){
+    let result=1;
+    for( let i=1;i<=y;i++){
+        result=result*x;
+
+    }
+    callback(result);
+}
+
+
+
+pow(x,y,Checking);
+
+
+</script>
