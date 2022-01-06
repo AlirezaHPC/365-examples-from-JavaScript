@@ -1,0 +1,110 @@
+<script>
+//     Define a class that receives a number from input and has different methods such as identifying even or odd
+// Recognize being a prime number and print it using a letter equivalent method.
+
+class Check{
+    #num;
+    #count;
+    #n;
+    #i;
+    get I(){
+        return this.#i;
+    }
+    set I(value){
+        this.#i=value;
+    }
+    get Count(){
+        return this.#count;
+    }
+    set Count(value){
+        this.#count=value;
+    }
+    
+    get N(){
+        return this.#n;
+    }
+    set N(value){
+        this.#n=value;
+    }
+    
+    get Num(){
+        return this.#num;
+    }
+    set Num(value){
+        this.#num=value;
+    }
+    constructor(n){
+        this.#num=n;
+    }
+    check2(){
+            if(this.#num%2==0){
+                console.log(`${this.#num} is evevn`)
+            }}
+        check3(){
+            if(this.#num%3==0){
+                console.log(`${this.#num} divided into 3`)
+            }}
+        check5(){
+            if(this.#num%5==0){
+                console.log(`${this.#num} divided into 5`)
+            }
+        }
+        letter(){
+            switch(this.#num){
+                case 1:
+                    console.log("one");
+            break;
+           case 2:
+               console.log("two");
+            break;
+            case 3:
+               console.log("three");
+            break;
+            case 4:
+               console.log("four");
+            break;
+            case 5:
+               console.log("five");
+            break;
+            case 6:
+               console.log("six");
+            break;
+            case 7:
+               console.log("seven");
+            break;
+            case 8:
+               console.log("eight");
+            break;
+            case 9:
+               console.log("nine");
+            break;
+            case 10:
+               console.log("ten");
+            break;
+
+            }
+            }
+            prime(){
+             this.#count=0;
+             this.#n=this.#num;
+                 for(this.#i=0;this.#i<=this.#n;this.#i++){
+                     if(this.#n%this.#i==0){
+                         this.#count++
+                     }
+                 }
+                 if(this.#count==2){
+                     console.log(`${this.#num} is prime `)
+                 }
+            
+            }
+        }
+
+        let x=parseInt(prompt("enter a number:"));
+ const num=new Check(x);
+ num.check2();
+ num.check3();
+ num.check5();
+ num.prime();
+ num.letter();
+
+</script>

@@ -1,0 +1,43 @@
+<script>
+
+// Define a class that receives a number from the input and uses three methods to say that the following are 2, 3, and 5, right?
+    class Check{
+        #num;
+        get Num(){
+            return this.#num;
+        }
+        set Num(value){
+            this.#num=value;
+        }
+
+
+
+
+        constructor(num){
+            this.#num=num;
+
+        }
+        check2(){
+            if(this.#num%2==0){
+                console.log(`${this.#num} divided into 2`)
+            }}
+        check3(){
+            if(this.#num%3==0){
+                console.log(`${this.#num} divided into 3`)
+            }}
+        check5(){
+            if(this.#num%5==0){
+                console.log(`${this.#num} divided into 5`)
+            }
+        }
+    }
+
+
+let n=parseInt(prompt("enter a number:"));
+ const num=new Check(n);
+ num.check2();
+ num.check3();
+ num.check5();
+
+
+</script>
