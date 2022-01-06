@@ -1,0 +1,20 @@
+<script>
+    // Write a program that receives a number and determines by a callback whether the input number is even or odd?
+
+
+    function Num(callback){
+        const number=parseFloat(prompt("Enter a number:"));
+        callback(number);
+
+    }
+    function Check(num){
+        if(num%2==0){
+            console.log(    `${num} is even`);
+        }
+        else{
+            console.log(  `${num} is even`);
+        }
+
+    }
+    Num(Check);
+</script>
