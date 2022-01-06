@@ -1,0 +1,30 @@
+<script>
+//   Write a function that takes N as an argument and examines whether it is prime or not.
+//      The output of this function is displayed by a callback.
+const num=parseInt(prompt("enter a number:"));
+function prime(num,callback){
+    let i=1,count=0;
+        for(;i<=num;i++){
+            if(num%i==0){
+                count++;
+            }
+        }
+        if(count==2){
+            return Displayer(true);
+        }
+        else{
+            return Displayer(false);
+
+        }
+}
+function Displayer(flag){
+    if(flag==true){
+        console.log("the input number is prime");
+    }
+    else{
+        console.log("the input number is  Not prime");
+    }
+}
+
+prime(num,Displayer);
+</script>
