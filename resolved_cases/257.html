@@ -1,0 +1,50 @@
+<script>
+    // Write a program that has one function and two callbacks.
+    //  Receive a number by the function and display complete smaller
+    //   than it by callback and prime numbers smaller than it by the second callback.
+    let num=parseInt(prompt("enter a number: "));
+
+    function Check(num,callback1,callback2){
+       
+        callback1(num);
+        callback2(num);
+
+    }
+
+
+    function prime(num){
+        let i=1,count=0;
+        for(;i<=num;i++){
+            if(num%i==0){
+                count++;
+            }
+        }
+        if(count==2){
+            console.log(`${num} is  a prime number`)
+        }
+        else{
+            console.log(`${num} is not a  prime number`) 
+        }
+
+    }
+
+    function complete(num){
+        let i=1,sum=0;
+        for(;i<num;i++){
+            if(num%i==0){
+                sum=sum+i;
+            }
+        }
+        if(sum==num){
+            console.log(`${num} is  a complete number`)
+        }
+        else{
+            console.log(`${num} is not a  complete number`) 
+        }
+
+    }
+
+
+
+    Check(num,prime,complete);
+    </script>
