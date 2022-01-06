@@ -634,7 +634,7 @@ Checking the evenness of number digits is done by the callback function.
 
 
 256: Define a function that reads a number from Verdi and checks that it is even or odd, if it was an odd number, calculates the sum of its digits by callback number one, and if it was an even number, calculates the sum of its digits by callback number two.
-257: Write a program that has one function and two callbacks. Receive a number by the function and display integers smaller than it by callback and prime numbers smaller than it by the second callback.
+257: Write a program that has one function and two callbacks. Receive a number by the function and display complete smaller than it by callback and prime numbers smaller than it by the second callback.
 
 
 258: Write a function that takes N as an argument and examines whether it is prime or not. The output of this function is displayed by a callback.
