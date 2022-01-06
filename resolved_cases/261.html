@@ -1,0 +1,19 @@
+<script>
+    // Define a function that reads 5 numbers from the last number to the first number, 
+    // this function should be executed after 3 seconds.
+
+
+    function setArray(){
+        let array=[];
+        for(let i=0;i<5;i++){
+            array[i]=parseInt(prompt("enter a number:"));
+        }
+        for(let i=4;i>=0;i--){
+            console.log(`number ${i+1}`,array[i]);
+        }
+        
+
+    }
+
+    setTimeout(setArray, 3000);
+</script>
