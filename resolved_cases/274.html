@@ -1,0 +1,138 @@
+<script>
+
+//  Define a class to receive a string and define different methods of working with the string for this class.
+
+
+    class Str{
+        #text;
+#arrText;
+#i;
+#end;
+#start;
+#j;
+
+#replaceTxet;
+#searchTxet;
+#replaceArray;
+#searchArray;
+#result;
+
+        get ReplaceTxet(){
+            return this.#replaceTxet;
+        }
+        set ReplaceTxet(value){
+            this.#replaceTxet=value;
+        }
+        get Result(){
+            return this.#result;
+        }
+        set Result(value){
+            this.#result=value;
+        }
+        get ReplaceArray(){
+            return this.#replaceArray;
+        }
+        set ReplaceArray(value){
+            this.#replaceArray=value;
+        }
+
+
+
+
+
+        get SearchTxet(){
+            return this.#searchTxet;
+        }
+        set SearchTxet(value){
+            this.#searchTxet=value;
+        }
+        get SearchArray(){
+            return this.#searchArray;
+        }
+        set SearchArray(value){
+            this.#searchArray=value;
+        }
+
+
+
+        
+
+
+
+        get I(){
+            return this.#i;
+        }
+        set I(value){
+            this.#i=value;
+        }
+        get J(){
+            return this.#j;
+        }
+        set J(value){
+            this.#j=value;
+        }
+
+
+
+        get start(){
+            return this.#start;
+        }
+        set start(value){
+            this.#start=value;
+        }
+        get End(){
+            return this.#end;
+        }
+        set End(value){
+            this.#end=value;
+        }
+
+
+
+        get Text(){
+            return this.#text;
+        }
+        set Text(value){
+            this.#text=value;
+        }
+        get ArrText(){
+            return this.#arrText;
+        }
+        set ArrText(value){
+            this.#arrText=value;
+        }
+
+
+
+        constructor(text){
+            this.#text=text;
+        }
+        Cut(){
+            this.#arrText=[];
+            this.#j=0;
+            this.#start=parseInt(prompt("enter start for cut String"));
+            this.#end=parseInt(prompt("enter End for cut String"));
+            for ( this.#i = this.#start; this.#i < this.#end; this.#i++) {
+                this.ArrText[this.#j]=this.#text[this.#i];
+                this.#j++;
+            }
+            console.log(String(this.#arrText));
+
+        }
+        Replace(){
+
+            this.#searchTxet=prompt("enter replace text");
+            this.#replaceTxet=prompt("enter replace text");
+      
+      
+            this.#result=this.#text.replace(this.#searchTxet,this.#replaceTxet);
+            console.log(this.#result);
+    
+
+
+    }}
+    const text=prompt("enter a text");
+    const String1=new Str(text);
+   // String1.Cut();
+    String1.Replace();
+</script>
