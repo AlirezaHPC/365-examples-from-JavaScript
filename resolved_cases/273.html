@@ -1,0 +1,93 @@
+<script>
+    // : Define a class that receives a number from Woody and converts and displays it to any user base.
+    class Base{
+        #num;
+        #base;
+        #array;
+        #array1;
+        #n;
+        #index;
+        #length;
+        #i;
+        get Num(){
+            return this.#num;
+        }
+        set Num(value){
+this.#num=value;
+        }
+        get Length(){
+            return this.#length;
+        }
+        set Length(value){
+this.#length=value;
+        }
+        get Index(){
+            return this.#index;
+        }
+        set Index(value){
+this.#index=value;
+        }
+        get I(){
+            return this.#i;
+        }
+        set I(value){
+this.#i=value;
+        }
+        get N(){
+            return this.#n;
+        }
+        set N(value){
+this.#n=value;
+        }
+        get Base(){
+            return this.#base;
+        }
+        set Base(value){
+            this.#base=value;
+        }
+        get Array(){
+            return this.#array;
+        }
+        set Array(value){
+            this.#array=value;
+        }
+        get Array1(){
+            return this.#array1;
+        }
+        set Array1(value){
+            this.#array1=value;
+        }
+        constructor(num,base){
+            this.#num=num;
+            this.#base=base;
+        }
+convert(){
+    this.#array=[];
+    this.#array1=[];
+    this.#n=this.#num;
+    this.#index=0;
+    while(this.#n>0){
+        this.#array[this.#index]=parseInt(this.#n%this.#base);
+        this.#index++;
+    this.#n=parseInt(this.#n/this.#base);
+    }
+    this.#length=this.#index;
+   
+  
+    for (  this.#i= 0; this.#i < this.#length; this.#i++) {
+        this.#array1[this.#i]=this.#array[this.#index];
+        this.#index--;
+    
+}
+  console.log(this.#array1);
+
+    
+}
+
+    }
+
+
+    //const number=parseInt(prompt("enter a number:"));
+    const base1=new Base(16,2);
+    base1.convert();
+</script>
