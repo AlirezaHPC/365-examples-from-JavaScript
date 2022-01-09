@@ -139,11 +139,7 @@ Count the number of letters in a string
 
 
 53: Write a program that generates 10 random numbers and puts them in the ArrayList and displays the sum of the numbers.
-54: A program that creates a class for rational numbers and performs fractional calculations on it. The form and denominator are the fraction of the data members of the class, and the methods of the class are: addition, subtraction, multiplication, and division by two fractions.
-
-Familiarity with methods that return an object
-Familiarity with methods that have a reference type parameter
-
+54: Define a class that generates 10 random numbers and puts them in the ArrayList and displays the sum of the numbers.
 
 
 
@@ -275,8 +271,7 @@ Which household has the most expenses?
 115: Write a function that calculates the factorial of each number.
 116: Create an array with the names of the cities of Urmia, Sanandaj, Tabriz, Tehran and then print the elements of the array.
 117: Define two variables x = 10, y = 7 and then perform the following expressions using computational operators, put the result of each line in the result variable and display it.
-118: Create an associative array whose elements look like this, and then print the values of the array using the foreach loop.
-
+118: Create an array whose elements are even numbers less than 20 and then print the values of the array using the foreach loop.
 
 119: Write a program that reads two arrays that define n elements and are set by the user. Puts in these two arrays then performs the following operations
 A) The method finds the common elements of the two arrays
@@ -374,7 +369,7 @@ Otherwise it returns the number -0.
 
 156: Displays a program that reads a number and calculates it using the multiplication method of digits above 5.
 157: Returns and displays a program that receives a person's age in years, months, and days, converts it to days, hours, minutes, and seconds by methods (365 days per year and 30 days per month).
-158: The program that receives the year determines whether it is a leap or not?
+158: Write a program that takes a date from the user and says is it even or odd?
 159: A program that calculates and prints the largest divisor of two numbers using a method.
 
 
@@ -536,19 +531,7 @@ The print1 call prints inverted numbers.
 Input9 method: reads a number and puts it in an array.
 Convert method: Inverts the numbers in the array.
 Print9 method: Prints the elements in the array.
-207: A program that reads a number of inputs and puts them in an array. Then, it divides all the elements of the array by the middle element. If the middle element is zero, it divides by the element after the middle element. if this
-The element zero with is divided by the element before the element and the line. If this element
-With zero, they go to find an element other than zero and do the division
-Previous continues. If all array elements are zero, a good message is issued
-he does.
-Explanation: After placing the elements in the array, calculate the middle index,
-Finds the middle element. If it is not zero, it performs the division operation.
-This counter is added to the middle index so that if it is positive, the element after the middle element is examined and if it is negative, the element before the middle element is examined.
-
-Until the division operation is performed. If a non-zero element is found in the array, action
-Is called to divide all the elements of the array on that element. If all
-If the elements are zero, the program will send a good message.
-
+207: Define a class that joins two strings together and adds two numbers together.
 
 
 
