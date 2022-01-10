@@ -1,0 +1,44 @@
+<script>
+
+
+// : A program that generates a number of random numbers in an array 
+// (the number of random numbers is randomly selected) (array)
+// Ask the user to enter a number between 1 and 3, arrange the array if he enters 1, 
+// print the array inversely if he enters 2, and make a copy of the array if he enters 3
+
+const min=parseInt(prompt("enter min number:"));
+const max=parseInt(prompt("enter max number:"));
+const number=parseInt(prompt("enter a number:"));
+let arr=[];
+     let count=getRandInteger(1,10);
+
+    function getRandInteger(min,max){
+        return Math.floor(Math.random()*(max-min))+min;
+    }
+    for(let i=0;i<count;i++){
+arr[i]=getRandInteger(min,max);
+
+      }
+      console.log(String(arr));
+      switch(number){
+
+
+        case 1:
+            arr.sort(function(x,y){
+                return(x-y);
+            });
+            console.log("Sort Array",String(arr))
+            break;
+            case 2:
+                console.log("the array inversely ",String(arr.reverse()));
+                break;
+                case 3:
+                    let arrCopy=arr;
+                    console.log("a copy of the array",String(arrCopy));
+                break;
+                default:
+
+
+      }
+   
+</script>

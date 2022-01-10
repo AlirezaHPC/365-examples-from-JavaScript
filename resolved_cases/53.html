@@ -1,0 +1,21 @@
+<script>
+
+// Write a program that generates 10 random numbers and puts them in the ArrayList and displays the sum of the numbers.
+
+const min=parseInt(prompt("enter min number:"));
+const max=parseInt(prompt("enter max number:"));
+let arr=[];
+let sum=0;
+function getRandInteger(min,max){
+    return Math.floor(Math.random()*(max-min))+min
+}
+
+
+
+      for(let i=0;i<10;i++){
+arr[i]=getRandInteger(min,max);
+sum=sum+arr[i];
+      }
+      console.log(String(arr));
+      console.log("sum=",sum);
+</script>

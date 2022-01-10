@@ -1,0 +1,76 @@
+<script>
+    // : Define a class that generates 10 random numbers and puts them in the ArrayList and displays the sum of the numbers.
+    class ArrayRand{
+        #sum=0;
+        #arr;
+        #min;
+        #max;
+        #i;
+        #num;
+
+        
+        get Num(){
+            return this.#num;
+        }
+        set Num(value){
+            this.#num=value;
+        }
+                get I(){
+            return this.#i;
+        }
+        set I(value){
+            this.#i=value;
+        }
+
+        get Arr(){
+            return this.#arr;
+        }
+        set Arr(value){
+            this.#arr=value;
+        }
+        get Sum(){
+            return this.#sum;
+        }
+        set Sum(value){
+            this.#sum=value;
+        }
+  get Min(){
+            return this.#min;
+        }
+        set Min(value){
+            this.#min=value;
+        }
+        get Max(){
+            return this.#max;
+        }
+        set Max(value){
+            this.#max=value;
+        }
+        
+constructor(min,max){
+    this.#min=min;
+ this.#max=max;
+}
+
+
+ getRandInteger(){
+    return Math.floor(Math.random()*(this.#max-this.#min))+this.#min
+}
+
+
+makeArray(){
+      for(this.#i=0;this.#i<10;this.#i++){
+      // this.#num= (Math.floor(Math.random()*(this.#max-this.#min))+this.#min)
+this.#arr[this.#i]=  getRandInteger();
+this.#sum=this.#sum+this.#arr[this.#i];
+      }}
+    //   console.log(String(this.#arr));
+    //   console.log("sum=",this.#sum);
+    // }
+}
+
+    const min=parseInt(prompt("enter min number:"));
+ const max=parseInt(prompt("enter max number:"));
+    const array=new ArrayRand(min,max);
+    array.makeArray();
+</script>
