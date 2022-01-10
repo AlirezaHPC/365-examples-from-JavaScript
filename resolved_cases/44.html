@@ -1,0 +1,41 @@
+<script>
+//  Write a program that reads a number of numbers and puts them in an array. 
+//  Then divide all the elements of the array by the middle element. If the middle element is zero,
+//   divide by the element after the middle element. If this element is also zero,
+//    divide by the element before the middle element. 
+//   If this element is also zero, continue the previous process to find the non-zero element and perform divisions. 
+//  If all elements are zero, it will send the appropriate message. (Array)
+
+
+
+    let arr=[];
+    let arr2=[];
+    let length=8;
+   let middle=parseInt(length/2);
+    for (let i = 0; i < length; i++) {
+        arr[i]=parseFloat(prompt(`enter number ${i+1}`));
+
+        
+    }
+
+if(arr[middle]==0){
+    for(let i=middle;i<length;i++){
+        if(arr[middle]==0){
+            if(arr[i]!=0){
+                middle=i;
+            }
+            
+        }
+    }
+
+}
+  console.log("middle",middle)
+    console.log(String(arr));
+    for(let i=0;i<length;i++){
+       arr2[i]=parseInt(arr[i]/arr[middle]);
+    }
+
+
+console.log("array2",String(arr2));
+
+</script>
