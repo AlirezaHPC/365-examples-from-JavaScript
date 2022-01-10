@@ -1,0 +1,14 @@
+<script>
+//Write a program that calculates your age using the date object.
+    const year=parseInt(prompt("enter your birthday year:"));
+    const month=parseInt(prompt("enter your birthday month:"));
+    const day=parseInt(prompt("enter your birthday day:"));
+
+
+
+    const birthDate=new Date(year,month,day);
+    const date=new Date();
+    const age=date.getFullYear()-birthDate.getFullYear();
+    console.log(age);
+
+</script>
