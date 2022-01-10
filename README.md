@@ -653,3 +653,25 @@ Recognize being a prime number and print it using a letter equivalent method.
 276: Create an object containing student names and book names, then use a method to look for a duplicate book name in the object and print it if there is one, after finding the duplicate element after 3 Print seconds.
 
 
+
+
+277: Write a program that can use the JavaScript language to print the phrase hello world in tags h1 to h6.
+
+278: Write a program that receives a number from the input and prints an inaccurate message if the number is not even.
+
+279: Write a program that prints four chapters in groups.
+
+280: Write a program that stores the names of 10 students in an object and then prints the names in groups in the output.
+
+281: Write three functions for multiplication, division and addition of two numbers, and at the end print the execution time of these three functions.
+
+282: Create a stack trace for the text Hello Life Print.
+
+283: Write a program that receives a value from the input and generates an alert if the input value is not a number.
+
+284: Write a program that calculates your age using the date object.
+
+285: Write a program that takes the current date and prints the amount of minutes.
+
+286: Write a program that the user converts to any date the month turns into November
+
