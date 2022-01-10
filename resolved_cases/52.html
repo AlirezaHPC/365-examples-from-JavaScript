@@ -1,31 +1,36 @@
 <script>
+    // Write a program that receives 20 numbers and sorts them, then displays the number with
+    //  the most repetitions, along with the number of repetitions
 
+    let arr=[];
+    let length=12;
+    let count;
+    let max=1;
+    let index;
+    for (let i = 0; i < length; i++) {
+        arr[i]=parseFloat(prompt(`enter number ${i+1}`));
 
-
-// Write a program that receives lenght numbers and sorts them, then 
-// displays the number with the most repetitions, along with the number of repetitions
-
-var array_number=[];
-var lenght=5;
-var array_count=[]
-for (var i=0;i<lenght;i++){
-    array_number[i]=parseInt(prompt("enter a number for array :",i));
-}
-var number1=array_number.sort(function(x,y){
-    return x-y;
-});
-console.log("array",number1);
-var count=0;
-for(var i=0;i<lenght;i++){
-    count=0;
-    for (var j=0;j<lenght;j++){
         
-        if(number1[i]==number1[j]){
-            count++
+    }
 
+    arr.sort(function(x,y){
+        return x-y;
+    });
+    console.log(String(arr));
+    for(let i=0;i<length;i++){
+        count=0;
+        for(let j=0;j<length;j++){
+            if(arr[i]==arr[j]){
+                count++;
+            }
+            if(count>max){
+                max=count;
+                index=i;
+            }
         }
-       
-    } console.log("number=",number1[i],"count repeat in array is=",count)
-}
+    }
+
+console.log(" number of repetitions",max);
+console.log("most repetitions=",arr[index]);
 
 </script>
