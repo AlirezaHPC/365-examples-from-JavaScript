@@ -1,0 +1,21 @@
+<html>
+    <!--Define a function to print when the mouse pointer moves away from the button.-->
+    <head>
+
+    </head>
+    <body >
+
+
+     <button onmouseover="changeText() "  onmouseout="changeText2()" id="btn1">click on this button</button>
+        <script>
+
+            function changeText(){
+               document.getElementById("btn1").innerHTML="Mouse pointer floats on the button";
+            }
+            function changeText2(){
+               document.getElementById("btn1").innerHTML="moves away from the button";
+            }
+        
+        </script>
+    </body>
+</html>
