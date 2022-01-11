@@ -675,3 +675,35 @@ Recognize being a prime number and print it using a letter equivalent method.
 
 286: Write a program that the user converts to any date the month turns into November
 
+287: Define eight variables and assign to each of them one of the values (null, undefined, and object, array, function, number, boolean string) and at the end print the type of each
+
+288: Write a program that receives a string and examines the existence of two strings in it
+
+289: Write a program that receives a long string and a student's name from the input. If the student's name is in the text, the appropriate message will be printed.
+
+290: Define two functions of the Declaration function and expression expressions functions that receive a string and check for the existence of a string in it.
+
+291: Write a self-call function that defines eight variables and assigns one of the values (null, undefined, and object, array, function, number, boolean string) to each, and print the type of each at the end.
+
+292: Define a function that accepts 10 numbers as input and prints the largest argument through the arguments object.
+
+293: Define an object that has a method and uses that method to print the total price of products.
+In the next object, enter the prices of the products, then print the total prices using the call method.
+
+294: Define a collider that prints the phrase hello world.
+
+
+295: Define a cluster that receives a string and prints it
+
+296: Define a cluster that adds a value to the counter each time the function is called and prints the counter.
+
+
+. 297: Define a cluster that receives a long string and a student's name from the input. If the student's name is in the text, the appropriate message will be printed. This program must support strict mode.
+
+
+298: Define an array with ten numeric elements, arrange the array, then scroll and print it using the for / of loop.
+
+299: Write programs that print letter equivalents of even numbers less than 20 using if / else.
+
+300: Write a program using a triple conditional operator that receives a number from the input and determines whether the input number is even or odd.
+
