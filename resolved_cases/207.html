@@ -1,0 +1,44 @@
+<script>
+    // Define a class that joins two strings together and adds two numbers together.
+    class joins{
+        #variable1;
+        #variable2;
+        get Var(){
+            return this.#variable1;
+        }
+        set Var(value){
+            this.#variable1=value;
+        }
+        get Var2(){
+            return this.#variable2;
+        }
+        set Var2(value){
+            this.#variable2=value;
+        }
+        constructor (v1,v2){
+            this.#variable1=v1;
+            this.#variable2=v2;
+
+        }
+        join(){
+            console.log(`${this.#variable1} + ${this.#variable2} = ${this.#variable1+this.#variable2}`)
+
+        }
+
+    }
+    const type=prompt("string or number");
+    let v1,v2;
+    if(type=="string"){
+         v1=prompt("enter string1");
+        v2=prompt("enter string2");
+    }
+    else{
+       v1=parseInt(prompt("enter number1"));
+        v2=parseInt(prompt("enter number2"));
+    }
+
+
+
+    const result=new joins(v1,v2);
+    result.join();
+</script>
