@@ -1,0 +1,14 @@
+<script>
+    // Write a program that takes a date from the user and says is it even or odd?
+    const year=parseInt(prompt("enter year"));
+    const month=parseInt(prompt("enter month"));
+    const day=parseInt(prompt("enter day"));
+    const date=new Date(year,month,day);
+    console.log(date);
+    if(day%2==0){
+        console.log(" input date is even");
+    }
+    else{
+        console.log("input date is odd");
+    }
+</script>
