@@ -1,0 +1,32 @@
+<script>
+    // : Define two functions of the Declaration function and expression expressions functions that receive a 
+    // string and check for the existence of a string in it.
+
+
+    const string=prompt("enter a string");
+    const text=prompt("enter a text for search");
+    function Search(string,text){
+        const result=string.search(text);
+        if(result>-1){
+            console.log(true);
+        }
+        else{
+            console.log(false);
+        }
+    }
+
+
+
+     let search=function (string,text){
+        const result=string.search(text);
+        if(result>-1){
+            console.log(true);
+        }
+        else{
+            console.log(false);
+        }
+    }
+Search(string,text);
+search(string,text);
+    
+</script>

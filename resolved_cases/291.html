@@ -1,0 +1,17 @@
+<script>
+    // : Write a self-call function that defines eight variables and assigns one of the values 
+    // (null, undefined, and object, array, function, number, boolean string) 
+    // to each, and print the type of each at the end.
+    (
+        function(var1,var2,var3,var4,var5,var6,var7,var8){
+            console.log("var1 type",typeof(var1));
+    console.log("var2 type",typeof(var2));
+    console.log("var3 type",typeof(var3));
+    console.log("var4 type",typeof(var4));
+    console.log("var5 type",typeof(var5));
+    console.log("var6 type",typeof(var6));
+    console.log("var7 type",typeof(var7) );
+    console.log("var8 type",typeof(var8));
+        }
+    )(5,"h",undefined,null,true,function b(){},8,[8,9,8])
+</script>
