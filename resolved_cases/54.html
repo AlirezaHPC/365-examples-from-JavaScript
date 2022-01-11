@@ -2,7 +2,7 @@
     // : Define a class that generates 10 random numbers and puts them in the ArrayList and displays the sum of the numbers.
     class ArrayRand{
         #sum=0;
-        #arr;
+        #arr=[];
         #min;
         #max;
         #i;
@@ -53,24 +53,27 @@ constructor(min,max){
 }
 
 
- getRandInteger(){
-    return Math.floor(Math.random()*(this.#max-this.#min))+this.#min
-}
+
 
 
 makeArray(){
       for(this.#i=0;this.#i<10;this.#i++){
-      // this.#num= (Math.floor(Math.random()*(this.#max-this.#min))+this.#min)
-this.#arr[this.#i]=  getRandInteger();
+      
+this.#arr[this.#i]=Math.floor(Math.random()*(this.#max-this.#min))+this.#min;
 this.#sum=this.#sum+this.#arr[this.#i];
-      }}
-    //   console.log(String(this.#arr));
-    //   console.log("sum=",this.#sum);
+      }
+      console.log(this.#arr);
+       console.log("sum=",this.#sum);
     // }
-}
+}}
 
     const min=parseInt(prompt("enter min number:"));
  const max=parseInt(prompt("enter max number:"));
     const array=new ArrayRand(min,max);
     array.makeArray();
+
+
+
+
+//console.log(Math.floor(Math.random()*(10-8))+8);
 </script>
