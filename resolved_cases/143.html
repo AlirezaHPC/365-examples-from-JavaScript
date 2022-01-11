@@ -1,0 +1,27 @@
+<script>
+    // A program that reads n represents all integers (less than (less than or equal to n, which are also harmful 4)) is an integer that is the sum of divisors less than
+// Be equal to itself 
+const n=parseInt(prompt("enter a number:"));
+let sum;
+    function harmful4(n){
+        for(let i=1;i<n;i++){
+            sum=0;
+            for(let j=0;j<i;j++){
+                if(i%j==0){
+                sum=sum+j;
+            }
+            }
+            if(sum==i){
+                if(i%4==0){
+                    console.log(i);
+                }
+            }
+           
+
+        }
+
+    }
+
+
+    harmful4(n);
+</script>
