@@ -1,0 +1,31 @@
+<script>
+    // Write a program that accepts two arrays from the input, sorts the first array in descending order,
+    //  and sorts the second array in ascending order,
+    //  then merges them. The final array must be neat.
+
+
+    const arr1=[];
+    const arr2=[];
+    for(let i=0;i<6;i++){
+        arr1[i]=parseInt(prompt(`enter number ${i+1} for array one `));
+        arr2[i]=parseInt(prompt(`enter number ${i+1} for array two `));
+    }
+console.log("arr1",arr1.toString());
+console.log("arr2",arr2.toString());
+    arr1.sort(function(a,b){
+        return b-a;
+    });
+    arr2.sort(function(x,y){
+        return x-y;
+    })
+console.log("***********SORT************")
+    console.log("arr1",arr1.toString());
+console.log("arr2",arr2.toString());
+
+const arr3=arr2.concat(arr1);
+arr3.sort(function(x,y){
+        return x-y;
+    })
+    console.log("arr3",arr3.toString());
+
+</script>

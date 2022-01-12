@@ -1,0 +1,19 @@
+<script>
+    // Find the largest element in an array in two ways.
+const arr=[14,25,36,41,52,63,74,78,85,85,89,96];
+console.log("arr",arr.toString());
+//method one
+const max1=Math.max.apply(null,arr);
+
+
+let max2=arr[0];
+for(let i=0;i<arr.length;i++){
+if(arr[i]>max2){
+    max2=arr[i];
+}
+}
+console.log("max 1=>",max1);
+console.log("max 2=>",max2);
+
+
+</script>
