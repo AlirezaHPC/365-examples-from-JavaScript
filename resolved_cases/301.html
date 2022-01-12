@@ -1,0 +1,170 @@
+<script>
+//    Write a program that receives a number and displays the Persian letter equivalent of that number
+// Write the program in such a way that it can be used for numbers (60 ** 10) to (10 ** - 60).
+//  For negative numbers, write the negative word first.
+// (Such as minus one) Use the small-scale (American) mode to name large numbers
+// That is, use millions, billions, trillions, quartiles to name numbers.
+
+       let num=parseInt(prompt("enter a number"))
+   console.log("num",num);
+   let n=num;
+   let flag;
+let count=0
+
+
+let result="";
+
+
+
+let b1,b2,b3,b4,b5,b6,b7,b8;
+// #############################
+if(num<0){
+    flag=true
+    num=num*-1}
+    // #########################3
+
+    while (n!=0){
+    digit=parseInt(n%10);
+    count++;
+    n=parseInt(n/10)}
+    console.log("count",count)
+    // #####################
+const oneDigit={0:"sefr",1:"yek",2:"do",3:"seh",4:"chahar",5:"panj",6:"shesh",7:"haft",8:"hasht",9:"noh"};
+const twoDgit1={11:"yazdah",12:"davazdah",13:"sizdah",14:"chahardah",
+         15:"panezdah",16:"shanezdah",17:"hefdah",18:"hejdah",19:"nozdah"};
+const twoDgit2={1:"dah",2:"bist",3:"si",4:"chehel",
+         5:"panjah",6:"shast",7:"haftad",8:"hashtad",9:"navad"};
+
+
+const treeDigit={1:"sad",2:"divist",3:"sisad",4:"chaharsad",5:"pansad",6:"sheshsad",
+         7:"haftsad",8:"hashtsad",9:"nohsad"}
+   // #####################
+   function C1(n){
+      // let c=oneDigit[n];
+       return oneDigit[n];
+   }
+
+   function C21(n){
+       return twoDgit1[n];
+   }
+   function C22(n){
+       return twoDgit2[n];
+   }
+
+   function C3(n){
+       return treeDigit[n];
+   }
+   
+
+
+// ###################
+// if(count==1){
+//         result=C1(num)
+//     }
+// if(9<num<20){
+//     result=C21(num)
+    
+// }
+// if(19<num<=99){
+    
+//      b1=parseInt(num/10)
+ 
+//      b2=parseInt(num%10)
+  
+   
+//         result=C22(b1)+" "+C1(b2)
+//    }
+// if(99<num<=999){
+    
+//      b1=parseInt(num/100)
+//      num=parseInt(num%100)
+//      b2=parseInt(num/10)
+//      b3=parseInt(num%10)
+   
+   
+//         result=C3(b1)+" "+C22(b2)+" "+C1(b3)
+//    }
+// if(999<num<=9999){
+//     let v=num
+//   b1=b2=b3=b4=0
+//     b1=parseInt(v/1000)
+//     v=parseInt(v/1000)
+//     b2=parseInt(v/100)
+//     v=parseInt(v/100)
+//     b3=parseInt(v/10)
+//    console.log("b3",b3,"b2",b2)
+//     b4=parseInt(v%10)
+
+//     result=C1(b1)+" hezar o "+C3(b2)+" "+C22(b3)+" "+C1(b4)
+// }
+//    // ##########################################
+//    if(9999<num<=99999){
+  
+//   b1=parseInt(num/10000);
+
+//   num=parseInt(num%10000)
+//   b2=parseInt(num/1000)
+//   num=parseInt(num%1000)
+//   b3=parseInt(num/100)
+//   num=parseInt(num%100)
+//   b4=parseInt(num/10)
+
+//   b5=parseInt(num%10)
+
+ 
+
+
+//   result=C22(b1)+" "+C1(b2)+" hezar o "+C3(b3)+" "+C22(b4)+" "+C1(b5)
+// }
+// // ##########################################
+// if(99999<num<=999999){
+  
+//   b1=parseInt(num/100000);
+
+//   num=parseInt(num%100000)
+//   b2=parseInt(num/10000)
+//   num=parseInt(num%10000)
+//   b3=parseInt(num/100)
+//   num=parseInt(num%1000)
+//   b4=parseInt(num/100)
+//   num=parseInt(num%100)
+//   b5=parseInt(num/10)
+
+//   b6=parseInt(num%10)
+
+
+//   result=C3(b1)+" "+C22(b2)+" "+C1(b3)+" hezar o "+C3(b4)+" "+C22(b5)+" "+C1(b6)
+// }
+
+// // ##########################################
+// // 7digit
+// if(999999<num<=9999999){
+  
+//   b1=parseInt(num/1000000);
+
+//   num=parseInt(num%1000000)
+//   b2=parseInt(num/100000)
+//   num=parseInt(num%100000)
+//   b3=parseInt(num/1000)
+//   num=parseInt(num%10000)
+//   b4=parseInt(num/1000)
+//   num=parseInt(num%1000)
+//   b5=parseInt(num/100)
+//   num=parseInt(num%100)
+//   b6=parseInt(num/10)
+//   b7=parseInt(num%10)
+
+//   result=C1(b1)+" "+ "milion o "+C3(b2)+" "+C22(b3)+" "+C1(b4)+" hezar o "+C3(b5)+" "+C22(b6)+" "+C1(b7)
+// }
+
+    
+
+
+// ##########################################
+
+
+    if(flag==true){
+    result="manfi"+" "+result}
+// ##########################################
+console.log("result",result);
+</script>
