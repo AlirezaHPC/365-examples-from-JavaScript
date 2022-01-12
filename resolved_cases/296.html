@@ -1,0 +1,15 @@
+<script>
+    // Define a cluster that adds a value to the counter each time the function is called and prints the counter.
+    function outer(){
+        let counter=0;
+        return function inner(string){
+          return counter++;
+         //  console.log(this.counter)
+        }
+    }
+    const print1=outer();
+    for(let i=0;i<6;i++){
+      console.log(  print1());
+    }
+   
+</script>

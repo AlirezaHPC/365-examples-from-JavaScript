@@ -1,0 +1,10 @@
+<script>
+    // Define a cluster that receives a string and prints it
+    function outer(){
+        return function inner(string){
+            console.log(string);
+        }
+    }
+    const print1=outer();
+    print1("samira");
+</script>
