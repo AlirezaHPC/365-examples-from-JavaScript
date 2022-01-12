@@ -1,0 +1,17 @@
+<script>
+    "use strict"
+    // Define a cluster that receives a long string and a student's name from the input. If the student's name is in the text, the appropriate message will be printed. This program must support strict mode.
+function outer(){
+    return function inner(string,stName){
+        let result=string.search(stName);
+if(result>=0){
+    console.log(`"${stName}"   is in the * ${string}*`)
+}
+    }
+}
+const string=prompt("enter a long string:");
+const stName=prompt("enter student name:");
+const search=outer();
+search(string,stName);
+
+</script>

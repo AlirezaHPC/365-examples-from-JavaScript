@@ -1,0 +1,13 @@
+<script>
+    // Define an array with ten numeric elements, arrange the array, then scroll and print it using the for / of loop.
+
+    const arr=[];
+    const count=parseInt(prompt("enter count for array elements"));
+    for(let i=0;i<count;i++){
+        arr[i]=parseInt(prompt(`enter number  ${i+1}for array elements`));
+
+    }
+    for( let num of arr){
+        console.log(arr[num]);
+    }
+</script>
