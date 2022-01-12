@@ -706,4 +706,46 @@ In the next object, enter the prices of the products, then print the total price
 299: Write programs that print letter equivalents of even numbers less than 20 using if / else.
 
 300: Write a program using a triple conditional operator that receives a number from the input and determines whether the input number is even or odd.
+301: Write a program that receives a number and displays the Persian letter equivalent of that number
+Write the program in such a way that it can be used for numbers (60 ** 10) to (10 ** - 60). For negative numbers, write the negative word first.
+(Such as minus one) Use the small-scale (American) mode to name large numbers
+That is, use millions, billions, trillions, quartiles to name numbers.
+
+
+
+302: Create an array of 10 word numbers so that the last number added is the first element of the array
+
+
+303: Define a function that merges three arrays.
+
+
+304: Define a function that receives an array and a value from the input and adds the value to the third element later.
+
+305: Define a function that removes the array of 3 elements from the third element onwards.
+
+306: Define a function that accepts three values of input and prints a slice of the array according to the input arguments
+
+307: Write a program that accepts two arrays from the input, sorts the first array in descending order, and sorts the second array in ascending order, then merges them. The final array must be neat.
+
+308: Find the largest element in an array in two ways.
+
+309: Find the smallest element in the input array in two ways.
+
+
+310: Remove the smallest and largest values of an array from it and print the resulting array regularly.
+
+
+
+
+311: Write a program that examines all modes for the slice method to work on strings.
+
+312: Define a function that takes the element and length of the extract from the index and prints a slice of the string
+
+
+313: Write a program that receives a long string from the input and prints the letter equivalent if there is a number in the string.
+
+314: Define a function that takes two strings from a word and converts them to uppercase, and finally joins and displays the strings.
+
+
+315: Define a function that converts a string into an array based on words.
 
