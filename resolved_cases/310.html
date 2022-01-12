@@ -1,0 +1,25 @@
+<script>
+    // Remove the smallest and largest values of an array from it and print the resulting array regularly.
+
+    const arr=[14,25,1,36,41,52,63,1000,74,78,85,85,89,96];
+    let indexMax, indexMin;
+console.log("arr",arr.toString());
+
+const min1=Math.min.apply(null,arr);
+const max1=Math.max.apply(null,arr);
+for(let i=0;i<arr.length;i++){
+    if(arr[i]==max1){
+         indexMax=i;
+    }
+    if(arr[i]==min1){
+         indexMin=i;
+    }
+}
+console.log("**************DELETE MAX AND MIN IN ARRAY*******")
+arr.splice(indexMax,1);
+arr.splice(indexMin,1);
+arr.sort(function(a,b){
+    return a-b;
+});
+console.log("arr",arr.toString());
+</script>
