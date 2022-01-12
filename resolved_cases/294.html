@@ -1,0 +1,12 @@
+<script>
+    // Define a collider that prints the phrase hello world!
+
+    function outer(){
+
+        return function inner(){
+            console.log("hello world!");
+        }
+    }
+const Hello=outer();
+Hello();
+</script>

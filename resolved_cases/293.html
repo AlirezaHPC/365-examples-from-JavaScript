@@ -1,0 +1,25 @@
+<script>
+//      Define an object that has a method and uses that method to print the total price of products.
+// In the next object, enter the prices of the products, then print the total prices using the call method.
+
+
+
+
+const obj1={
+    print:function(){
+        return this.pric1+this.pric2+this.pric3+this.pric4+this.pric5+this.pric6
+    }
+}
+
+function obj(pric1,pric2,pric3,pric4,pric5,pric6){
+    this.pric1=pric1;
+    this.pric2=pric2;
+    this.pric3=pric3;
+    this.pric4=pric4;
+    this.pric5=pric5;
+    this.pric6=pric6;
+}
+const obj2=new obj(523,698,478,9969,456,36);
+const result=obj1.print.call(obj2);
+console.log(result);
+</script>
