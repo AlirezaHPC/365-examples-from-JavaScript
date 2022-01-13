@@ -79,14 +79,13 @@ The smallest three-digit number that is divisible by 5
 28: Write a program that reads the positive integer and converts it to base 4. (To convert an integer to base 4, consecutive divisions by 4 are used)
 29: Write a program that reads a positive integer and converts it to a basis of 16. (To convert an integer to a base of 8, consecutive divisions of 16 are used)
 30: Write a program that reads 10 numbers and displays the third number in terms of size. This program uses 4 variables called max1, max2, max3, temp. P. 126
-31: Write a program that sorts ascending with the selected method. (Array)
-32: Write a program that sorts in ascending order using the bubble method. (Array)
-
-33: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and searches the array in pairs. (Array)
-34: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and searches the array in sequential order. (Array)
-35: A program that puts 20 numbers between 1 and 100 in an array regularly reads a number from the input and searches the array in binary. (Array)
+31: Write a program that sorts ascending. (Array)
+32: Write a program that takes a number and prints its first factors.
+33: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and searches the array (Array)
+34: A program that receives 20 numbers between 1 and 100 regularly puts them in an array, reads a number from the input, and add to start array(Array)
+35: A program that puts 20 numbers between 1 and 100 in an array regularly reads a number from the input and Add to end array. (Array)
 36: : Define the pLanguage variable of array type with const and get the name of n programming language from Word.
-37: A program that initializes a 4x3 table and displays the largest array element along with its location in the array. (Array)
+37: Write a program that receives the number of names and prints the shortest name.
 
 38: A program that reads two disciplines and performs the following actions:
 A) Search the first string in the second string and display its first location
@@ -151,7 +150,8 @@ Count the number of letters in a string
 
 57: Write a class called data that receives the day, month and year to control them. For example, if the moon is equal to 12, the user cannot enter the day greater than 29
 ************************************************* ****
-58: Define a class called tictactoe with which you can dose the game. This class contains a 2 * 3x array of the correct type. The class constructor must set the array elements to zero. Two players play. The first player puts the number 1 and the second player puts the number 2 in the square. Movements must be made in empty houses. After each move, you control whether someone has won or not. The program must follow the turn and specify which player should start first.
+58: Write a program that takes two lists of integers (8 members each) and a number
+Print their subscribers.
 
 
 
@@ -463,11 +463,8 @@ For the number 135274, it will display the number 24.
 184: A program that reads two integers and displays divisors against their common denominator
 
 185: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
-186: : Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+186: Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
 : Redefine the sub srtring method.
-: Redefine the sub str () method.
-: Redefine the replace () method.
-: Get a string and delete the empty space around it
 : Join two strings in three ways
 : Get a string and convert its letters to uppercase and display.
 
@@ -580,7 +577,7 @@ Samira Abdi is a programmer fluent in JavaScript.
 
 235: Define a function of type IIFES that receives a number from the input and displays even numbers before it.
 236: Define a function of type IIFES that displays numbers from 0 to 100.
-237: Write a program that receives information about one students, including first and last name, age, place of residence, and field of study (map), and then check for the city key in map.
+237: Write a program that receives information about one students, including first and last name, age, place of residence, and field of study , and then check for the city key in map.
 
 238: Write a program that has a function that receives and sets the name of 15 students, then receives a name from the input and checks if the name is in the namespace.
 239: Define a function of Arrow Function that receives a number from the input and if there is a number 5 in this number, replace it with 2 and return the resulting number.
@@ -748,4 +745,12 @@ That is, use millions, billions, trillions, quartiles to name numbers.
 
 
 315: Define a function that converts a string into an array based on words.
+
+316: Define a function that prints three-digit odd numbers from uppercase to lowercase.
+
+317: Write a program that receives a hundred numbers and at the end the smallest and largest
+To print.
+
+318: Write a program that takes a list of hundreds of numbers and then the positive numbers and
+Store the negative numbers in other arrays and print them separately.
 
