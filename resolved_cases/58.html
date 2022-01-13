@@ -1,0 +1,25 @@
+<script>
+// Write a program that takes two lists of integers (8 members each) and a number
+// Print their subscribers.
+
+const length=9;
+let count=0;
+const arr1=[];
+const arr2=[];
+for(let i=0;i<length;i++){
+    arr1[i]=parseInt(prompt(`enter number ${i+1} for array one`));
+    arr2[i]=parseInt(prompt(`enter number ${i+1} for array two`));
+}
+console.log(String(arr1));
+console.log(String(arr2));
+for(let i=0;i<length;i++){
+    for(let j=0;j<length;j++){
+        if(arr1[i]==arr2[j]){
+            count++;
+            console.log(arr2[j]);
+        }
+
+    }
+
+}
+</script>
