@@ -1,0 +1,19 @@
+<script>
+    // Write a program that traces the value  for a three-element object, 
+    // creates the object, and displays it by scrolling.
+
+    
+    const value1=prompt(`enter a value for key1}`);
+    const value2=prompt(`enter a value for {key2}`);
+    const value3=prompt(`enter a value for {key3}`);
+   
+    const obj1={}
+      obj1.key1=`${value1}`;
+        
+      obj1.key2=value2;
+      obj1.key3=value3;
+      for(x in obj1){
+          console.log(obj1[x]);
+      }
+    console.log(JSON.stringify(obj1));
+</script>
