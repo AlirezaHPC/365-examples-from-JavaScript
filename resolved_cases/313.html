@@ -1,0 +1,16 @@
+<script>
+    const longStr=prompt("enter a long text");
+let array=longStr.split(" ");
+console.log(array);
+
+const numbers=["zero","one","two","three","four","five","six","seven","eight","nine","ten"];
+for(let i=0;i<array.length;i++){
+    for(let j=0;j<numbers.length;j++){
+        if(array[i]==j){
+            array[i]=numbers[j];
+        }
+    }
+}
+console.log(array);
+    
+</script>
