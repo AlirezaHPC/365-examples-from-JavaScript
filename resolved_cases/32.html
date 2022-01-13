@@ -1,0 +1,35 @@
+<script>
+    // Write a program that takes a number and prints its first factors.
+
+
+    const num=parseInt(prompt("enter a number:"));
+    const maghsom=[];
+    const firstFactors=[];
+    let index=0;
+    let index2=0;
+    let n,counter;
+    for(let i=1;i<num;i++){
+        if(num%i==0){
+maghsom[index]=i;
+index++;
+        }
+    }
+    // 1,2,5,10,25
+    for(let i=0;i<maghsom.length;i++){
+      
+        counter=0;
+        number=maghsom[i];
+        for(let j=0;j<=i;j++){
+            if(number%j==0){
+                counter++;
+            } }
+            if(counter==2){
+                firstFactors[index2]=number;
+                index2++;
+            }
+      
+    }
+    console.log("number = ",num);
+    console.log("maghsom",maghsom.toString());
+    console.log("first factors",firstFactors.toString());
+</script>

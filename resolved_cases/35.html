@@ -1,0 +1,18 @@
+<script>
+    //  A program that puts 20 numbers between 1 and 100 in
+    //  an array regularly reads a number from the input and Add to end array. (Array)
+
+    const count=3;
+    const numbers=[];
+  
+    for(let i=0;i<count;i++){
+        numbers[i]=parseInt(prompt(`enter number ${i+1} between 1 and 100`));
+    }
+    numbers.sort(function(x,y){
+        return x-y;
+    });
+    console.log(String(numbers));
+    const num=parseInt(prompt("enter num for search in array"));
+    numbers.push(num);
+    console.log(String(numbers));
+</script>

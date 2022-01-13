@@ -1,0 +1,17 @@
+<script>
+    // A program that receives 20 numbers between 1 and 100 regularly puts them in an array,
+    //  reads a number from the input, and searches the array (Array)
+    const count=20;
+    const numbers=[];
+  
+    for(let i=0;i<count;i++){
+        numbers[i]=parseInt(prompt(`enter number ${i+1} between 1 and 100`));
+    }
+    console.log(String(numbers));
+    const num=parseInt(prompt("enter num for search in array"));
+    for(let i=0;i<count;i++){
+        if(numbers[i]==num){
+            console.log(`${num} is in the input array`);
+        }
+    }
+</script>
