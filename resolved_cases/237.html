@@ -1,18 +1,27 @@
 <script>
-    // Write a program that receives information about one students,
-    //  including first and last name, age, place of residence,
-    //   and field of study (map), and then check for the city key in  map.
-    const students=new Map();
-    let name=prompt("enter student name:")
-    let lastName=prompt("enter student lastname:");
-    let city=prompt("enter student  place of residence:");
-    let field=prompt("enter student's  field of study:")
-    students.set("firstName",name);
-    students.set("lasttName",lastName);
-    students.set("field",field);
-    students.set("city",city);
-    console.log(students);
-    console.log(students.has("city"));
+
+
+
+// Write a program that receives information about three students, including first and last name, age,
+//  place of residence, and field of study 
+// , and then check for the city key 
+const name=prompt("enter student name:");
+const family=prompt("enter students family");
+
+const fieldStudy=prompt("enter students  field of study");
+const city=prompt("enter students  city");
+
+function students(n,f,s,c){
+    this.name=n;
+    this.family=f;
+    this.fieldStudy=s;
+    this.city=c;
+}
+const st1=new students(name,family,fieldStudy,city);
+
+console.log(st1);
+console.log("city=>",st1.city);
+
 
 
 </script>
