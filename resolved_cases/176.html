@@ -1,24 +1,12 @@
 <script>
-    // : A program that reads a number determines whether it is a power of 2 or not.
-
-    const num1=parseInt(prompt("enter a number:"));
-    let n=num1,counter=0;
-    while(n>0){
-    digit=parseInt(n%2);
+    //A program that reads a number determines whether it is a power of 2 or not.
+    let num=parseInt(prompt("enter a number:"));
     
-   
-    if(digit>0){
-        counter++;
-    }
-    n=parseInt(n/2);
-
-}
-if(counter===1){
-    console.log(`${num1} is a power of a ${2}}`);
-
-}
-else{
-    console.log(`${num1} is Not a power of a ${2}`);
-
-}
+     let pow2=Math.sqrt(num);
+     if((pow2**2)==num){
+         console.log(`${num} it is a power of 2`);
+     }
+     else{
+        console.log(`${num} it is  NOT a power of 2`);
+     }
 </script>
