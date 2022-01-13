@@ -1,4 +1,5 @@
-
+I defined 365-examples-from-JavaScript (if you can call it a project, of course!) To get more and more familiar with JavaScript topics and become more skilled and capable in Git and GitHub
+365 examples from JavaScript
 
 365 examples from JavaScript
 
@@ -752,4 +753,16 @@ To print.
 
 318: Write a program that takes a list of hundreds of numbers and then the positive numbers and
 Store the negative numbers in other arrays and print them separately.
+
+319: Define three objects in three different ways.
+• Define objects and properties in a phrase (simplest method)
+• Define objects and properties using the new keyword
+• Define the object and its properties using the constructor of the object
+
+
+320: Write a program that traces the value and key for a three-element object, creates the object, and displays it by scrolling.
+
+321: Write a program that traces the value and key for a three-element object, creates the object, and displays it by scrolling. Then take the value of a key from the user and delete it if it is in the object.
+
+
 
