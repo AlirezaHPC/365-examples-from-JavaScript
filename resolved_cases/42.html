@@ -2,9 +2,11 @@
     // Write a program that displays the number of words in a string read from the input 
     // (there is a space between the words of one of the characters, and the space and? And,.
 
-    const string=prompt("enter a long string");
-console.log(string);
-    let arr=[];
-    arr=string.match(/ /gi);
-    console.log(" the number of words in a string is",arr.length+1);
+
+    let sentence=prompt("enter a sentence:");
+    let count=0;
+    let arrSentence=sentence.split(" ");
+    
+    console.log(`input sentence="${sentence}"`);
+    console.log(`number of words is ${arrSentence.length}`);
 </script>
