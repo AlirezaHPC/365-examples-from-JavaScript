@@ -1,0 +1,36 @@
+<script>
+//     : Write a program that receives a sentence and then takes the start, end from the user and prints a slice of the sentence.
+
+// : Join two strings in three ways
+// : Get a string and convert its letters to uppercase and display.
+
+const sentence=prompt("enter a sentence");
+const start=parseInt(prompt(" enter start"));
+const end=parseInt(prompt("enter end"));
+console.log("input sentence is =>>",sentence);
+console.log("slice of input sentence=>>",sentence.slice(start,end));
+console.log("uppercase=>",sentence.toUpperCase());
+console.log("*****************");
+console.log("*****************");
+console.log("*****************");
+function c1(st1,st2){
+    console.log(st1+" "+st2);
+}
+
+function c2(st1,st2){
+    console.log(st1," ",st2);
+}
+
+function c3(st1,st2){
+    console.log(st1.concat(st2));
+}
+const text1=prompt("enter text1");
+const text2=prompt("enter text2");
+c1(text1,text2);
+console.log("*****************");
+c2(text1,text2);
+console.log("*****************");
+c3(text1,text2);
+
+
+</script>
