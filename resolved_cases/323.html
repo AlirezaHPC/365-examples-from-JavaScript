@@ -1,0 +1,53 @@
+<script>
+
+
+// 323: Define an object that receives a value for the year,
+//  month, and day variables; the day and month values must be entered at a specified interval.
+
+
+    const date={
+        Y2345:"",
+        m5657:"",
+        d4567:"",
+        get Year(){
+            return this.Y2345;
+        },
+        set Year(value){
+            this.Y2345=value;
+        },
+        get Month(){
+return this.m5657;
+} ,
+set Month(value){
+if(value<=12  ){
+    this.m5657=value;
+}
+},
+get Day(){
+    return this.d4567;
+},
+set Day(value){
+    if(this.m5657<=6){
+    if(value<=31){
+        this.d4567=value;
+
+    }}
+    else if(this.m5657<=12){
+        if(value<31){
+            this.d4567=value
+        }
+        else{
+            console.log("invalid input");
+        }
+    }
+},
+get fullDate(){
+    return this.Y2345+" / "+this.m5657+" / "+this.d4567;
+}
+
+}
+date.Year=2000;
+date.Month=11;
+date.Day=21;
+console.log(date.fullDate);
+</script>
