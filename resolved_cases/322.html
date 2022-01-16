@@ -1,0 +1,23 @@
+<script>
+//   Write a program to define a person object that could only be accessed via the set and get methods.
+      const   obj1={
+           f234567:"",
+            l96875:"",
+            get fullName(){
+                return this.f234567+" "+this.l96875;
+            },
+            set fullName(value){
+                if(value){
+                    [this.f234567,this.l96875]=value.split(" ");
+                }
+                else{
+                    console.log("Enter name and family ");
+                }
+               
+            }
+        }
+    
+    obj1.fullName="samira ABDI ";
+  console.log(obj1.fullName);
+
+</script>
