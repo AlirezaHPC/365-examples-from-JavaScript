@@ -1,0 +1,51 @@
+<script>
+    
+// 325 : Define the book object and access its properties through the set and get methods.
+
+const Book={
+    name:"",
+    printYear:"",
+    printCount:null,
+    writer:"",
+    get Name(){
+        return this.name;
+    },
+    get PY(){
+        return this.printYear;
+    },
+    get PC(){
+        return this.printCount;
+    },
+    get Writer(){
+        return this.writer;
+    },
+ set Name(value){
+       this.name=value;
+    },
+    set PY(value){
+      this.printYear=value;
+    },
+    set PC(value){
+     this.printCount=value;
+    },
+    set Writer(value){
+       this.writer=value;
+    },
+    set full(value){
+        if(value){
+        [this.name, this.printYear, this.printCount,  this.writer]=value.split(" ");
+        }
+    },
+    get full(){
+        return this.name+ " "+  this.printYear+"  "+this.printCount+" "+ this.writer;
+    }
+
+
+
+}
+Book.full="Book1 2000 120 samiraAbdi";
+console.log(Book.full);
+
+
+</script>
+
