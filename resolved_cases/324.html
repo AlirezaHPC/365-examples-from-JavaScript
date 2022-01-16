@@ -1,0 +1,44 @@
+<script>
+
+
+
+//     Define an object that has two variables called num1 and num2, 
+// the first variable accepts only even numbers and the second variable accepts only odd numbers as input.
+
+
+
+const obj1={
+    nnnn1:"",
+    nnnn2:"",
+    get Num1(){
+return this.nnnn1   ;
+    },
+    set Num1(value){
+if(value%2==0){
+    this.nnnn1=value;
+}
+else{
+    console.log("Num1 can not be odd ");
+}
+    },
+    get Num2(){
+return this.nnnn2  ;
+    },
+    set Num2(value){
+        if(value%2==1){
+    this.nnnn2=value;
+}
+else{
+    console.log("Num1 can not be even ");
+}
+    },
+    get TwoNum(){
+        return "num1= "+this.nnnn1+"  num2 =  "+this.nnnn2;
+    }
+    
+}
+obj1.Num1=4;
+obj1.Num2=3;
+console.log(obj1.TwoNum);
+
+</script>
