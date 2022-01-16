@@ -774,9 +774,9 @@ Store the negative numbers in other arrays and print them separately.
 
 323: Define an object that receives a value for the year, month, and day variables; the day and month values must be entered at a specified interval.
 
-224: Define an object that has two variables called num1 and num2, the first variable accepts only even numbers and the second variable accepts only odd numbers as input.
+324  Define an object that has two variables called num1 and num2, the first variable accepts only even numbers and the second variable accepts only odd numbers as input.
 
-225: Define the book object and access its properties through the set and get methods.
+325 : Define the book object and access its properties through the set and get methods.
 
 
 
