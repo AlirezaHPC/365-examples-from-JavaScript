@@ -760,9 +760,26 @@ Store the negative numbers in other arrays and print them separately.
 • Define the object and its properties using the constructor of the object
 
 
+
+
 320: Write a program that traces the value and key for a three-element object, creates the object, and displays it by scrolling.
 
 321: Write a program that traces the value and key for a three-element object, creates the object, and displays it by scrolling. Then take the value of a key from the user and delete it if it is in the object.
+
+
+322: Write a program to define a person object that could only be accessed via the set and get methods.
+
+
+
+
+323: Define an object that receives a value for the year, month, and day variables; the day and month values must be entered at a specified interval.
+
+224: Define an object that has two variables called num1 and num2, the first variable accepts only even numbers and the second variable accepts only odd numbers as input.
+
+225: Define the book object and access its properties through the set and get methods.
+
+
+
 
 
 
