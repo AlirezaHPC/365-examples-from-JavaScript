@@ -1,0 +1,23 @@
+<script>
+    // Define two constructor functions called print and person
+
+
+   
+function person(f,l,a,e){
+  this.firstName=f;
+  this.lastName=l;
+  this.age=a;
+  this.eyeColor=e;
+
+  }
+
+
+  function print(){
+    this.print=function (){
+      console.log(this.firstName +" "+ this.lastName+" is  "+this.age +" years old and eyeColor is  "+this.eyeColor);}
+
+  }
+  person.prototype=new print();
+  const p1=new person("akan","abdi",12,"black");
+  p1.print();
+</script>
