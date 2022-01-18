@@ -1,0 +1,29 @@
+<script>
+    
+// Define two different objects with different methods and properties,
+//  then set the prototype of the first object to the second object.
+	
+
+function person(f,l,a){
+  this.firstName=f;
+  this.lastName=l;
+  this.age=a;
+  this.printNmae=function (){
+      console.log(this.name);
+  }
+  this.print=function (){
+      console.log(this.name+" eyeColor is "+ this.eyeColor );
+  }
+ 
+}
+
+function child(name,eyeColor){
+    this.name=name;
+    this.eyeColor=eyeColor;
+    
+}
+child.prototype=new person();
+const ch1=new child("maryam","black");
+ch1.print();
+
+</script>
