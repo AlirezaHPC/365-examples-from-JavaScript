@@ -1,0 +1,30 @@
+<script>
+    //  Inherit the parent object from the child object via the prototype.
+
+    function parent(n,c){
+        this.name=n;
+        this.city=c;
+     
+    }
+    parent.prototype.printCity=function(){
+            console.log(this.city);
+        };
+    function child(n,c,f,l,a){
+        parent.call(this,n,c);
+        this.firstName=f;
+        this.lastName=l;
+        this.age=a;
+
+    }
+   
+    child.prototype=new parent();
+    child.prototype.print=function(){
+        console.log(` my name is ${this.name} , Iam ${this.age} years old and I live in ${this.city}  `);
+    };
+    child.prototype.constructor=child;
+    const child1=new child("samira abdi","Urmia","samira","abdi",21);
+    child1.printCity();
+    child1.print();
+
+
+</script>
