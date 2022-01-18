@@ -1,0 +1,18 @@
+<script>
+    // Add a constructor function to the properties function using the prototype via the set method
+
+function person(name,city){
+    this.name=name;
+    this.city=city;
+ 
+}
+Object.defineProperty(person,"age",{
+    set (value)
+{
+    person.prototype.age=value;
+}})
+const p1=new person("raman","Gilan");
+p1.age=28;
+console.log(p1);
+
+</script>
