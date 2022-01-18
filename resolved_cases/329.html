@@ -1,0 +1,16 @@
+<script>
+    // Create a constructor function and add all its methods and properties to the prototype, then create an object from it.
+    function computer(){
+
+    }
+    computer.prototype.monitor="flatron";
+    computer.prototype.mouse="farassoo";
+    computer.prototype.keyboard="ersch";
+    computer.prototype.print=function(){
+        console.log("monitor="+this.monitor+" mouse="+this.mouse+" keyboard="+this.keyboard);
+
+    }
+    const computer1=new computer();
+   
+    computer1.print();
+</script>
