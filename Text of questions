@@ -780,6 +780,28 @@ Store the negative numbers in other arrays and print them separately.
 
 
 
+326: Define a constructor function called a person and then add a method to display the properties through the property.
+
+327: Define two different objects with different methods and properties, then set the prototype of the first object to the second object.
+	
+328: Define two constructor functions called print and person
+The person constructor function includes the definition of properties
+The print constructor function includes the display method.
+Then create an object that has the properties of the person and the print method.
+
+329: Create a constructor function and add all its methods and properties to the prototype, then create an object from it.
+
+330: Add a constructor function to the properties function using the prototype via the set method
+331: Inherit the parent object from the child object via the prototype.
+332: Create an object for the book then add it to the count property or print method at the user's request via prototype
+333: Define three constructor functions, define three objects from them, then write the code snippet through which the constructor of each object is identified.
+
+334: Create an object containing two maps and then add a set to it via prototype.
+335: Create a class named person Define two more classes that inherit from the person class with methods and properties. Then use a function that takes the name of the two classes to determine which class is subclass of which class.
+
+
+
+
 
 
 
