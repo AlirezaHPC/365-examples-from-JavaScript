@@ -1,0 +1,22 @@
+<script>
+    
+
+
+
+// : Define a constructor function called a person and then add a method to display the properties through the property.
+
+
+
+function person(f,l,a){
+  this.firstName=f;
+  this.lastName=l;
+  this.age=a;
+ 
+}
+person.prototype.print=function(){
+    console.log(this.firstName +" "+ this.lastName+" "+this.age +" years old")
+}
+const person1=new person("samira","abdi",21);
+person1.print();
+
+</script>
