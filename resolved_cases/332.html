@@ -1,0 +1,26 @@
+<script>
+    // Create an object for the book then add it to the count property or print method at the user's request via prototype
+    function book(n,w){
+        this.name=n;
+        this.writer=w;
+    }
+    const myBook=new book("GreenJavaScript","Samira Abdi");
+    const chose=prompt(`enter "c"   or "p" `);
+    if(chose==="c"){
+        book.prototype.count=3//parseInt(prompt("enter count"))
+        console.log("book count is " +myBook.count);
+
+    }
+    else if (chose==="p"){
+        book.prototype.print=function(){
+            console.log("bookName is "+this.name+ "  writer Name is "+this.writer);}
+            myBook.print();
+
+        }
+    else {
+            console.log("invalid Input");
+        }
+    
+
+   
+</script>
