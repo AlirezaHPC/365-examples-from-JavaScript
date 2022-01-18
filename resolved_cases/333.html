@@ -1,0 +1,33 @@
+<script>
+
+
+
+// Define three constructor functions, define three objects from them,
+//  then write the code snippet through which the constructor of each object is identified.
+
+
+
+function person(n,a,c){
+this.name=n;
+this.age=a;
+this.city=c;
+}
+person.prototype.printPrivate=function(){
+    console.log(" My name is  "+this.name+" I am "+this.age+" Years old and I live in "+ this.city);
+}
+
+function student(g){
+this.grade=g;
+}
+
+
+
+
+function teacher(l){
+this.lesson=l;
+}
+
+
+
+
+</script>
