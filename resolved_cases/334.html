@@ -1,0 +1,16 @@
+<script>
+    // Create an object containing two maps and then add a set to it via prototype
+   
+    const obj={
+      inf1:new Map([["name","samira"],["family","abdi"]]),
+       inf2:new Map([["age",21],["city","urmia"]]),
+
+      
+       inf3:""
+    }
+   obj.inf=function(value){
+this.inf3=value;
+   }
+   obj.inf("this is a object whit two map object");
+   console.log(obj.inf3)
+</script>
