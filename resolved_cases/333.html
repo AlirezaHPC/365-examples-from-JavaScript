@@ -16,18 +16,71 @@ person.prototype.printPrivate=function(){
     console.log(" My name is  "+this.name+" I am "+this.age+" Years old and I live in "+ this.city);
 }
 
-function student(g){
+///////////////////////////////////////////////////////////////////////////////
+function student(n,a,c,g){
+    person.call(this,n,a,c);
 this.grade=g;
 }
+student.prototype=new person();
+student.prototype.printSt=function(){
+    console.log(" My name is  "+this.name+" I am "+this.age+" Years old and I live in "+ this.city);
+    console.log(" My grade is "+ this.grade);
+}
+const st1=new student("Samira Abdi",21,"urmia","six");
+
+//st1.printSt();
 
 
 
 
-function teacher(l){
+
+
+///////////////////////////////////////////////////////////////////////////////
+function teacher(n,a,c,l){
+    person.call(this,n,a,c,l);
 this.lesson=l;
 }
 
+teacher.prototype=new person();
+teacher.prototype.printTeach=function(){
+    console.log(" My name is  "+this.name+" I am "+this.age+" Years old and I live in "+ this.city);
+    console.log(" My lesson is "+ this.lesson);
+}
+
+const teach1=new teacher("Samira Abdi",21,"urmia","computer");
+//teach1.printTeach();
 
 
+
+if(st1 instanceof person){
+    console.log("st1 instanceof person ")
+}
+else{
+    console.log("st1  Not instanceof person ")
+}
+
+if(teach1 instanceof person){
+    console.log("teach1 instanceof person ")
+}
+else{
+    console.log("teach1 Not  instanceof person ")
+}
+
+
+if(person  instanceof teacher){
+    console.log("person instanceof teacher ")
+}
+else{
+    console.log("person Not  instanceof teacher ")
+}
+
+
+
+if(person  instanceof student){
+    console.log("person instanceof student ")
+}
+else{
+    console.log("person Not  instanceof student  ")
+}
 
 </script>
