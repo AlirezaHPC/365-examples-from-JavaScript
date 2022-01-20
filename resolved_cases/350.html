@@ -1,0 +1,42 @@
+<script>
+//  Define a class with read-only properties
+
+
+
+
+
+
+class Samira{
+    #name;
+    #age;
+    #city;
+    #eyeColor;
+    get  Name(){
+        return this.#name;
+    }
+    get Age(){
+        return this.#age;
+    }
+    get City(){
+        return this.#city;
+    }
+    get EyeColor(){
+        return this.#eyeColor();
+    }
+    constructor(){
+       this.#name="samira";
+       this.#age="abdi";
+       this.#city="Gilan";
+       this.#eyeColor="Black";
+    }
+    print(){
+        console.log(` I am ${this.#name}  I'm ${this.#age} years old my eye color is ${this.#eyeColor}`)
+    }
+
+}
+
+
+const copy1=new Samira();
+copy1.print();
+
+</script>

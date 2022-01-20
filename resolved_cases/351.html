@@ -1,0 +1,42 @@
+<script>
+// Create a string join class that receives only the string input type.
+
+class join{
+    #str1;
+    #str2;
+    dfgtr;
+    get Str1(){
+        return this.#str1;
+    }
+set Str1(value){
+    dfgtr=typeof value
+    if(dfgtr==="string"){
+    this.#str1=value;}
+}
+get Str2(){
+    return this.#str2;
+
+}
+set Str2(value){
+    dfgtr=(typeof value)
+    if(dfgtr){
+    this.#str2=value;}
+}
+constructor(s1,s2){
+    this.#str1=s1;
+    this.#str2=s2;
+}
+
+join(){
+    return this.#str1+" "+this.#str2;
+    console.log(this.dfgtr);
+}
+
+
+
+
+}
+const sentence1=new join("samira",2);
+console.log(sentence1.join());
+console.log(typeof "samira")
+</script>
