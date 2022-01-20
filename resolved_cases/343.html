@@ -1,0 +1,21 @@
+<script>
+
+
+// Write a program that adds the values of one map to "value" and stores it in the key and adds it to another map.
+
+const map=new Map([
+    ["a","A"],
+    ["b","B"],
+    ["c","C"],
+    ["d","D"]
+
+])
+const map2=new Map();
+map.forEach((value,key)=>{
+map2.set(key,"value "+value);
+})
+
+console.log(map2);
+
+
+</script>

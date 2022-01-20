@@ -1,0 +1,99 @@
+<script>
+
+
+// Create a class named person Define two more classes that inherit from the person class with methods and properties.
+// Then use a function that takes the name of the two classes to determine which class is subclass of which class.
+    
+ class person{
+     #name;
+     #age;
+     #city;
+     
+     constructor(n,a,c){
+         this.#name=n;
+         this.#age=a;
+         this.#city=c;
+     }
+
+     get Name(){
+         return this.#name;
+     }
+     set  Name(value){
+         this.#name=value;
+     }
+     get City(){
+         return this.#city;
+     }
+     set City(value){
+        this.#city=value;
+     }
+     get Age(){
+         return this.#age;
+     }
+     set Age(value){
+        this.#age=value;
+     }
+
+     print(){
+         console.log("My name is "+this.#name+" Iam "+this.#age+"  years old and I live in "+this.#city);
+     }
+     
+ }
+    class student extends person{
+        #grade;
+        get Grade(){
+            return this.#grade;
+
+        }
+        set Grade(value){
+            this.#grade=value;
+        }
+        constructor(n,a,c,g){
+            super();
+this.#grade=g;
+        }
+
+
+        print(){
+        super.print();
+        console.log("My grade is "+this.#grade);
+     }
+    }
+
+
+
+
+    class teacher extends person{
+        #lesson;
+        constructor(n,a,c,l){
+            super();
+this.#lesson=l;
+        }
+        get Lesson(){
+
+            return this.#lesson;
+        }
+        set Lesson(value){
+            this.#lesson=value;
+        }
+        print(){
+            super.print();
+        console.log("My lesson is "+this.#lesson);
+     }
+    }
+
+
+
+    // function CheckInstanceof(class1,class2){
+    //     if (class1 instanceof class2){
+    //         console.log(   ` ${class1}   instanceof  ${class2} `)
+
+    //     }
+    //     else{
+    //         console.log(   ` ${class1}   Not  instanceof  ${class2} `)
+    //     }
+    // }
+
+
+CheckInstanceof(student,person);
+    </script>
