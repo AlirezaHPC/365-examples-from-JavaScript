@@ -1,0 +1,25 @@
+<script>
+    // Define a class that adds a value of 5 to each number.
+
+
+    class Addfive{
+        #five;
+        #number;
+        get number(){
+        return this.#number;
+        }
+
+        set number(value){
+            this.#number=value;
+        }
+        constructor(num){
+            this.#five=5;
+            this.#number=num;
+        }
+        Addfive(){
+            return this.#number + this.#five;
+        }
+    }
+    const result=new Addfive(4);
+    console.log(result.Addfive());
+</script>
