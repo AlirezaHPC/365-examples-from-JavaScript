@@ -838,6 +838,40 @@ Then create an object that has the properties of the person and the print method
 351: Create a string join class that receives only the string input type.
 
 
+352: For the person object, write the fullName method as AccessorProperty in both internal and external methods
+
+353: For the person object, define the name property with different values in the constructor function and in the prototype, but define the age property only in the prototype and then display the name and age.
+
+354: Define two classes called plant and fruit
+A) The fruit class inherits from the plant class.
+B) The plant class has a mat that prints the color and name of the fruit of the fruit class.
+
+355: Define two classes called Animal and Dog
+Dog to inherit from the Animal class. Create an instance of Dog and check if this instance is from the Animal class.
+
+356: Define a class that uses a static method to get a name from input and recognize whether it is a shape of a geometric shape or not?
+
+
+
+357: Define a class that has a static method for comparing the colors of birds, by default the colors of the birds in this class are red.
+
+358: Create a class that prints the current date with a static method.
+
+
+359: Define a static method that prints the phrase hello world. Write this class so that an instance method can also call the static method.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
