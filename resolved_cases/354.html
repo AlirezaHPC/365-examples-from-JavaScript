@@ -1,0 +1,76 @@
+<script>
+//     Define two classes called plant and fruit
+// A) The fruit class inherits from the plant class.
+// B) The plant class has a mat that prints the color and name of the fruit of the fruit class.
+
+//method one
+class plant{
+
+
+print(){
+    console.log(` my name is ${this.name} and my color is ${this.color}`);
+}
+}
+
+
+class fruit extends plant{
+    color;
+    name;
+    constructor(c,n){
+        super();
+
+        this.color=c;
+this.name=n;
+    }
+
+
+
+}
+
+const Bnana=new fruit("yellow","Bnana");
+Bnana.print();
+
+
+
+
+
+
+class plant{
+
+
+print(){
+    console.log(` my name is ${this.name} and my color is ${this.color}`);
+}
+}
+
+
+class fruit{
+    color;
+    name;
+    constructor(c,n){
+        super();
+
+        this.color=c;
+this.name=n;
+    }
+
+
+
+}
+
+
+const Bnana=new fruit("yellow","Bnana");
+Bnana.print();
+
+
+
+if(Bnana instanceof plant){
+    console.log("*");
+}
+else{
+    console.log("//");
+}
+
+
+
+</script>
