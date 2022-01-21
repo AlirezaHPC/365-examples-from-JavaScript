@@ -1,0 +1,27 @@
+<script>
+
+    // Define a class that uses a static method to get a name 
+    // from input and recognize whether it is a shape of a geometric shape or not?
+    
+    
+        let CheckShape=class{
+           
+            static shape(shName){
+            const names=new Set([ "circle","triangle","rectangle","ellipes","square","heart","star","rhombus","cone","trapezoid"]);
+    
+            if(names.has(shName)){
+                console.log(` ${shName} is a shape`);
+            }
+    else{
+        console.log(` ${shName} is  Not a shape`);
+    }
+    
+            }
+    
+        };
+        
+    CheckShape.shape("samira");
+    
+    
+    
+    </script>
