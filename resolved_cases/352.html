@@ -1,0 +1,96 @@
+<script>
+// For the person object, write the fullName method as AccessorProperty in both internal and external methods
+
+class person{
+    #fName;
+    #lName;
+    get First(){
+        return this.#fName;
+    }
+    set First(value){
+
+this.#fName=value;
+    }
+    get last(){
+        return this.#lName;
+    }
+    set last(value){
+
+this.#lName=value;
+    }
+
+
+    constructor(f,n){
+        this.#fName=f;
+        this.#lName=n;
+    }
+   get  fullName(){
+      return  this.#fName + "   "+ this.#lName;
+    }
+}
+
+
+
+// class person{
+//     fName;
+//     lName;
+
+
+//     constructor(f,n){
+//         this.fName=f;
+//         this.lName=n;
+//     }
+
+// }
+// Object.defineProperty(person,"fullName",{
+//     set(value){
+//         [this.fName,this.lName]=value.split(' ');
+//     },
+//     get(){
+
+//         return this.fName+" "+this.lName;
+//     }
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+const person1=new person("samira","abdi");
+console.log(person1.fullName);
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
