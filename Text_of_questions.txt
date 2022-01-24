@@ -813,9 +813,8 @@ Then create an object that has the properties of the person and the print method
 340 : Define a function that returns the number of elements in an object.
 
 
-341: Display Class B inheritance from Object A in two ways.
-342: Write Class B inheritance from Object A in two ways.
-
+341: Display Class B inheritance from Object A 
+342: Write Class B inheritance from Object A 
 
 343: Write a program that adds the values of one map to "value" and stores it in the key and adds it to another map.
 
@@ -836,6 +835,9 @@ Then create an object that has the properties of the person and the print method
 350: Define a class with read-only properties
 
 351: Create a string join class that receives only the string input type.
+
+
+
 
 
 352: For the person object, write the fullName method as AccessorProperty in both internal and external methods
@@ -863,8 +865,16 @@ Dog to inherit from the Animal class. Create an instance of Dog and check if thi
 
 
 
+360: Define a function that takes a set from the input and converts it to an array.
+361: Define a function that takes a map and converts it to an object, converts an object to a map.
+Convert a set to an array and vice versa. This function has two inputs, the first input is a data structure and the second input is a data structure type.
+362: Define a static method for the data class that converts a map to an object and an object to a map.
 
+363: Merge an array in two different ways.
 
+364:  Combine two sets in two ways.
+
+365:  Attach two objects in two different ways.
 
 
 
