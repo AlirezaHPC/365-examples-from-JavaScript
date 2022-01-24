@@ -1,0 +1,24 @@
+<script>
+
+// Attach two objects in two different ways.
+let obj1={
+    name:"samira"
+};
+let obj2={
+family:"abdi"
+};
+
+obj2={...obj2,...obj1};
+console.log(obj2);
+
+
+let s={
+    name:"samira"
+};
+let t={
+family:"abdi"
+};
+
+console.log(Object.assign(s,t));
+
+</script>
