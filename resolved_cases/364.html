@@ -1,0 +1,13 @@
+<script>
+
+// Combine two sets in two ways.
+    set1=new Set(["samira","zahra","roya","maryam"]);
+    set2=new Set(["raman","ali","majid","hesam"]);
+    const str=[...set1,...set2];
+    console.log(str);
+
+    let s=new Set([1,2,3]);
+    let t=new Set([4,5,6]);
+    t.forEach(s.add,s);
+    console.log(s);
+</script>
