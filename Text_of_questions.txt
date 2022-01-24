@@ -125,7 +125,7 @@ B)	Show the location of the last  string in the second string
 Convert all uppercase letters of the string to lowercase letters
 Count the number of letters in a string
 
-48: Write a program that simulates the dose game (in this game we have a 3 * 3 matrix in which two players with numbers 1 and 2 play together, each player has three pieces. The winning player is the one who can move faster Align your beads in a row or column or diagonally)
+48: Define a person class whose default field value is your own information.
 49: Write a program that reads 20 numbers and puts them in two 10-element arrays. Then merge the elements of the two arrays (the two arrays must be arranged)
 
 
