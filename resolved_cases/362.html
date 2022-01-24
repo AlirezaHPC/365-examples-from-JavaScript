@@ -1,0 +1,35 @@
+<script>
+
+
+//Define a static method for the data class that converts a map to an object and an object to a map.
+
+    class date{
+        static convert(object,type){
+            let result=null;
+           
+            switch (type){
+                case "map": 
+result=Object.fromEntries(object);
+
+                break;
+                case "object": 
+                result=new Map(Object.entries(object));
+                break;
+                default : 
+                console.log("input is invalid!")
+
+            }
+            return result;
+        }
+    }
+let map=new Map([
+    ["name","raman"],
+    ["age",28],["city","Gilan"]
+]);
+object={
+    name:"samira",
+    age:21,
+    city:"heart"
+};
+   console.log( date.convert(map,"map"));
+</script>
