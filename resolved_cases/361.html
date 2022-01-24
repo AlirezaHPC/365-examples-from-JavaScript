@@ -1,0 +1,51 @@
+<script>
+
+
+// Define a function that takes a map and converts it to an object, converts an object to a map.
+// Convert a set to an array and vice versa. This function has two inputs,
+//  the first input is a data structure and the second input is a data structure type.
+
+
+    function Convert(object,type){
+        let result;
+
+        switch (type){
+    case "map":
+result=Object.fromEntries(object);
+    break;
+
+    case "array": 
+    result=new Set(object);
+
+    break;
+
+
+    case "object": 
+    result=new Map(Object.entries(object));
+
+    break;
+
+    case "set": 
+    result=[...object];
+
+    break;
+
+
+        }
+        return result;
+    }
+
+
+    let array=[1,2,3,4,5,6,23];
+    let map=new Map([
+        ["name","samira"]
+    ]);
+    let set=new Set([2,3,6,5,8,9]);
+    let obj={
+        name:"raman",
+        age:28,
+        city:"Gilan"
+    }
+   
+    console.log( Convert(obj,"object"))
+</script>
