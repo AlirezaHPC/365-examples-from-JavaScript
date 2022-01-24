@@ -1,5 +1,5 @@
 <script>
-// For the person object, write the fullName method as AccessorProperty in both internal and external methods
+// For the person object, write the fullName method as AccessorProperty methods
 
 class person{
     #fName;
@@ -18,6 +18,9 @@ this.#fName=value;
 
 this.#lName=value;
     }
+    set fullName(value){
+        [this.#fName,this.#lName]=value.split(" ");
+    }
 
 
     constructor(f,n){
@@ -31,31 +34,6 @@ this.#lName=value;
 
 
 
-// class person{
-//     fName;
-//     lName;
-
-
-//     constructor(f,n){
-//         this.fName=f;
-//         this.lName=n;
-//     }
-
-// }
-// Object.defineProperty(person,"fullName",{
-//     set(value){
-//         [this.fName,this.lName]=value.split(' ');
-//     },
-//     get(){
-
-//         return this.fName+" "+this.lName;
-//     }
-
-// })
-
-
-
-
 
 
 
@@ -65,6 +43,7 @@ this.#lName=value;
 
 
 const person1=new person("samira","abdi");
+person1.fullName="zahra abdi"
 console.log(person1.fullName);
 
 
