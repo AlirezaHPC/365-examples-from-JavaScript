@@ -1,0 +1,39 @@
+<script>
+// Display Class B inheritance from Object A 
+
+
+
+class A{
+constructor(){
+
+}
+}
+
+class   B extends A{
+    constructor(){
+        super();
+    }
+}
+
+
+
+let char=new B();
+
+
+function Check(v){
+if(v instanceof A){
+    console.log(`input object  instanceof A `);
+}
+else{
+
+    console.log(`input object    Not  instanceof A `);
+
+
+}
+
+}
+
+
+
+Check(char);
+</script>
