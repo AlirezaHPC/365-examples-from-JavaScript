@@ -1,0 +1,34 @@
+<script>
+
+
+
+// Define two classes called Animal and Dog
+// Dog to inherit from the Animal class. Create an instance of Dog and check if this instance is from the Animal class.
+
+
+class Animal{
+    name;
+    
+    constructor(n){
+        this.name=n;
+    }
+    print(){
+        console.log(` name = ${this.name}`);
+    }
+
+}
+
+class Dog extends Animal{
+    voice="Haoo , Haoo";
+    constructor(n){
+        super(n);
+    }
+    print(){
+        super.print();
+        console.log(`${this.name} voice is ${this.voice}`);
+    }
+
+}
+const dog=new Dog("dog");
+dog.print();
+</script>
