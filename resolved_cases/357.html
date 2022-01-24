@@ -1,0 +1,26 @@
+<script>
+    // Define a class that has a static method for comparing the colors of birds, 
+    // by default the colors of the birds in this class are red.
+
+
+class Bird{
+    color;
+    constructor({color="red"}={}){
+        this.color=color;
+    }
+    static comparing(first,second){
+
+
+
+        return (first.color==second.color);
+      
+    }
+}
+
+
+const redBird=new Bird();
+const blueBird=new Bird({"color":"blue"});
+console.log(Bird.comparing(redBird,blueBird));
+console.log(redBird.color);
+console.log(blueBird.color);
+</script>
