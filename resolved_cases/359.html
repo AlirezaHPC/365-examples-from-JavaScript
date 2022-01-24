@@ -1,0 +1,22 @@
+<script>
+    //  Define a static method that prints the phrase hello world. 
+    //  Write this class so that an instance method can also call the static method.
+
+
+    class Hello{
+
+
+callHello(){
+    return Hello.Hello();
+}
+
+
+        static Hello(){
+            console.log("Hello World!");
+        }
+    }
+
+Hello.Hello();
+const var1=new Hello();
+var1.callHello();
+</script>
