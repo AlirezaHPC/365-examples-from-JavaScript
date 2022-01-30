@@ -1,0 +1,26 @@
+<script>
+
+// Suppose a telecommunications company in one of the provinces wants to transfer its information over a telephone line.
+//  All transfer information consists of four correct digits. The telecommunications company encodes it for transmission.
+//   A program that reads an integer four-digit number and encodes and prints it as follows:
+// 1. Calculates the remainder of each digit to 4 and replaces the digit with a sum.
+// 2. Replaces the first digit with the third.
+
+
+
+const num4Digit = parseInt(prompt("enter a 4 digit number"));
+
+let n=num4Digit;
+let new4Digit=0,digit=0;
+
+let p=1;
+while(n>0){
+digit=parseInt(n%10);
+// new4Digit=digit+(new4Digit*p);
+// p=p*10;
+console.log(digit);
+n=parseInt(n/10);
+}
+console.log(new4Digit);
+
+</script>
